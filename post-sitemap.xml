@@ -1,0 +1,752 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="sitemap.xsl"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>http://fengchao.github.io</loc>
+        <changefreq>daily</changefreq>
+        <priority>1</priority>
+    </url>
+
+    <url>
+        <loc>http://fengchao.github.io/2016/09/08/Scrapy-python-spider/</loc>
+        <lastmod>2016-09-08T07:52:26.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>http://fengchao.github.io/2009/09/06/Do-not-be-too-streeful/</loc>
+        <lastmod>2016-09-05T06:33:40.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>http://fengchao.github.io/2009/09/27/No-title/</loc>
+        <lastmod>2016-09-05T06:27:22.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>http://fengchao.github.io/2009/10/09/Olny-srmat-poelpe-can-raed-tihs-1/</loc>
+        <lastmod>2016-09-05T05:30:08.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>http://fengchao.github.io/2009/10/09/Olny-srmat-poelpe-can-raed-tihs/</loc>
+        <lastmod>2016-09-05T05:30:02.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>http://fengchao.github.io/2009/10/09/No-Software-patent/</loc>
+        <lastmod>2016-09-05T05:28:08.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>http://fengchao.github.io/2009/10/09/Unpredictable-stock-market/</loc>
+        <lastmod>2016-09-05T05:26:16.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>http://fengchao.github.io/2009/11/20/I-am-not-me/</loc>
+        <lastmod>2016-09-05T02:04:50.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>http://fengchao.github.io/2009/11/23/No-Change/</loc>
+        <lastmod>2016-09-05T02:02:34.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>http://fengchao.github.io/2009/12/06/Watchmen/</loc>
+        <lastmod>2016-09-02T09:00:32.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>http://fengchao.github.io/2009/12/21/Strive-for-Clean/</loc>
+        <lastmod>2016-07-28T08:10:40.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>http://fengchao.github.io/2009/12/30/Xianguo-RSS/</loc>
+        <lastmod>2016-07-28T08:08:06.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>http://fengchao.github.io/2009/12/30/2009-Stock-summary/</loc>
+        <lastmod>2016-07-28T04:54:56.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>http://fengchao.github.io/2009/12/03/2009-Job-summary/</loc>
+        <lastmod>2016-07-28T04:50:54.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>http://fengchao.github.io/2010/01/02/First-Notebook/</loc>
+        <lastmod>2016-07-28T04:49:04.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>http://fengchao.github.io/2010/01/05/Products-and-demands/</loc>
+        <lastmod>2016-07-28T04:47:22.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>http://fengchao.github.io/2010/01/19/Prejudice/</loc>
+        <lastmod>2016-07-27T08:22:08.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>http://fengchao.github.io/2010/01/24/Reform-by-Li-Rui/</loc>
+        <lastmod>2016-07-27T08:13:04.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>http://fengchao.github.io/2010/01/25/Microsoft-choice/</loc>
+        <lastmod>2016-07-27T08:05:26.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>http://fengchao.github.io/2010/02/04/Engineering-thinkinng/</loc>
+        <lastmod>2016-07-27T07:47:40.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>http://fengchao.github.io/2010/03/17/Self-Consistency/</loc>
+        <lastmod>2016-07-27T07:28:42.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>http://fengchao.github.io/2010/07/07/Short-Summary/</loc>
+        <lastmod>2016-07-27T07:25:44.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>http://fengchao.github.io/2009/06/15/Link-list-in-linux-kernel/</loc>
+        <lastmod>2016-07-25T03:11:58.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>http://fengchao.github.io/2010/07/09/Blood-type-AB/</loc>
+        <lastmod>2016-07-23T08:41:18.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>http://fengchao.github.io/2016/07/22/Mutithread-efficency/</loc>
+        <lastmod>2016-07-22T09:55:04.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>http://fengchao.github.io/2016/07/13/The-Stockdale-Paradox/</loc>
+        <lastmod>2016-07-13T01:10:12.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>http://fengchao.github.io/2016/07/12/Dvorak/</loc>
+        <lastmod>2016-07-12T03:22:06.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>http://fengchao.github.io/2016/07/06/Destory-books/</loc>
+        <lastmod>2016-07-11T02:25:56.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>http://fengchao.github.io/2015/10/05/Hexo/</loc>
+        <lastmod>2016-07-08T05:47:38.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>http://fengchao.github.io/2016/07/05/Hard-Bugs/</loc>
+        <lastmod>2016-07-07T09:09:42.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>http://fengchao.github.io/2016/07/06/Learn-linux-the-hard-way/</loc>
+        <lastmod>2016-07-07T08:27:52.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>http://fengchao.github.io/2016/07/05/Archive-what-you-think/</loc>
+        <lastmod>2016-07-05T05:52:32.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>http://fengchao.github.io/2016/06/30/How-to-create-community/</loc>
+        <lastmod>2016-06-30T05:07:14.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>http://fengchao.github.io/2016/06/28/The-Innovators-Dilemma/</loc>
+        <lastmod>2016-06-28T07:41:48.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>http://fengchao.github.io/2016/06/23/Tech-Type-and-solution/</loc>
+        <lastmod>2016-06-23T09:58:06.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>http://fengchao.github.io/2010/08/01/Goodbye-VIA/</loc>
+        <lastmod>2016-06-23T06:11:22.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>http://fengchao.github.io/2010/08/01/Vivid-history/</loc>
+        <lastmod>2016-06-23T06:02:54.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>http://fengchao.github.io/2010/08/06/How-to-learn-English/</loc>
+        <lastmod>2016-06-23T05:47:24.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>http://fengchao.github.io/2010/08/22/Hacker-Hack-Thyself/</loc>
+        <lastmod>2016-06-23T05:41:12.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>http://fengchao.github.io/2006/11/16/Sun-Opens-Java/</loc>
+        <lastmod>2016-06-23T05:29:10.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>http://fengchao.github.io/2016/06/13/Tmux/</loc>
+        <lastmod>2016-06-23T05:28:42.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>http://fengchao.github.io/2010/09/05/Shenzhen/</loc>
+        <lastmod>2016-06-23T05:11:56.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>http://fengchao.github.io/2010/09/18/Growing-Linux/</loc>
+        <lastmod>2016-06-23T03:25:42.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>http://fengchao.github.io/2016/06/14/Google-win-Oracle/</loc>
+        <lastmod>2016-06-22T07:44:32.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>http://fengchao.github.io/2010/12/20/Live-Not-By-Lies/</loc>
+        <lastmod>2016-06-22T07:43:02.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>http://fengchao.github.io/2011/05/01/Example-for-programmer/</loc>
+        <lastmod>2016-06-22T07:30:30.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>http://fengchao.github.io/2011/12/14/Guzhun/</loc>
+        <lastmod>2016-06-22T07:27:06.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>http://fengchao.github.io/2011/12/17/Goodbye-IE6/</loc>
+        <lastmod>2016-06-22T07:23:40.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>http://fengchao.github.io/2011/12/27/Later-Never/</loc>
+        <lastmod>2016-06-21T09:40:30.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>http://fengchao.github.io/2011/12/27/Wiki/</loc>
+        <lastmod>2016-06-21T08:32:32.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>http://fengchao.github.io/2016/06/12/Open-source-funnel/</loc>
+        <lastmod>2016-06-12T09:08:44.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>http://fengchao.github.io/2016/04/06/hello-world/</loc>
+        <lastmod>2016-06-11T10:25:30.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>http://fengchao.github.io/2012/03/19/My-life-in-MTK-Hefei/</loc>
+        <lastmod>2016-06-08T09:06:18.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>http://fengchao.github.io/2012/04/09/How-to-be-great-in-China/</loc>
+        <lastmod>2016-06-08T09:03:32.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>http://fengchao.github.io/2012/05/07/ZIP-Story/</loc>
+        <lastmod>2016-06-08T09:01:50.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>http://fengchao.github.io/2012/05/09/stock-k-line/</loc>
+        <lastmod>2016-06-08T08:57:44.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>http://fengchao.github.io/2013/01/28/Goodbye-Wintel/</loc>
+        <lastmod>2016-06-08T08:53:54.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>http://fengchao.github.io/2013/02/07/kde-4-10/</loc>
+        <lastmod>2016-06-08T08:50:56.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>http://fengchao.github.io/2013/03/14/Goodby-google-reader/</loc>
+        <lastmod>2016-06-08T08:49:02.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>http://fengchao.github.io/2016/06/08/why-people-burn-out/</loc>
+        <lastmod>2016-06-08T08:37:52.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>http://fengchao.github.io/2016/05/27/flashroom/</loc>
+        <lastmod>2016-05-27T07:31:14.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>http://fengchao.github.io/2016/05/27/PCI-device-driver/</loc>
+        <lastmod>2016-05-27T07:28:56.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>http://fengchao.github.io/2016/05/27/initrd/</loc>
+        <lastmod>2016-05-27T07:16:18.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>http://fengchao.github.io/2016/05/27/Tao-of-programing/</loc>
+        <lastmod>2016-05-27T07:14:12.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>http://fengchao.github.io/2016/05/27/The-Cathedral-and-Bazaar/</loc>
+        <lastmod>2016-05-27T07:12:14.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>http://fengchao.github.io/2016/05/27/Master-boot-record/</loc>
+        <lastmod>2016-05-27T07:05:40.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>http://fengchao.github.io/2016/05/27/Linux-From-Scratch/</loc>
+        <lastmod>2016-05-27T06:53:40.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>http://fengchao.github.io/2016/05/27/cmd-story/</loc>
+        <lastmod>2016-05-27T06:27:04.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>http://fengchao.github.io/2016/05/27/pkgconfig/</loc>
+        <lastmod>2016-05-27T06:21:08.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>http://fengchao.github.io/2016/05/27/designated-initializers/</loc>
+        <lastmod>2016-05-27T05:51:28.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>http://fengchao.github.io/2016/05/27/Vim-keyboard/</loc>
+        <lastmod>2016-05-27T05:43:16.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>http://fengchao.github.io/2016/05/27/Mother-board-debug-card/</loc>
+        <lastmod>2016-05-27T05:39:32.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>http://fengchao.github.io/2016/05/27/HelloWDM/</loc>
+        <lastmod>2016-05-27T05:36:10.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>http://fengchao.github.io/2016/05/27/submit-code-to-upstream-kernel/</loc>
+        <lastmod>2016-05-27T05:23:34.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>http://fengchao.github.io/2016/05/22/Function-call-convention/</loc>
+        <lastmod>2016-05-22T00:17:54.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>http://fengchao.github.io/2016/05/21/programer-roadmap/</loc>
+        <lastmod>2016-05-22T00:11:02.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>http://fengchao.github.io/2016/05/21/dbus/</loc>
+        <lastmod>2016-05-21T08:18:02.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>http://fengchao.github.io/2016/04/06/Songbird-Play-music-play-the-web/</loc>
+        <lastmod>2016-05-21T08:04:28.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>http://fengchao.github.io/2016/05/21/testdisk/</loc>
+        <lastmod>2016-05-21T08:02:38.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>http://fengchao.github.io/2016/05/21/patch/</loc>
+        <lastmod>2016-05-21T07:58:06.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>http://fengchao.github.io/2016/05/21/Python-import-this/</loc>
+        <lastmod>2016-05-21T07:55:12.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>http://fengchao.github.io/2016/05/09/Java-NET-Mono/</loc>
+        <lastmod>2016-05-09T08:52:50.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>http://fengchao.github.io/2016/04/16/How-to-get-kernel-module-maintainers/</loc>
+        <lastmod>2016-04-16T12:13:52.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>http://fengchao.github.io/2016/04/16/Bash-rotation-code/</loc>
+        <lastmod>2016-04-16T12:11:12.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>http://fengchao.github.io/2016/04/06/Flash-storage-in-Linux/</loc>
+        <lastmod>2016-04-06T06:43:42.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>http://fengchao.github.io/2016/04/06/Kill-software-patents/</loc>
+        <lastmod>2016-04-06T06:12:26.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>http://fengchao.github.io/2016/04/06/Free-as-in-Freedom/</loc>
+        <lastmod>2016-04-06T06:08:40.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>http://fengchao.github.io/2009/05/18/Sound-of-opensource-projects/</loc>
+        <lastmod>2016-04-06T05:46:04.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>http://fengchao.github.io/2016/04/06/Why-Firefox/</loc>
+        <lastmod>2016-04-06T05:44:24.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>http://fengchao.github.io/2015/10/12/IE-vs-Firefox/</loc>
+        <lastmod>2016-04-06T03:40:38.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>http://fengchao.github.io/2016/04/06/An-open-letter-to-hobbyists/</loc>
+        <lastmod>2016-04-06T03:27:06.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>http://fengchao.github.io/2016/04/05/Delete-code/</loc>
+        <lastmod>2016-04-06T03:27:06.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>http://fengchao.github.io/2016/04/05/Different-programe-languages/</loc>
+        <lastmod>2016-04-06T03:27:06.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>http://fengchao.github.io/2016/04/05/Gentoo-to-Arch/</loc>
+        <lastmod>2016-04-06T03:27:06.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>http://fengchao.github.io/2016/04/05/Goodbye-Baidu/</loc>
+        <lastmod>2016-04-06T03:27:06.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>http://fengchao.github.io/2015/10/06/Markdown-cheetsheet/</loc>
+        <lastmod>2016-04-06T03:27:06.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>http://fengchao.github.io/2016/04/05/Mpeg-to-Theora/</loc>
+        <lastmod>2016-04-06T03:27:06.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>http://fengchao.github.io/2016/04/05/My-linux-history/</loc>
+        <lastmod>2016-04-06T03:27:06.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>http://fengchao.github.io/2015/11/07/Open-source-maintainer/</loc>
+        <lastmod>2016-04-06T03:27:06.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>http://fengchao.github.io/2015/11/07/Redflag-linux/</loc>
+        <lastmod>2016-04-06T03:27:06.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>http://fengchao.github.io/2016/04/06/Top-100-Network-security-tools/</loc>
+        <lastmod>2016-04-06T03:27:06.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>http://fengchao.github.io/2016/04/05/VA-ARGS/</loc>
+        <lastmod>2016-04-06T03:27:06.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>http://fengchao.github.io/2015/11/07/nodejs-nvm/</loc>
+        <lastmod>2016-04-06T03:27:06.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>http://fengchao.github.io/2015/10/08/remote-work/</loc>
+        <lastmod>2016-04-06T03:27:06.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>http://fengchao.github.io/2015/10/12/self-promote/</loc>
+        <lastmod>2016-04-06T03:27:06.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>http://fengchao.github.io/2015/10/12/volatile-in-C/</loc>
+        <lastmod>2016-04-06T03:27:06.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+</urlset>
+<!-- XML Sitemap generated by Hexo SEO Friendly Sitemap Generator -->

@@ -1,0 +1,434 @@
+<!-- build time:Thu Oct 20 2016 21:29:21 GMT+0800 (CST) --><!doctype html><html class="theme-next mist use-motion"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><meta name="baidu-site-verification" content="6c70qR5DN9"><link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css"><link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css"><link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css"><link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css"><meta name="keywords" content="Hexo, NexT"><link rel="alternate" href="/atom.xml" title="Chaospace" type="application/atom+xml"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1"><meta property="og:type" content="website"><meta property="og:title" content="Chaospace"><meta property="og:url" content="http://fengchao.github.io/page/4/index.html"><meta property="og:site_name" content="Chaospace"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="Chaospace"><script type="text/javascript" id="hexo.configuration">var NexT=window.NexT||{},CONFIG={scheme:"Mist",sidebar:{position:"left",display:"post"},fancybox:!0,motion:!0,duoshuo:{userId:0,author:"博主"}}</script><link rel="canonical" href="http://fengchao.github.io/page/4/"><title>Chaospace</title></head><body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans,en,default"><script type="text/javascript">var _hmt=_hmt||[];!function(){var e=document.createElement("script");e.src="//hm.baidu.com/hm.js?e6e028efa4e1db3bb40b47f735c82723";var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)}()</script><div class="container one-collumn sidebar-position-left page-home"><div class="headband"></div><header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="header-inner"><div class="site-meta"><div class="custom-logo-site-title"><a href="/" class="brand" rel="start"><span class="logo-line-before"><i></i></span> <span class="site-title">Chaospace</span> <span class="logo-line-after"><i></i></span></a></div><p class="site-subtitle">Reshape the world by engineering chaos</p></div><div class="site-nav-toggle"><button><span class="btn-bar"></span> <span class="btn-bar"></span> <span class="btn-bar"></span></button></div><nav class="site-nav"><ul id="menu" class="menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i><br>首页</a></li><li class="menu-item menu-item-categories"><a href="/categories" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i><br>分类</a></li><li class="menu-item menu-item-archives"><a href="/archives" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i><br>归档</a></li><li class="menu-item menu-item-tags"><a href="/tags" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i><br>标签</a></li><li class="menu-item menu-item-search"><a href="javascript:;" class="popup-trigger"><i class="menu-item-icon fa fa-search fa-fw"></i><br>搜索</a></li></ul><div class="site-search"><div class="popup"><span class="search-icon fa fa-search"></span> <input type="text" id="local-search-input"><div id="local-search-result"></div><span class="popup-btn-close">close</span></div></div></nav></div></header><main id="main" class="main"><div class="main-inner"><div class="content-wrap"><div id="content" class="content"><section id="posts" class="posts-expand"><article class="post post-type-normal" itemscope itemtype="http://schema.org/Article"><header class="post-header"><h1 class="post-title" itemprop="name headline"><a class="post-title-link" href="/2016/05/21/programer-roadmap/" itemprop="url">程序员发展路线图</a></h1><div class="post-meta"><span class="post-time"><span class="post-meta-item-icon"><i class="fa fa-calendar-o"></i> </span><span class="post-meta-item-text">发表于</span> <time itemprop="dateCreated" datetime="2016-05-21T16:20:11+08:00" content="2016-05-21">2016-05-21 </time></span><span class="post-comments-count">&nbsp; | &nbsp; <a href="/2016/05/21/programer-roadmap/#comments" itemprop="discussionUrl"><span class="post-comments-count ds-thread-count" data-thread-key="2016/05/21/programer-roadmap/" itemprop="commentsCount"></span></a></span></div></header><div class="post-body" itemprop="articleBody"><p>高中</p><pre><code>10 PRINT &quot;HELLO WORLD&quot;
+ 20 END
+</code></pre><p>大一</p><pre><code>rogram Hello(input, output)
+   begin
+    writeln(&apos;Hello World&apos;)
+   end.
+</code></pre><p>大二</p><pre><code>(defun hello
+       (print 
+        (cons &apos;Hello 
+            (list &apos;World))))
+</code></pre><p>新手</p><pre><code>#include &lt;stdio.h&gt;
+void main(void)
+{
+      char *message[] = {&quot;Hello &quot;, &quot;World&quot;};
+      int i;
+
+      for(i = 0; i &lt; 2; ++i)
+        printf(&quot;%s&quot;, message[i]);
+
+   printf(&quot;\n&quot;);
+}
+</code></pre><p>熟练程序员</p><pre><code> #include &lt;iostream.h&gt;
+#include &lt;string.h&gt;
+class string {
+private:
+     int size;
+     char *ptr;
+
+     string() : size(0), ptr(new char[1]) { ptr[0] = 0; }
+
+    string(const string &amp;s) : size(s.size)
+    {
+        ptr = new char[size + 1];
+        strcpy(ptr, s.ptr);
+    }
+
+    ~string()
+    {
+        delete [] ptr;
+    }
+
+       friend ostream &amp;operator &lt;&lt;(ostream &amp;, const string &amp;);
+       string &amp;operator=(const char *);
+ };
+
+ ostream &amp;operator&lt;&lt;(ostream &amp;stream, const string &amp;s)
+ {
+   return(stream &lt;&lt; s.ptr);
+ }
+
+ string &amp;string::operator=(const char *chrs)
+ {
+   if (this != &amp;chrs)
+   {
+     delete [] ptr;
+    size = strlen(chrs);
+     ptr = new char[size + 1];
+     strcpy(ptr, chrs);
+   }
+   return(*this);
+ }
+
+ int main()
+ {
+   string str;
+
+   str = &quot;Hello World&quot;;
+   cout &lt;&lt; str &lt;&lt; endl;
+
+   return(0);
+ }
+</code></pre><p>专家</p><pre><code>[
+ uuid(2573F8F4-CFEE-101A-9A9F-00AA00342820)
+ ]
+ library LHello
+ {
+     // bring in the master library
+     importlib(&quot;actimp.tlb&quot;);
+     importlib(&quot;actexp.tlb&quot;);
+
+     // bring in my interfaces
+     #include &quot;pshlo.idl&quot;
+
+     [
+     uuid(2573F8F5-CFEE-101A-9A9F-00AA00342820)
+     ]
+     cotype THello
+  {
+  interface IHello;
+  interface IPersistFile;
+  };
+ };
+
+ [
+ exe,
+ uuid(2573F890-CFEE-101A-9A9F-00AA00342820)
+ ]
+ module CHelloLib
+ {
+
+     // some code related header files
+     importheader(&lt;windows.h&gt;);
+     importheader(&lt;ole2.h&gt;);
+     importheader(&lt;except.hxx&gt;);
+     importheader(&quot;pshlo.h&quot;);
+     importheader(&quot;shlo.hxx&quot;);
+     importheader(&quot;mycls.hxx&quot;);
+
+     // needed typelibs
+     importlib(&quot;actimp.tlb&quot;);
+     importlib(&quot;actexp.tlb&quot;);
+     importlib(&quot;thlo.tlb&quot;);
+
+     [
+     uuid(2573F891-CFEE-101A-9A9F-00AA00342820),
+     aggregatable
+     ]
+     coclass CHello
+  {
+  cotype THello;
+  };
+ };
+
+
+ #include &quot;ipfix.hxx&quot;
+
+ extern HANDLE hEvent;
+
+ class CHello : public CHelloBase
+ {
+ public:
+     IPFIX(CLSID_CHello);
+
+     CHello(IUnknown *pUnk);
+     ~CHello();
+
+     HRESULT  __stdcall PrintSz(LPWSTR pwszString);
+
+ private:
+     static int cObjRef;
+ };
+
+
+ #include &lt;windows.h&gt;
+ #include &lt;ole2.h&gt;
+ #include &lt;stdio.h&gt;
+ #include &lt;stdlib.h&gt;
+ #include &quot;thlo.h&quot;
+ #include &quot;pshlo.h&quot;
+ #include &quot;shlo.hxx&quot;
+ #include &quot;mycls.hxx&quot;
+
+ int CHello::cObjRef = 0;
+
+ CHello::CHello(IUnknown *pUnk) : CHelloBase(pUnk)
+ {
+     cObjRef++;
+     return;
+ }
+
+ HRESULT  __stdcall  CHello::PrintSz(LPWSTR pwszString)
+ {
+     printf(&quot;%ws
+&quot;, pwszString);
+     return(ResultFromScode(S_OK));
+ }
+
+
+ CHello::~CHello(void)
+ {
+
+ // when the object count goes to zero, stop the server
+ cObjRef--;
+ if( cObjRef == 0 )
+     PulseEvent(hEvent);
+
+ return;
+ }
+
+ #include &lt;windows.h&gt;
+ #include &lt;ole2.h&gt;
+ #include &quot;pshlo.h&quot;
+ #include &quot;shlo.hxx&quot;
+ #include &quot;mycls.hxx&quot;
+
+ HANDLE hEvent;
+
+  int _cdecl main(
+ int argc,
+ char * argv[]
+ ) {
+ ULONG ulRef;
+ DWORD dwRegistration;
+ CHelloCF *pCF = new CHelloCF();
+
+ hEvent = CreateEvent(NULL, FALSE, FALSE, NULL);
+
+ // Initialize the OLE libraries
+ CoInitializeEx(NULL, COINIT_MULTITHREADED);
+
+ CoRegisterClassObject(CLSID_CHello, pCF, CLSCTX_LOCAL_SERVER,
+     REGCLS_MULTIPLEUSE, &amp;dwRegistration);
+
+ // wait on an event to stop
+ WaitForSingleObject(hEvent, INFINITE);
+
+ // revoke and release the class object
+ CoRevokeClassObject(dwRegistration);
+ ulRef = pCF-&gt;Release();
+
+ // Tell OLE we are going away.
+ CoUninitialize();
+
+ return(0); }
+
+ extern CLSID CLSID_CHello;
+ extern UUID LIBID_CHelloLib;
+
+ CLSID CLSID_CHello = { /* 2573F891-CFEE-101A-9A9F-00AA00342820 */
+     0x2573F891,
+     0xCFEE,
+     0x101A,
+     { 0x9A, 0x9F, 0x00, 0xAA, 0x00, 0x34, 0x28, 0x20 }
+ };
+
+ UUID LIBID_CHelloLib = { /* 2573F890-CFEE-101A-9A9F-00AA00342820 */
+     0x2573F890,
+     0xCFEE,
+     0x101A,
+     { 0x9A, 0x9F, 0x00, 0xAA, 0x00, 0x34, 0x28, 0x20 }
+ };
+
+ #include &lt;windows.h&gt;
+ #include &lt;ole2.h&gt;
+ #include &lt;stdlib.h&gt;
+ #include &lt;string.h&gt;
+ #include &lt;stdio.h&gt;
+ #include &quot;pshlo.h&quot;
+ #include &quot;shlo.hxx&quot;
+ #include &quot;clsid.h&quot;
+
+ int _cdecl main(
+ int argc,
+ char * argv[]
+ ) {
+ HRESULT  hRslt;
+ IHello        *pHello;
+ ULONG  ulCnt;
+ IMoniker * pmk;
+ WCHAR  wcsT[_MAX_PATH];
+ WCHAR  wcsPath[2 * _MAX_PATH];
+
+ // get object path
+ wcsPath[0] = &apos;\0&apos;;
+ wcsT[0] = &apos;\0&apos;;
+ if( argc &gt; 1) {
+     mbstowcs(wcsPath, argv[1], strlen(argv[1]) + 1);
+     wcsupr(wcsPath);
+     }
+ else {
+     fprintf(stderr, &quot;Object path must be specified\n&quot;);
+     return(1);
+     }
+
+ // get print string
+ if(argc &gt; 2)
+     mbstowcs(wcsT, argv[2], strlen(argv[2]) + 1);
+ else
+     wcscpy(wcsT, L&quot;Hello World&quot;);
+
+ printf(&quot;Linking to object %ws\n&quot;, wcsPath);
+ printf(&quot;Text String %ws\n&quot;, wcsT);
+
+ // Initialize the OLE libraries
+ hRslt = CoInitializeEx(NULL, COINIT_MULTITHREADED);
+
+ if(SUCCEEDED(hRslt)) {
+
+
+     hRslt = CreateFileMoniker(wcsPath, &amp;pmk);
+     if(SUCCEEDED(hRslt))
+  hRslt = BindMoniker(pmk, 0, IID_IHello, (void **)&amp;pHello);
+
+     if(SUCCEEDED(hRslt)) {
+
+  // print a string out
+  pHello-&gt;PrintSz(wcsT);
+
+  Sleep(2000);
+  ulCnt = pHello-&gt;Release();
+  }
+     else
+  printf(&quot;Failure to connect, status: %lx&quot;, hRslt);
+
+     // Tell OLE we are going away.
+     CoUninitialize();
+     }
+
+ return(0);
+ }
+</code></pre><p>见习黑客</p><pre><code>#!/usr/local/bin/perl
+ $msg=&quot;Hello, world.\n&quot;;
+ if ($#ARGV &gt;= 0) {
+   while(defined($arg=shift(@ARGV))) {
+     $outfilename = $arg;
+     open(FILE, &quot;&gt;&quot; . $outfilename) || die &quot;Can&apos;t write $arg: $!\n&quot;;
+     print (FILE $msg);
+     close(FILE) || die &quot;Can&apos;t close $arg: $!\n&quot;;
+   }
+ } else {
+   print ($msg);
+ }
+ 1;
+</code></pre><p>有经验黑客</p><pre><code>#include &lt;stdio.h&gt;
+ #define S &quot;Hello, World\n&quot;
+ main(){exit(printf(S) == strlen(S) ? 0 : 1);}
+</code></pre><p>熟练黑客</p><pre><code>% cc -o a.out ~/src/misc/hw/hw.c
+ % a.out
+</code></pre><p>黑客领袖</p><pre><code>% echo &quot;Hello, world.&quot;初级主管10 PRINT &quot;HELLO WORLD&quot;
+ 20 END
+</code></pre><p>中级主管</p><pre><code>mail -s &quot;Hello, world.&quot; bob@b12
+ Bob, could you please write me a program that prints &quot;Hello, world.&quot;?
+ I need it by tomorrow.
+ ^D
+</code></pre><p>高级主管</p><pre><code>% zmail jim
+ I need a &quot;Hello, world.&quot; program by this afternoon.
+</code></pre><p>首席执行官</p><pre><code>% letter
+ letter: Command not found.
+ % mail
+ To: ^X ^F ^C
+ % help mail
+ help: Command not found.
+ % damn!
+ !: Event unrecognized
+ % logout
+</code></pre></div><div></div><div></div><footer class="post-footer"><div class="post-eof"></div></footer></article><article class="post post-type-normal" itemscope itemtype="http://schema.org/Article"><header class="post-header"><h1 class="post-title" itemprop="name headline"><a class="post-title-link" href="/2016/05/21/dbus/" itemprop="url">dbus 进程间通信</a></h1><div class="post-meta"><span class="post-time"><span class="post-meta-item-icon"><i class="fa fa-calendar-o"></i> </span><span class="post-meta-item-text">发表于</span> <time itemprop="dateCreated" datetime="2016-05-21T16:13:13+08:00" content="2016-05-21">2016-05-21 </time></span><span class="post-comments-count">&nbsp; | &nbsp; <a href="/2016/05/21/dbus/#comments" itemprop="discussionUrl"><span class="post-comments-count ds-thread-count" data-thread-key="2016/05/21/dbus/" itemprop="commentsCount"></span></a></span></div></header><div class="post-body" itemprop="articleBody"><h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>通常一个桌面中会有几个不同的程序同时运行，而且它们之间需要相互间进行通讯。在操作系统层，这些不同的程序用不同的进程来实现。而为了安全起见，不同进 程间是不能直接相互调用和内存访问的，也就是一个进程对另外的进程是不可见的。这就需要一个机制来定义一个接口，一个进程通过接口访问另外一个进程，对于 发起访问的进程来说，调用 IPC 接口中的函数与调用自己进程内的函数是没有区别的这就是进程间通讯。进程间通讯有许多不同的实现：D-bus，CORBA，KDE 中的 DCOP 和 Gnome 中的 Bonobo 等。</p><p>实践证明， D-bus 是未来一段时间的桌面程序间进行通讯的主要方式。 D-BUS 的目标是将 DCOP 和 Bonobo 替换为简单的 IPC，并集成这两种桌面环境。由于尽可能地减少了 D-BUS 所需的依赖，所以其他可能会使用 D-BUS 的应用程序不用担心引入过多依赖。</p><h2 id="与其它通讯方式的对比"><a href="#与其它通讯方式的对比" class="headerlink" title="与其它通讯方式的对比"></a>与其它通讯方式的对比</h2><p>其他方式的缺点概括起来就是：</p><p>CORBA： 非常复杂，难于实现。看起来接口定义得相当完善，所以 Gnome 和 KDE 都曾经试图用它作为 进程间通讯的方式。但是因为此方式的接口复杂难用，速度慢，耗内存等缺点，结果都以失败告终。<br>DCOP：轻量级，依赖于 QT，曾经是 KDE 中的默认进程间通信方式，而目前KDE4 已经完全转移到 Dbus；</p><p>Bonobo：基于CORBA，实现复杂，依赖于GObject。目前Gnome 除了极个别的复杂情况下仍然使用 Bonobo 外，大部分已经转移到 D-Bus。</p><p>XML-RPC 和 SOAP：所有消息都以复杂的 XML 格式封包，用文本模式发送，接收后再转换回二进制模式。两次转换低效而耗时、</p><p>COM/DCOM: 微软早期版本使用，而且只能在微软的视窗系统中使用。众所周知，微软的设计通常包含安全问题，曾经风靡一时的冲击波病毒就是利用了远程进程间调用的漏洞。 COM 当然也不例外，ActiveX 依然是大部分网页病毒的源泉。COM+解决了部分问题，不过也实在好不到哪里去。</p><p>综合起来，大部分的缺点包括：</p><p>(1)有些过于复杂，不适合桌面使用</p><p>(2)有些严重依赖桌面环境，只能在 Gnome 中通讯或只能在 KDE 中通讯。这就造成 Gnome 和 KDE 间的程序难以相互通讯，扩大了 Linux 桌面的分裂。</p><h2 id="Dbus-的特点"><a href="#Dbus-的特点" class="headerlink" title="Dbus 的特点"></a>Dbus 的特点</h2><p>Dbus 的设计重复考虑了以上缺点,其主要特点包括：</p><p>（1）基于消息的通讯方式，使用二进制传输数据，使得实现起来相对简单，效率高</p><p>（2) 独立于 Gnome 和 KDE，在 freedesktop.org 的维护下发展。这样 Gnome 和 KDE 的程序之间就可以进行良好的通讯。</p><p>（3）正如其名字显示的那样，Dbus 使用总线系统，这样一个进程就可以同时和一组进程进行通讯。Dbus 中可以使用系统级总线，操作系统可以像总线中发送消息，供用户空间的程序使用。将整个桌面系统更好的整合起来。</p><p>（4）典型的 D-BUS 设置将由几个总线构成,经常使用系统总线和会话总线。一个持久系统总线在引导时就会启动，由操作系统和后台进程使用，安全性非常好，应用程序无法欺骗系统事件。会话总线在用户登录后启动，为用户私有，供用户的自己的应用程序进行通信。</p><h2 id="dbus-的调用方式"><a href="#dbus-的调用方式" class="headerlink" title="dbus 的调用方式"></a>dbus 的调用方式</h2><p>下面这个例子来自 Dbus 的官方教程，使用了 D-Bus 的 GLib 绑定，展示了如何通过 dbus 调用函数，更详细的例子请参考 <a href="http://dbus.freedesktop.org/doc/dbus/libdbus-tutorial.html" target="_blank" rel="external">http://dbus.freedesktop.org/doc/dbus/libdbus-tutorial.html</a> 。</p><pre><code>int main (int argc, char **argv)
+{
+    DBusGConnection *connection;
+    GError *error;
+    DBusGProxy *proxy;
+    char **name_list;
+    char **name_list_ptr;
+
+    g_type_init ();
+
+    error = NULL;
+
+    /* 首先连接到总线 */
+    connection = dbus_g_bus_get (DBUS_BUS_SESSION, &amp;error);
+    if (connection == NULL){
+        g_printerr (&quot;Failed to open connection to bus: %s\n&quot;,
+        error-&gt;message);
+        g_error_free (error);
+        exit (1);
+    }
+
+    /* 创建代理对象 &quot;bus driver&quot; (name &quot;org.freedesktop.DBus&quot;) */
+
+    proxy = dbus_g_proxy_new_for_name (connection,
+        DBUS_SERVICE_DBUS,
+        DBUS_PATH_DBUS,
+        DBUS_INTERFACE_DBUS);
+
+    /* 跨进程调用 ListNames 方法 并等待相应 */
+    error = NULL;
+    if (!dbus_g_proxy_call (proxy, &quot;ListNames&quot;, &amp;error, G_TYPE_INVALID,
+    G_TYPE_STRV, &amp;name_list, G_TYPE_INVALID)){
+    /* 演示远程异常与本地错误的处理 */
+        if (error-&gt;domain == DBUS_GERROR &amp;&amp; error-&gt;code ==  BUS_GERROR_REMOTE_EXCEPTION)
+            g_printerr (&quot;Caught remote method exception %s: %s&quot;,             dbus_g_error_get_name (error), error-&gt;message);
+        else {
+            g_printerr (&quot;Error: %s\n&quot;, error-&gt;message);
+
+        g_error_free (error);
+        exit (1);
+    }
+
+    /* 打印结果 */
+
+    g_print (&quot;Names on the message bus:\n&quot;);
+
+    for (name_list_ptr = name_list; *name_list_ptr; name_list_ptr++){
+        g_print (&quot; %s\n&quot;, *name_list_ptr);
+    }
+    g_strfreev (name_list);
+
+    /* 释放接口 */
+    g_object_unref (proxy);
+
+    return 0;
+}
+</code></pre></div><div></div><div></div><footer class="post-footer"><div class="post-eof"></div></footer></article><article class="post post-type-normal" itemscope itemtype="http://schema.org/Article"><header class="post-header"><h1 class="post-title" itemprop="name headline"><a class="post-title-link" href="/2016/05/21/testdisk/" itemprop="url">testdisk</a></h1><div class="post-meta"><span class="post-time"><span class="post-meta-item-icon"><i class="fa fa-calendar-o"></i> </span><span class="post-meta-item-text">发表于</span> <time itemprop="dateCreated" datetime="2016-05-21T16:00:45+08:00" content="2016-05-21">2016-05-21 </time></span><span class="post-comments-count">&nbsp; | &nbsp; <a href="/2016/05/21/testdisk/#comments" itemprop="discussionUrl"><span class="post-comments-count ds-thread-count" data-thread-key="2016/05/21/testdisk/" itemprop="commentsCount"></span></a></span></div></header><div class="post-body" itemprop="articleBody"><p>Testdisk 是修复分区表，恢复误删数据的好工具。</p><h4 id="Install（Ubuntu）"><a href="#Install（Ubuntu）" class="headerlink" title="Install（Ubuntu）"></a>Install（Ubuntu）</h4><pre><code>$ sudo apt-get install testdisk
+</code></pre><h4 id="启动"><a href="#启动" class="headerlink" title="启动"></a>启动</h4><pre><code>$ sudo testdisk
+</code></pre><h4 id="重新扫描分区表"><a href="#重新扫描分区表" class="headerlink" title="重新扫描分区表"></a>重新扫描分区表</h4><p>依次选择</p><pre><code>[Create] --&gt; 需要修复的硬盘 --&gt; 
+[Proceed] --&gt; 
+[Intel ] Intel/PC partition --&gt; 
+[Analyse] --&gt; 
+[Proceed] --&gt;
+[Write]
+</code></pre><h4 id="reboot"><a href="#reboot" class="headerlink" title="reboot"></a>reboot</h4></div><div></div><div></div><footer class="post-footer"><div class="post-eof"></div></footer></article><article class="post post-type-normal" itemscope itemtype="http://schema.org/Article"><header class="post-header"><h1 class="post-title" itemprop="name headline"><a class="post-title-link" href="/2016/05/21/patch/" itemprop="url">生成和使用代码补丁</a></h1><div class="post-meta"><span class="post-time"><span class="post-meta-item-icon"><i class="fa fa-calendar-o"></i> </span><span class="post-meta-item-text">发表于</span> <time itemprop="dateCreated" datetime="2016-05-21T15:57:10+08:00" content="2016-05-21">2016-05-21 </time></span><span class="post-comments-count">&nbsp; | &nbsp; <a href="/2016/05/21/patch/#comments" itemprop="discussionUrl"><span class="post-comments-count ds-thread-count" data-thread-key="2016/05/21/patch/" itemprop="commentsCount"></span></a></span></div></header><div class="post-body" itemprop="articleBody"><h4 id="生成"><a href="#生成" class="headerlink" title="生成"></a>生成</h4><pre><code>$ diff -Nur old new &gt; patchfile
+</code></pre><h3 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h3><pre><code>$ cd old 
+$ patch -p1 &lt; ../patchfile
+</code></pre></div><div></div><div></div><footer class="post-footer"><div class="post-eof"></div></footer></article><article class="post post-type-normal" itemscope itemtype="http://schema.org/Article"><header class="post-header"><h1 class="post-title" itemprop="name headline"><a class="post-title-link" href="/2016/05/21/Python-import-this/" itemprop="url">Python >>> import this</a></h1><div class="post-meta"><span class="post-time"><span class="post-meta-item-icon"><i class="fa fa-calendar-o"></i> </span><span class="post-meta-item-text">发表于</span> <time itemprop="dateCreated" datetime="2016-05-21T15:53:46+08:00" content="2016-05-21">2016-05-21 </time></span><span class="post-comments-count">&nbsp; | &nbsp; <a href="/2016/05/21/Python-import-this/#comments" itemprop="discussionUrl"><span class="post-comments-count ds-thread-count" data-thread-key="2016/05/21/Python-import-this/" itemprop="commentsCount"></span></a></span></div></header><div class="post-body" itemprop="articleBody"><p>The Zen of Python, by Tim Peters</p><pre><code>Beautiful is better than ugly.
+Explicit is better than implicit.
+Simple is better than complex.
+Complex is better than complicated.
+Flat is better than nested.
+Sparse is better than dense.
+Readability counts.
+Special cases aren&apos;t special enough to break the rules.
+Although practicality beats purity.
+Errors should never pass silently.
+Unless explicitly silenced.
+In the face of ambiguity, refuse the temptation to guess.
+There should be one-- and preferably only one --obvious way to do it.
+Although that way may not be obvious at first unless you&apos;re Dutch.
+Now is better than never.
+Although never is often better than *right* now.
+If the implementation is hard to explain, it&apos;s a bad idea.
+If the implementation is easy to explain, it may be a good idea.
+Namespaces are one honking great idea -- let&apos;s do more of those!
+</code></pre></div><div></div><div></div><footer class="post-footer"><div class="post-eof"></div></footer></article><article class="post post-type-normal" itemscope itemtype="http://schema.org/Article"><header class="post-header"><h1 class="post-title" itemprop="name headline"><a class="post-title-link" href="/2016/05/09/Java-NET-Mono/" itemprop="url">Java, .NET ,Mono</a></h1><div class="post-meta"><span class="post-time"><span class="post-meta-item-icon"><i class="fa fa-calendar-o"></i> </span><span class="post-meta-item-text">发表于</span> <time itemprop="dateCreated" datetime="2016-05-09T16:49:24+08:00" content="2016-05-09">2016-05-09 </time></span><span class="post-comments-count">&nbsp; | &nbsp; <a href="/2016/05/09/Java-NET-Mono/#comments" itemprop="discussionUrl"><span class="post-comments-count ds-thread-count" data-thread-key="2016/05/09/Java-NET-Mono/" itemprop="commentsCount"></span></a></span></div></header><div class="post-body" itemprop="articleBody"><p>Java 是 Sun 开发的跨平台语言，Java 编译出的程序运行在与平台无关的虚拟机 JVM 上，只要在各个操作系统之上实现了虚拟机，Java 就可以在其上运行。因为这一特性， Java 成为跨平台网络开发的首选语言。</p><p>这一点，显然是微软最不愿意看到的。微软希望所有的软件都只能在它的Windows操作系统中运行，这样就可以牢牢拴住用户，即使生产 Vista 这样的垃圾系统也能赚钱。所以，微软自己也发布一个所谓的“扩展” Java 虚拟机，但是这个 Java 版本只能用在微软自己的系统之上，不能用在其它平台，只能用于 IE 浏览器，无法用于其它浏览器。微软希望通过特意的设计，逐步消减 Java 的跨平台特征。</p><p>Sun 并没有束手就擒，面对这种卑劣的手段，只好于 1997 年提起诉讼，认为微软利用自己的垄断地位，破环 Java 的设计原则：</p><p>“Microsoft feared and sought to impede the development of network effects that cross-platform technology like Netscape Navigator and Java might enjoy and use to challenge Microsoft’s monopoly. Another internal Microsoft document indicates that the plan was not simply to blunt Java/browser cross-platform momentum, but to destroy the cross-platform threat entirely, with the ‘Strategic Objective’ described as to ‘Kill cross-platform Java by grow(ing) the polluted Java market.’”</p><p>微软败诉，只得放弃自己的 Java。并通过退出 .NET 来抗衡 Java。.NET 和 Java 都是中间层，但是和 Java 不同，.NET 并不提供跨操作系统的虚拟机，而是提供与语言关的环境。在 .NET 之上，可以使用 VB，VC 和 C# 进行开发，结果会编译成中间语言，实现与语言无关的特性。总体来说，.NET 还是十分出色的一个开发环境，具有许多优秀的功能。其最重要的目的，就是与 Java 在争抢网络开发上的地盘。</p><p>Mono 是 Linux 下的 .NET 开发工具，目的是使 Windows 下的程序更容易移植到 Linux，开发人员更快开始 Linux 下的开发。MonoDevelop 很好用，而且开发出了一些优秀的程序，例如Beagle, Tomboy, Banshee 和F-Spot 等。但是由于 Mono 和 .NET 的关系，很多人都害怕微软又会出什么招数，或者利用专利手段一下釜底抽薪，导致所有基于 Mono 的程序陷入困境。正如 Richard Stallman 所说：基于自由软件开发 C# 实现是值得鼓励的一件事，但是把 Gnome，把许多优秀的桌面程序建立在 C# 之上是一件危险的事情。</p><p>但是有一个公司并不用担心这个事情，那就是 Novell。因为 Novell 与微软达成的协议，即使 Mono 侵犯了微软的版权，微软也不会起诉这公司。这也就是 Mono 的开发者 de Icaza 受雇于 Novell，而且 Novell 大力支持 Mono 开发的原因。</p><p>也许有一天，微软会认识到开源是大势所趋，自由软件是软件这一生产形势的必然要求。但是在获得微软的完全授权之前，Mono 的命运总是不靠谱的。</p><h4 id="2016-5-update"><a href="#2016-5-update" class="headerlink" title="2016-5 update"></a>2016-5 update</h4><p>故事和预想的类似，微软最终将 Mono 纳入自己的手中。我们应该高兴，微软在这么多年中，终于有所改变，开始了很多开源的项目。</p><p>但是，还是那句话，任何严肃的开源开发者，都不应该将自己的工作建立在一个不稳固的基础之上。</p></div><div></div><div></div><footer class="post-footer"><div class="post-eof"></div></footer></article><article class="post post-type-normal" itemscope itemtype="http://schema.org/Article"><header class="post-header"><h1 class="post-title" itemprop="name headline"><a class="post-title-link" href="/2016/04/16/How-to-get-kernel-module-maintainers/" itemprop="url">如何确定内核模块的维护者</a></h1><div class="post-meta"><span class="post-time"><span class="post-meta-item-icon"><i class="fa fa-calendar-o"></i> </span><span class="post-meta-item-text">发表于</span> <time itemprop="dateCreated" datetime="2016-04-16T20:12:10+08:00" content="2016-04-16">2016-04-16 </time></span><span class="post-comments-count">&nbsp; | &nbsp; <a href="/2016/04/16/How-to-get-kernel-module-maintainers/#comments" itemprop="discussionUrl"><span class="post-comments-count ds-thread-count" data-thread-key="2016/04/16/How-to-get-kernel-module-maintainers/" itemprop="commentsCount"></span></a></span></div></header><div class="post-body" itemprop="articleBody"><ol><li><p>查看 MAINTAINERS 文件</p></li><li><p>使用脚本 scripts/get_maintainer.pl</p><pre><code>$ scripts/get_maintainer.pl -f drivers/usb/serial/ftdi_sio.c
+  Greg Kroah-Hartman &lt;gregkh@suse.de&gt;
+  Alan Cox &lt;alan@linux.intel.com&gt;
+  linux-usb@vger.kernel.org
+  linux-kernel@vger.kernel.org
+</code></pre></li></ol></div><div></div><div></div><footer class="post-footer"><div class="post-eof"></div></footer></article><article class="post post-type-normal" itemscope itemtype="http://schema.org/Article"><header class="post-header"><h1 class="post-title" itemprop="name headline"><a class="post-title-link" href="/2016/04/16/Bash-rotation-code/" itemprop="url">Bash 脚本里面的旋转</a></h1><div class="post-meta"><span class="post-time"><span class="post-meta-item-icon"><i class="fa fa-calendar-o"></i> </span><span class="post-meta-item-text">发表于</span> <time itemprop="dateCreated" datetime="2016-04-16T20:07:32+08:00" content="2016-04-16">2016-04-16 </time></span><span class="post-comments-count">&nbsp; | &nbsp; <a href="/2016/04/16/Bash-rotation-code/#comments" itemprop="discussionUrl"><span class="post-comments-count ds-thread-count" data-thread-key="2016/04/16/Bash-rotation-code/" itemprop="commentsCount"></span></a></span></div></header><div class="post-body" itemprop="articleBody"><pre><code>while(true); do 
+    for a in \\ \| \/ -; do 
+        echo -n $a
+        sleep 1
+        echo -n -e \\r
+    done
+done
+</code></pre></div><div></div><div></div><footer class="post-footer"><div class="post-eof"></div></footer></article><article class="post post-type-normal" itemscope itemtype="http://schema.org/Article"><header class="post-header"><h1 class="post-title" itemprop="name headline"><a class="post-title-link" href="/2016/04/06/Flash-storage-in-Linux/" itemprop="url">Linux 中的 Flash 文件系统</a></h1><div class="post-meta"><span class="post-time"><span class="post-meta-item-icon"><i class="fa fa-calendar-o"></i> </span><span class="post-meta-item-text">发表于</span> <time itemprop="dateCreated" datetime="2016-04-06T14:27:11+08:00" content="2016-04-06">2016-04-06 </time></span><span class="post-comments-count">&nbsp; | &nbsp; <a href="/2016/04/06/Flash-storage-in-Linux/#comments" itemprop="discussionUrl"><span class="post-comments-count ds-thread-count" data-thread-key="2016/04/06/Flash-storage-in-Linux/" itemprop="commentsCount"></span></a></span></div></header><div class="post-body" itemprop="articleBody"><p>作者： 华清远见嵌入式培训中心</p><p>嵌入式系统与通用PC机不同，一般没有硬盘这样的存储设备而是使用Flash闪存芯片、小型闪存卡等专为嵌入式系统设计的存储装置，本文分析了嵌入式系统中常用的存储设备及其管理机制，介绍了常用的基于FLASH的文件系统类型。</p><h1 id="1．嵌入式系统存储设备及其管理机制分析"><a href="#1．嵌入式系统存储设备及其管理机制分析" class="headerlink" title="1．嵌入式系统存储设备及其管理机制分析"></a>1．嵌入式系统存储设备及其管理机制分析</h1><p>构建适用于嵌入式系统的Linux文件系统，必然会涉及到两个关键点，一是文件系统类型的选择，它关系到文件系统的读写性能、尺寸大小;另一个就是根文件系统内容的选择，它关系到根文件系统所能提供的功能及尺寸大小。</p><p>嵌 入式设备中使用的存储器是像Flash闪存芯片、小型闪存卡等专为嵌入式系统设计的存储装置。Flash是目前嵌入式 系统中广泛采用的主流存储器，它的 主要特点是按整体/扇区擦除和按字节编程，具有低功耗、高密度、小体积等优点。目前，Flash分为NOR, NAND两种类型。</p><p>NOR型闪存可以直接读取芯片内储存的数据，因而速度比较快，但是价格较高。NOR型芯 片，地址线与数据线分开，所以 NOR型芯片可以像SRAM一样连在 数据线上，对NOR芯片可以“字”为基本单位操作，因此传输效率很高，应用程序可以直接在Flash内运行，不必再把代码读到系统RAM中运行。它与 SRAM的最大不同在于写操作需要经过擦除和写入两个过程。</p><p>NAND型闪存芯片共用地址线与数据线，内部数据 以块为单位进行存储，直接将NAND芯片做启动芯片比较难。NAND闪 存是连续存储介质，适合放大文件。 擦除NOR器件时是以64-128KB的块进行的，执行一个写入/擦除操作的时间为5s；擦除NAND器件是以8-32KB的块进行的，执行相同的操作最 多只需要4ms。NAND Rash的单元尺寸几乎是NOR器件的一半，由于生产过程更为简单，NAND结构可以在给定的模具尺寸内提供更高的容量，也就相应地降低了价格。NOR flash占据了容量为1―16MB闪存市场的大部分，而NAND flash只是用在8―128MB的产品当中，这也说明NOR主要应用在代码存储介质中，NAND适合于数据存储。寿命(耐用性)，在NAND闪存中每个 块的最大擦写次数是一百万次，而NOR的擦写次数是十万次。NAND存储器除了具有10比1的块擦除周期优势，典型的NAND块尺寸要比NOR器件小8 倍，每个NAND存储器块在给定的时间内的删除次数要少一些。</p><p>所有嵌入式系统的启动都至少需要使用某种形式的永久性存储设备，它们需要合适的驱动程序，当前在嵌入式Linux中有三种常用的块驱动程序可以选择。</p><ul><li>Blkmem驱动层</li></ul><p>Blkmem 驱动是为uclinux专门设计的，也是最早的一种块驱动程序之一，现在仍然有很多嵌入式Linux操作系 统选用它作为块驱动程，尤其是在 uClinux中。它相对来说是最简单的，而且只支持建立在NOR型Flash和RAM中的根文件系统。使用Blkmem驱动，建立Flash分区配置比 较困难，这种驱动程序为Flash提供了一些基本擦除/写操作。</p><ul><li>RAMdisk驱动层</li></ul><p>RAMdisk 驱动层通常应用在标准Linux中无盘工作站的启动，对Flash存储器并不提供任何的直接支持， RAM disk就是在开机时，把一部分的内存虚拟成块设备，并且把之前所准备好的档案系统映像解压缩到该RAM disk环境中。当在Flash中放置一个压缩的文件系统，可以将文件系统解压到RAM，使用RAM disk驱动层支持一个保持在RAM中的文件系统。</p><ul><li>MTD驱动层</li></ul><p>为 了尽可能避免针对不同的技术使用不同的工具，以及为不同的的技术提供共同的能力，Linux内核纳入了MTD子系统 (memory Technology Device)。它提供了一致且统一的接口，让底层的MTD芯片驱动程序无缝地与较高层接口组合在一起。JFFS2, Cramfs, YAFFS等文件系统都可以被安装成MTD块设备。MTD驱动也可以为那些支持CFI接口的NOR型Flash提供支持。虽然MTD可以建立在RAM上， 但它是专为基于Flash的设备而设计的。MTD包含特定Flash芯片的驱动程序，开发者要选择适合自己系统的Flash芯片驱动。Flash芯片驱动 向上层提供读、写、擦除等基本的操作，MTD对这些操作进行封装后向用户层提供MTD char和MTD block类型的设备。MTD char类型的设备包括/dev/mtd0, /dev/mtdl等，它们提供对Flash原始字符的访问。MTD block类型的设备包括/dev/mtdblock0,/dev/mtdblock1等，MTD block设备是将Flash模拟成块设备，这样可以在这些模拟的块设备上创建像Cramfs, JFFS2等格式的文件系统。</p><p>MTD 驱动层也支持在一块Flash上建立多个Flash分区，每一个分区作为了一个MTD block设备，可以把系统软件和数据等分配到不同的分区上，同时可以在不同的分区采用不用的文件系统格式。这一点非常重要，正是由于这一点才为嵌入式系 统多文件系统的建立提供了灵活性。</p><h1 id="2．-基于Flash的文件系统"><a href="#2．-基于Flash的文件系统" class="headerlink" title="2． 基于Flash的文件系统"></a>2． 基于Flash的文件系统</h1><p>鉴 于Flash存储介质的读写特点，传统的Linux文件系统己经不适合应用在嵌入式系统中，像Ext2fs文件系统是 为像IDE那样的块设备设计的，这 些设备的逻辑块是512字节、1024字节等大小，没有提供很好的扇区擦写支持，不支持损耗平衡，没有掉电保护，也没有特别完美的扇区管理，这不太适合于 扇区大小因设备类型而划分的闪存设备。基于这样的原因，产生了很多专为Flash设备而设计的文件系统，常见的专用于闪存设备的文件系统如下：</p><ul><li>Romfs</li></ul><p>传 统型的Romfs文件系统是最常使用的一种文件系统，它是一种简单的、紧凑的、只读的文件系统，不支持动态擦写保存; 它按顺序存放所有的文件数据，所以 这种文件系统格式支持应用程序以XIP方式运行，在系统运行时，可以获得可观的RAM节省空间。uClinux系统通常采用Romfs文件系统。</p><ul><li>Cramfs</li></ul><p>Cramfs 是Linux的创始人Linus Torvalds开发的一种可压缩只读文件系统在Cramfs文件系统中，每一页被单独压缩，可以随机页访问，其压缩比高达2:1,为嵌入式系统节省大量 的Flash存储空间。Cramfs文件系统以压缩方式存储，在运行时解压缩，所以不支持应用程序以XIP方式运行，所有的应用程序要求被拷到RAM里去 运行，但这并不代表比Ramfs需求的RAM 空间要大一点，因为Cramfs是采用分页压缩的方式存放档案，在读取档案时，不会一下子就耗用过多的内存空间，只针对目前实际读取的部分分配内存，尚没 有读取的部分不分配内存空间，当我们读取的档案不在内存时， Cramfs文件系统自动计算压缩后的资料所存的位置，再即时解压缩到RAM中。另外，它的速度快，效率高，其只读的特点有利于保护文件系统免受破坏，提 高了系统的可靠性;但是它的只读属性同时又是它的一大缺陷，使得用户无法对其内容对进扩充。Cramfs映像通常是放在Flash中，但是也能放在别的文 件系统里，使用loopback设备可以把它安装别的文件系统里。使用mkcramfs工具可以创建Cramfs映像。</p><ul><li>Ramfs/Tmpfs</li></ul><p>Ramfs 也是Linus Torvalds开发的，Ramfs文件系统把所有的文件都放在RAM里运行，通常是Flash系统用来存储一些临时性或经常要修改的数据，相对于 ramdisk来说，Ramfs的大小可以随着所含文件内容大小变化，不像ramdisk的大小是固定的。Tmpfs是基于内存的文件系统，因为 tmpfs驻留在RAM 中，所以写/读操作发生在RAM 中。tmpfs文件系统大小可随所含文件内容大小变化，使得能够最理想地使用内存;tmpfs驻留在RAM，所以读和写几乎都是瞬时的。tmpfs的一个 缺点是当系统重新引导时会丢失所有数据。</p><ul><li>JFFS2</li></ul><p>JFFS2 是RedHat公司基于JFFS开发的闪存文件系统，最初是针对RedHat公司的嵌入式产品eCos开发的 嵌入式文件系统，所以JFFS2也 可以用在Linux,uCLinux中。JFFS文件系统最早是由瑞典Axis Communications公司基于Linux2.0的内核为嵌入式系统开发的文件系统。JFFS2是一个可读写的、压缩的、日志型文件系统，并提供了 崩溃/掉电安全保护，克服了JFFS的一些缺点:使用了基于哈希表的日志节点结构，大大加快了对节点的操作速度;支持数据压缩；提供了“写平衡”支持;支 持多种节点类型；提高了对闪存的利用率，降低了内存的消耗。这些特点使JFFS2文件系统成为目前Flash设备上最流行的文件系统格式，它的缺点就是当 文件系统已满或接近满时，JFFS2运行会变慢，这主要是因为碎片收集的问题。</p><ul><li>YAFFS</li></ul><p>YAFFS/YAFFS2 是一种和JFFSx类似的闪存文件系统，它是专为嵌入式系统使用NAND型闪存而设计的一种日 志型文件系统。和JFFS2相比它 减少了一些功能，所以速度更快，而且对内存的占用比较小。此外，YAFFS自带NAND芯片的驱动，并且为嵌入式系统提供了直接访问文件系统的API，用 户可以不使用Linux中的MTD与VFS，直接对文件系统操作。YAFFS2支持大页面的NAND设备，并且对大页面的NAND设备做了优化。 JFFS2在NAND闪存上表现并不稳定，更适合于NOR闪存，所以相对大容量的NAND闪存，YAFFS是更好的选择。</p><p>具体的嵌入式系统设计中可根据不同目录存放的内容不同以及存放的文件属性，确定使用何种文件系统。</p><ul><li>UBIFS</li></ul><p>诺基亚开发的新文件系统，意在取代 JFFS2.</p></div><div></div><div></div><footer class="post-footer"><div class="post-eof"></div></footer></article><article class="post post-type-normal" itemscope itemtype="http://schema.org/Article"><header class="post-header"><h1 class="post-title" itemprop="name headline"><a class="post-title-link" href="/2016/04/06/Kill-software-patents/" itemprop="url">Kill software patents</a></h1><div class="post-meta"><span class="post-time"><span class="post-meta-item-icon"><i class="fa fa-calendar-o"></i> </span><span class="post-meta-item-text">发表于</span> <time itemprop="dateCreated" datetime="2016-04-06T14:11:55+08:00" content="2016-04-06">2016-04-06 </time></span><span class="post-comments-count">&nbsp; | &nbsp; <a href="/2016/04/06/Kill-software-patents/#comments" itemprop="discussionUrl"><span class="post-comments-count ds-thread-count" data-thread-key="2016/04/06/Kill-software-patents/" itemprop="commentsCount"></span></a></span></div></header><div class="post-body" itemprop="articleBody"><p>By Pieter Hintjens</p><p>Online on: 31/10/2006</p><p>I know that many people come to the FFII—as I did—because they feel a deep sense of injustice at how the smaller players in IT are consistently squashed by special interests and monopolists. But I’m going to look at our core concern—software patents—from a different angle, one based more on economics and less on emotions.</p><p>The simple question “what’s wrong with software patents?” stirs up controversy and divides the IT industry into two camps like no other. Every group has their own ideology about software patents. Those who don’t like them claim that they are anti-competitive, that they are tools used by industry giants to crush free and open software, that they are bad for innovation, that they are monopolies, etc. Those who like them claim that they are simply units of intellectual property, to be traded like any other commodity.</p><p>What is property?<br>All property is a monopoly. All property can be traded, bought and sold, and can make money for its owners. The state can declare any resource it likes to be “property”. We are, as citizens, property of the state, and in some countries we can still be traded, bought, and sold, and make money for our owners.</p><p>But these are useless truisms. I can make tenuous comparisons between patents and slavery, and stir up all kinds of emotions. I’m not going to do that. Instead, I’m going to look at the very meaning of property, and explore the dynamics that drive the basic notions of “private property”.</p><p>Property, of any kind, consists of a definition and a system of enforcement. All the rest is subjective. There is no intrinsic reason that land or potatoes should be different from ideas, time, or air. Anyone who argues that it is “right” or “wrong” to define and enforce certain types of property must prove this using more than just rhetoric and dogma.</p><p>The case for private property<br>Let’s look at a well-understood form of property: land rights. Most countries are divided up into plots large and small. The very concept of “country” is property, but a thousand years ago, only a small part of the world’s surface, in and around human habitations, was considered property. The rest was common lands, belonging to all and none. The process of turning common lands into shared property, and then into private domains (the “tragedy of the commons”) was driven by discussions very similar to the ones we hear today. The process was driven by greed to some extent, but also by real needs of evolving economies driven by new technologies in agriculture and industry.</p><p>A farmer who owns his land is far more likely to look after it than a farmer working on a collective. Similarly, it is clear that private home ownership is a healthier model in a modern money-based economy than state-ownership of homes. Private ownership of some things works very well.</p><p>The case for common property<br>However, this is not the whole story. Private ownership is not a panacea, and for every example where private ownership is “right”, I can find one where it is “wrong”. The roads and streets that connect those farms and houses are owned and managed collectively. The rain, air, and sun is owned by no-one. The wild animals and insects that form an important part of the ecology are collectively owned.</p><p>The five principles of property<br>There are actually good economic reasons for choosing a private property model for some resources, and not for others. There are five key rules to consider (there may be more, these are the most obvious ones to me):</p><p>Is the resource mobile, or fixed? This criteria defines whether it is possible to accurately define the resource, or not. A mobile resource—such as migrating birds or fish—does not fit the private property model. Fixed resources, such as lobsters, do.<br>Does the resource have clear boundaries, or not? This criteria defines whether it is possible to accurately enforce the monopoly, or not. Land can be well-defined. Art cannot be well-defined.<br>What generates more wealth—exclusive ownership or sharing? This criteria defines whether it is useful to consider this resource as property at all. Exclusive ownership of a house generates wealth, but exclusive ownership of roads does not (which is why we removed toll bridges on our roads).<br>Is the property system economical? In other words, is the definition and enforcement of the property cheap? If so, it is accessible to all. If not, it becomes a priviledge of the rich, and the system itself stops being economically neutral.<br>Is the property system well-bounded? In other words, is the definition of the property clear and unnegotiable? If the definition can be manipulated and changed, then the system that manages it will grow in an unsafe manner.<br>All forms of property can be tested against these five rules. The rules are, ultimately, self-enforcing because any society that ignores them will find itself paying the cost, and competition between societies punishes those that choose inefficient economic models.</p><p>The dangers of bad property systems<br>A well-defined property system can be incredibly powerful, and badly-defined property systems can be very damaging. I’d argue that what brought down the Soviet Union was not the political system, nor military spending, but simply the fact that private ownership of farms and houses was impossible. There is a direct relationship between house prices (which mainly depend on availability of land) and economic growth, in many countries. Home ownership creates a middle class, which is the main driver of modern economies.</p><p>Let’s see what happens when we break the rules. If we try to create monopolies on mobile resources, we over-exploit those resources. If we try to enforce monopolies that don’t have clear boundaries, we spend a lot on lawyers. If we create monopolies on resources that should be shared, we lose competitive advantage. If we create expensive property systems, we unleash special interests. And if we create unbounded property systems, those special interests will grow out of control.</p><p>Property systems for the software business<br>So I’ve defined five economic rules that we can apply to any form of property to measure whether it is a good, or bad, concept. Let’s now apply these to the main forms of property that are used in the IT sector, and see what we get. The four main property forms are: copyright, trademark, patent, and trade secret (which though not defined as IPR, is a real and useful form of property):</p><p>Copyright: it applies to a fixed resource: a self-defining written expression. It has clear boundaries (the document or work). Exclusive ownership does produce wealth, but sharing seems to be a stronger driver, and models such as the GPL that encourage both appear to be the most efficient at producing value. The copyright system is cheap and well-bounded, except when it comes to lifespans, and we’ve seen copyright terms extended to life+70, which is extraordinary in today’s digital era.<br>Trademark: it applies to a fixed resource: a name, logo, or phrase. It has clear boundaries (the mark). Exclusive ownership produces the most value—sharing of marks just weakens them. The trademark system is very well-bounded, though it could be cheaper.<br>Software patent: it applies to mobile resources: new ways of doing things, or methods. It has unclear boundaries (methods are difficult to define absolutely, and they overlap in horribly complex ways). It uses exclusive ownership for resources (new ideas) that produce much more value when shared. It is poorly bounded (it depends on a set of negotiable definitions such as “technical effect”), and it is very expensive.<br>Trade secret: it is fixed (in your firm). It has clear boundaries (individuals may not pass secrets outside the defined group). It depends on exclusive ownership. It is a well-defined system that is easy to apply, and cheap (based on simple contract).<br>The conclusions are clear: copyright, trademark, and trade secret are good forms of property for the software business, though copyright terms are a problem. Patents are a bad form of property for the software business, because they amplify the general weaknesses of the patent system:</p><p>Patents claim to own ideas, which are highly mobile resources, and in software, more mobile than most other industries.<br>Patents have unclear boundaries, and in software these boundaries are even less clear than in other industries.<br>Patents reduce the sharing of new ideas, and software depends on a higher volume of sharing of ideas than other industries.<br>Patents are an expensive property system, and most software innovation is driven by unfunded grass-roots work.<br>Patents are not a well-bounded property system, and in software a boundary between “good” and “bad” patents cannot be drawn.<br>It is significant, in my opinion, that patent industry has focussed almost exclusively on weakening the definition of software patents, and on strengthening their enforcement. There has been little or no discussion about the basic justification for creating this form of property, apart from the uselessly broad claim that “ownership of [certain classes of] ideas promotes investment in innovation [in certain sectors]”. This claim, which has always underpinned the patent system has been used to justify a gold rush, a land-grab of ideas in sectors where innovation actually depends on sharing, not exclusion.</p><p>Software patents are a new toll barrier<br>Many industries find that poor quality patents are a problem. But no other industry that has relied extensively on copyright has been subjected to patenting. The use of patents in software looks a lot more like the errection of a massive new system of private tolls and taxes, than the enablement of a new properties class.</p><p>Software patents were enabled in the USA in 1982 by a Supreme Court decision. After almost twenty-five years, we would expect to see this new form of property either proven, or disproven. The bulk of the software sector should, by now, be using patents as their primary tool for justifying new investments. There should be software patent success stories, to match the many success stories that were and are driven by other forms of intellectual property.</p><p>These success stories are just not there. Instead, we see a sorry parade of lawsuits. IBM—who has the largest software portfolio, and who has claimed that it is against business method patents—has just sued Amazon for infringing on several business process patents.</p><p>Conclusion<br>In this article I’ve examined software patents from the fundamentalist view point of how well a property system functions. This is not art, but science. We can document and measure, and we can prove or disprove property systems.</p><p>No sane person can claim that all private property is good, or that all private property is bad. Would it make sense to sell off all our streets to private owners? Would it make sense to allow individuals to collect tolls on bridges, borders, crossings, and rivers? All these property systems have been tried. There is no firmer believer in private property and punitive enforcement than a warlord.</p><p>No honest person can claim that it’s a choice between “privatising everything” and “an anti-property communist state”. The choices are between models that work, and models that do not. History is filled with examples and experiences, and we must recognise and learn from those models, or we will make stupid and avoidable mistakes. There is, behind our iMatix building in Brussels, a street that was privatised some decades ago. I’ve no idea what the intention was, but today we can see the results via Google Maps. The privatised street has become a wasted area, a car park, filled with weeds.</p><p>This is what’s wrong with software patents.</p></div><div></div><div></div><footer class="post-footer"><div class="post-eof"></div></footer></article></section><nav class="pagination"><a class="extend prev" rel="prev" href="/page/3/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/3/">3</a><span class="page-number current">4</span><a class="page-number" href="/page/5/">5</a><span class="space">&hellip;</span><a class="page-number" href="/page/11/">11</a><a class="extend next" rel="next" href="/page/5/"><i class="fa fa-angle-right"></i></a></nav></div></div><div class="sidebar-toggle"><div class="sidebar-toggle-line-wrap"><span class="sidebar-toggle-line sidebar-toggle-line-first"></span> <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span> <span class="sidebar-toggle-line sidebar-toggle-line-last"></span></div></div><aside id="sidebar" class="sidebar"><div class="sidebar-inner"><section class="site-overview sidebar-panel sidebar-panel-active"><div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person"><img class="site-author-image" itemprop="image" src="/images/avatar.gif" alt="Feng Chao"><p class="site-author-name" itemprop="name">Feng Chao</p><p class="site-description motion-element" itemprop="description"></p></div><nav class="site-state motion-element"><div class="site-state-item site-state-posts"><a href="/archives"><span class="site-state-item-count">106</span> <span class="site-state-item-name">日志</span></a></div><div class="site-state-item site-state-categories"><a href="/categories"><span class="site-state-item-count">10</span> <span class="site-state-item-name">分类</span></a></div><div class="site-state-item site-state-tags"><a href="/tags"><span class="site-state-item-count">5</span> <span class="site-state-item-name">标签</span></a></div></nav><div class="feed-link motion-element"><a href="/atom.xml" rel="alternate"><i class="fa fa-rss"></i> RSS</a></div><div class="links-of-author motion-element"><span class="links-of-author-item"><a href="https://github.com/fengchao" target="_blank" title="GitHub"><i class="fa fa-fw fa-github"></i> GitHub </a></span><span class="links-of-author-item"><a href="https://twitter.com/fengchao" target="_blank" title="Twitter"><i class="fa fa-fw fa-twitter"></i> Twitter</a></span></div></section></div></aside></div></main><footer id="footer" class="footer"><div class="footer-inner"><div class="copyright">&copy; 2008 - <span itemprop="copyrightYear">2016</span> <span class="with-love"><i class="fa fa-heart"></i> </span><span class="author" itemprop="copyrightHolder">Feng Chao</span></div><div class="powered-by">由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动</div><div class="theme-info">主题 - <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">NexT.Mist</a></div></div></footer><div class="back-to-top"><i class="fa fa-arrow-up"></i></div></div><script type="text/javascript">"[object Function]"!==Object.prototype.toString.call(window.Promise)&&(window.Promise=null)</script><script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script><script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script><script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script><script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script><script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script><script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script><script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script><script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script><script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script><script type="text/javascript">var duoshuoQuery={short_name:"chaosite"};!function(){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.id="duoshuo-script",t.src=("https:"==document.location.protocol?"https:":"http:")+"//static.duoshuo.com/embed.js",t.charset="UTF-8",(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(t)}()</script><script src="/vendors/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script><script src="/js/src/hook-duoshuo.js"></script><script type="text/javascript">function proceedsearch(){$("body").append('<div class="popoverlay">').css("overflow","hidden"),$(".popup").toggle()}var isfetched=!1,search_path="search.xml";0==search_path.length&&(search_path="search.xml");var path="/"+search_path,searchFunc=function(e,t,a){"use strict";$.ajax({url:e,dataType:"xml",async:!0,success:function(e){isfetched=!0,$(".popup").detach().appendTo(".header-inner");var r=$("entry",e).map(function(){return{title:$("title",this).text(),content:$("content",this).text(),url:$("url",this).text()}}).get(),c=document.getElementById(t),s=document.getElementById(a);c.addEventListener("input",function(){var e=0,t='<ul class="search-result-list">',a=this.value.trim().toLowerCase().split(/[\s\-]+/);s.innerHTML="",this.value.trim().length>1&&r.forEach(function(r){var c=!0,s=r.title.trim().toLowerCase(),n=r.content.trim().replace(/<[^>]+>/g,"").toLowerCase(),i=r.url,o=-1,l=-1,p=-1;if(""!=s&&""!=n&&a.forEach(function(e,t){o=s.indexOf(e),l=n.indexOf(e),o<0&&l<0?c=!1:(l<0&&(l=0),0==t&&(p=l))}),c){e+=1,t+="<li><a href='"+i+"' class='search-result-title'>"+s+"</a>";var h=r.content.trim().replace(/<[^>]+>/g,"");if(p>=0){var u=p-20,d=p+80;u<0&&(u=0),0==u&&(d=50),d>h.length&&(d=h.length);var f=h.substring(u,d);a.forEach(function(e){var t=new RegExp(e,"gi");f=f.replace(t,'<b class="search-keyword">'+e+"</b>")}),t+='<p class="search-result">'+f+"...</p>"}t+="</li>"}}),t+="</ul>",0==e&&(t='<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'),""==a&&(t='<div id="no-result"><i class="fa fa-search fa-5x" /></div>'),s.innerHTML=t}),proceedsearch()}})};$(".popup-trigger").click(function(e){e.stopPropagation(),0==isfetched?searchFunc(path,"local-search-input","local-search-result"):proceedsearch()}),$(".popup-btn-close").click(function(e){$(".popup").hide(),$(".popoverlay").remove(),$("body").css("overflow","")}),$(".popup").click(function(e){e.stopPropagation()})</script><script type="text/javascript" async src="//push.zhanzhang.baidu.com/push.js"></script></body></html><!-- rebuild by neat -->

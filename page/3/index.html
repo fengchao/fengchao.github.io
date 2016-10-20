@@ -1,0 +1,398 @@
+<!-- build time:Thu Oct 20 2016 21:29:21 GMT+0800 (CST) --><!doctype html><html class="theme-next mist use-motion"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><meta name="baidu-site-verification" content="6c70qR5DN9"><link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css"><link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css"><link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css"><link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css"><meta name="keywords" content="Hexo, NexT"><link rel="alternate" href="/atom.xml" title="Chaospace" type="application/atom+xml"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1"><meta property="og:type" content="website"><meta property="og:title" content="Chaospace"><meta property="og:url" content="http://fengchao.github.io/page/3/index.html"><meta property="og:site_name" content="Chaospace"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="Chaospace"><script type="text/javascript" id="hexo.configuration">var NexT=window.NexT||{},CONFIG={scheme:"Mist",sidebar:{position:"left",display:"post"},fancybox:!0,motion:!0,duoshuo:{userId:0,author:"博主"}}</script><link rel="canonical" href="http://fengchao.github.io/page/3/"><title>Chaospace</title></head><body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans,en,default"><script type="text/javascript">var _hmt=_hmt||[];!function(){var e=document.createElement("script");e.src="//hm.baidu.com/hm.js?e6e028efa4e1db3bb40b47f735c82723";var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)}()</script><div class="container one-collumn sidebar-position-left page-home"><div class="headband"></div><header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="header-inner"><div class="site-meta"><div class="custom-logo-site-title"><a href="/" class="brand" rel="start"><span class="logo-line-before"><i></i></span> <span class="site-title">Chaospace</span> <span class="logo-line-after"><i></i></span></a></div><p class="site-subtitle">Reshape the world by engineering chaos</p></div><div class="site-nav-toggle"><button><span class="btn-bar"></span> <span class="btn-bar"></span> <span class="btn-bar"></span></button></div><nav class="site-nav"><ul id="menu" class="menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i><br>首页</a></li><li class="menu-item menu-item-categories"><a href="/categories" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i><br>分类</a></li><li class="menu-item menu-item-archives"><a href="/archives" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i><br>归档</a></li><li class="menu-item menu-item-tags"><a href="/tags" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i><br>标签</a></li><li class="menu-item menu-item-search"><a href="javascript:;" class="popup-trigger"><i class="menu-item-icon fa fa-search fa-fw"></i><br>搜索</a></li></ul><div class="site-search"><div class="popup"><span class="search-icon fa fa-search"></span> <input type="text" id="local-search-input"><div id="local-search-result"></div><span class="popup-btn-close">close</span></div></div></nav></div></header><main id="main" class="main"><div class="main-inner"><div class="content-wrap"><div id="content" class="content"><section id="posts" class="posts-expand"><article class="post post-type-normal" itemscope itemtype="http://schema.org/Article"><header class="post-header"><h1 class="post-title" itemprop="name headline"><a class="post-title-link" href="/2016/05/27/Master-boot-record/" itemprop="url">Master-boot-record</a></h1><div class="post-meta"><span class="post-time"><span class="post-meta-item-icon"><i class="fa fa-calendar-o"></i> </span><span class="post-meta-item-text">发表于</span> <time itemprop="dateCreated" datetime="2016-05-27T15:01:15+08:00" content="2016-05-27">2016-05-27 </time></span><span class="post-comments-count">&nbsp; | &nbsp; <a href="/2016/05/27/Master-boot-record/#comments" itemprop="discussionUrl"><span class="post-comments-count ds-thread-count" data-thread-key="2016/05/27/Master-boot-record/" itemprop="commentsCount"></span></a></span></div></header><div class="post-body" itemprop="articleBody"><p>硬盘的0磁道的第一个扇区称为MBR，它的大小是512字节，而这个区域可以分为三个部分。第一部分为pre-boot区（预启动区），占446字节；第 二部分是分区表（Partition Table），占64个字节，硬盘中分区有多少以及每一分区的大小都记在其中。第三部分是magic<br>number，占2个字节，固定为55AA。</p><p>MBR 通常由 fdisk 等类似命令创建，系统上电自检之后，会调用 INT 19 中断(CTRL+ALT+Delete 同样引发这个中断) 。INT 19 会查找活动分区(用第一个字符为 80标记) 载入并跳转到 0000:7C00 开始执行程序。若未找到活动分区，则自动执行启动硬盘的 MBR 0000:7C00 地址程序。因为每个操作系统的启动区格式都不相同，所以这里的这段程序会查找操作系统的启动代码或者启动管理器例如 Grub 等。</p><p>以下是一个 MBR 的十六进制和ASCII码，后面会分段介绍具体内容。</p><pre><code>OFFSET 0 1 2 3 4 5 6 7 8 9 A B C D E F *0123456789ABCDEF*
+000000 fa33c08e d0bc007c 8bf45007 501ffbfc *.3.....|..P.P...*
+000010 bf0006b9 0001f2a5 ea1d0600 00bebe07 *................*
+000020 b304803c 80740e80 3c00751c 83c610fe *...&lt;.t..&lt;.u.....*
+000030 cb75efcd 188b148b 4c028bee 83c610fe *.u......L.......*
+000040 cb741a80 3c0074f4 be8b06ac 3c00740b *.t..&lt;.t.....&lt;.t.*
+000050 56bb0700 b40ecd10 5eebf0eb febf0500 *V.......^.......*
+000060 bb007cb8 010257cd 135f730c 33c0cd13 *..|...W.._s.3...*
+000070 4f75edbe a306ebd3 bec206bf fe7d813d *Ou...........}.=*
+000080 55aa75c7 8bf5ea00 7c000049 6e76616c *U.u.....|..Inval*
+000090 69642070 61727469 74696f6e 20746162 *id partition tab*
+0000a0 6c650045 72726f72 206c6f61 64696e67 *le.Error loading*
+0000b0 206f7065 72617469 6e672073 79737465 * operating syste*
+0000c0 6d004d69 7373696e 67206f70 65726174 *m.Missing operat*
+0000d0 696e6720 73797374 656d0000 00000000 *ing system......*
+0000e0 00000000 00000000 00000000 00000000 *................*
+0000f0 TO 0001af SAME AS ABOVE
+0001b0 00000000 00000000 00000000 00008001 *................*
+0001c0 0100060d fef83e00 00000678 0d000000 *......&gt;....x....*
+0001d0 00000000 00000000 00000000 00000000 *................*
+0001e0 00000000 00000000 00000000 00000000 *................*
+0001f0 00000000 00000000 00000000 000055aa *..............U.*
+</code></pre><p>上面代码反汇编的结果如下：1. 首先，代码会把自己复制到 0000:0600BEGIN: NOW AT 0000:7C00, RELOCATE</p><pre><code>0000:7C00 FA CLI disable int&apos;s
+0000:7C01 33C0 XOR AX,AX set stack seg to 0000
+0000:7C03 8ED0 MOV SS,AX
+0000:7C05 BC007C MOV SP,7C00 set stack ptr to 7c00
+0000:7C08 8BF4 MOV SI,SP SI now 7c00
+0000:7C0A 50 PUSH AX
+0000:7C0B 07 POP ES ES now 0000:7c00
+0000:7C0C 50 PUSH AX
+0000:7C0D 1F POP DS DS now 0000:7c00
+0000:7C0E FB STI allow int&apos;s
+0000:7C0F FC CLD clear direction
+0000:7C10 BF0006 MOV DI,0600 DI now 0600
+0000:7C13 B90001 MOV CX,0100 move 256 words (512 bytes)
+0000:7C16 F2 REPNZ move MBR from 0000:7c00
+0000:7C17 A5 MOVSW to 0000:0600
+0000:7C18 EA1D060000 JMP 0000:061D jmp to NEW_LOCATION
+</code></pre><ol><li>从分区表中查找活动分区</li></ol><p>设置表指针</p><pre><code>NEW_LOCATION: NOW AT 0000:0600
+0000:061D BEBE07 MOV SI,07BE point to first table entry
+0000:0620 B304 MOV BL,04 there are 4 table entries
+</code></pre><p>第一遍查找</p><pre><code>SEARCH_LOOP1: SEARCH FOR AN ACTIVE ENTRY
+
+0000:0622 803C80 CMP BYTE PTR [SI],80 is this the active entry?
+0000:0625 740E JZ FOUND_ACTIVE yes
+0000:0627 803C00 CMP BYTE PTR [SI],00 is this an inactive entry?
+0000:062A 751C JNZ NOT_ACTIVE no
+0000:062C 83C610 ADD SI,+10 incr table ptr by 16
+0000:062F FECB DEC BL decr count
+0000:0631 75EF JNZ SEARCH_LOOP1 jmp if not end of table
+0000:0633 CD18 INT 18 GO TO ROM BASIC
+</code></pre><p>找到活动分区</p><pre><code>FOUND_ACTIVE: FOUND THE ACTIVE ENTRY
+
+0000:0635 8B14 MOV DX,[SI] set DH/DL for INT 13 call
+0000:0637 8B4C02 MOV CX,[SI+02] set CH/CL for INT 13 call
+0000:063A 8BEE MOV BP,SI save table ptr
+</code></pre><p>第二遍查找以保证只有一个活动分区</p><pre><code>SEARCH_LOOP2: MAKE SURE ONLY ONE ACTIVE ENTRY
+
+0000:063C 83C610 ADD SI,+10 incr table ptr by 16
+0000:063F FECB DEC BL decr count
+0000:0641 741A JZ READ_BOOT jmp if end of table
+0000:0643 803C00 CMP BYTE PTR [SI],00 is this an inactive entry?
+0000:0646 74F4 JZ SEARCH_LOOP2 yes
+</code></pre><p>无活动分区，则打印信息，挂起系统</p><pre><code>NOT_ACTIVE: MORE THAN ONE ACTIVE ENTRY FOUND
+
+0000:0648 BE8B06 MOV SI,068B display &quot;Invld prttn tbl&quot;
+
+DISPLAY_MSG: DISPLAY MESSAGE LOOP
+
+0000:064B AC LODSB get char of message
+0000:064C 3C00 CMP AL,00 end of message
+0000:064E 740B JZ HANG yes
+0000:0650 56 PUSH SI save SI
+0000:0651 BB0700 MOV BX,0007 screen attributes
+0000:0654 B40E MOV AH,0E output 1 char of message
+0000:0656 CD10 INT 10 to the display
+0000:0658 5E POP SI restore SI
+0000:0659 EBF0 JMP DISPLAY_MSG do it again
+
+HANG: HANG THE SYSTEM LOOP
+
+0000:065B EBFE JMP HANG sit and stay!
+</code></pre><ol><li><p>找到活动分区之后，会读取启动信息</p><pre><code>READ_BOOT: READ ACTIVE PARITION BOOT RECORD
+
+0000:065D BF0500 MOV DI,0005 INT 13 retry count
+
+INT13RTRY: INT 13 RETRY LOOP
+
+0000:0660 BB007C MOV BX,7C00
+0000:0663 B80102 MOV AX,0201 read 1 sector
+0000:0666 57 PUSH DI save DI
+0000:0667 CD13 INT 13 read sector into 0000:7c00
+0000:0669 5F POP DI restore DI
+0000:066A 730C JNB INT13OK jmp if no INT 13
+0000:066C 33C0 XOR AX,AX call INT 13 and
+0000:066E CD13 INT 13 do disk reset
+0000:0670 4F DEC DI decr DI
+0000:0671 75ED JNZ INT13RTRY if not zero, try again
+0000:0673 BEA306 MOV SI,06A3 display &quot;Errr ldng systm&quot;
+0000:0676 EBD3 JMP DISPLAY_MSG jmp to display loop
+
+INT13OK: INT 13 ERROR
+
+0000:0678 BEC206 MOV SI,06C2 &quot;missing op sys&quot;
+0000:067B BFFE7D MOV DI,7DFE point to signature
+0000:067E 813D55AA CMP WORD PTR [DI],AA55 is signature correct?
+0000:0682 75C7 JNZ DISPLAY_MSG no
+0000:0684 8BF5 MOV SI,BP set SI
+0000:0686 EA007C0000 JMP 0000:7C00 JUMP TO THE BOOT SECTOR
+WITH SI POINTING TO
+PART TABLE ENTRY
+</code></pre></li><li><p>后面是一些显示字符</p><pre><code>0000:0680 ........ ........ ......49 6e76616c * Inval*
+0000:0690 69642070 61727469 74696f6e 20746162 *id partition tab*
+0000:06a0 6c650045 72726f72 206c6f61 64696e67 *le.Error loading*
+0000:06b0 206f7065 72617469 6e672073 79737465 * operating syste*
+0000:06c0 6d004d69 7373696e 67206f70 65726174 *m.Missing operat*
+0000:06d0 696e6720 73797374 656d00.. ........ *ing system. *
+</code></pre></li><li><p>接着是一段没有用的空区域</p><pre><code>0000:06d0 ........ ........ ......00 00000000 * .....*
+0000:06e0 00000000 00000000 00000000 00000000 *................*
+0000:06f0 00000000 00000000 00000000 00000000 *................*
+0000:0700 00000000 00000000 00000000 00000000 *................*
+0000:0710 00000000 00000000 00000000 00000000 *................*
+0000:0720 00000000 00000000 00000000 00000000 *................*
+0000:0730 00000000 00000000 00000000 00000000 *................*
+0000:0740 00000000 00000000 00000000 00000000 *................*
+0000:0750 00000000 00000000 00000000 00000000 *................*
+0000:0760 00000000 00000000 00000000 00000000 *................*
+0000:0770 00000000 00000000 00000000 00000000 *................*
+0000:0780 00000000 00000000 00000000 00000000 *................*
+0000:0790 00000000 00000000 00000000 00000000 *................*
+0000:07a0 00000000 00000000 00000000 00000000 *................*
+0000:07b0 00000000 00000000 00000000 0000.... *............ *
+</code></pre></li><li><p>后面是分区表信息，启示位置为 0000:07be，每个分区表占16字节，这里只有一个主分区，开头的 80 表明这是一个启动分区。</p><pre><code>0000:07b0 ........ ........ ........ ....8001 * ....*
+0000:07c0 0100060d fef83e00 00000678 0d000000 *......&gt;....x....*
+0000:07d0 00000000 00000000 00000000 00000000 *................*
+0000:07e0 00000000 00000000 00000000 00000000 *................*
+0000:07f0 00000000 00000000 00000000 0000.... *............ *
+</code></pre></li><li><p>最后是 55AA 标记</p><pre><code>0000:07f0 ........ ........ ........ ....55aa *..............U.*
+</code></pre></li></ol><p>如果奇怪为什么用 55AA 这个值，写成二进制就清楚了：</p><pre><code>0x55aa=(0101010110101010)2
+</code></pre></div><div></div><div></div><footer class="post-footer"><div class="post-eof"></div></footer></article><article class="post post-type-normal" itemscope itemtype="http://schema.org/Article"><header class="post-header"><h1 class="post-title" itemprop="name headline"><a class="post-title-link" href="/2016/05/27/Linux-From-Scratch/" itemprop="url">Linux From Scratch</a></h1><div class="post-meta"><span class="post-time"><span class="post-meta-item-icon"><i class="fa fa-calendar-o"></i> </span><span class="post-meta-item-text">发表于</span> <time itemprop="dateCreated" datetime="2016-05-27T14:52:16+08:00" content="2016-05-27">2016-05-27 </time></span><span class="post-comments-count">&nbsp; | &nbsp; <a href="/2016/05/27/Linux-From-Scratch/#comments" itemprop="discussionUrl"><span class="post-comments-count ds-thread-count" data-thread-key="2016/05/27/Linux-From-Scratch/" itemprop="commentsCount"></span></a></span></div></header><div class="post-body" itemprop="articleBody"><p>2007-05-11 15:34</p><p>花了两天半的时间，搞完了 Linux from Scratch ，对编译器、系统、编译器之间的鸡生蛋、蛋生鸡的问题有了实际的认识。</p><p>基本按步骤一步一步来的，更多的时间是等待编译，只不过在最后的时候 Grub 没有重写 MBR，而是直接在 现有系统上加了一个启动项。</p><p>手动添加</p><pre><code>Wincat &gt;&gt; /boot/grub/menu.lst &lt;&lt; &quot;EOF&quot;
+title Windows
+rootnoverify (hd0,0)
+chainloader +1
+EOF
+</code></pre></div><div></div><div></div><footer class="post-footer"><div class="post-eof"></div></footer></article><article class="post post-type-normal" itemscope itemtype="http://schema.org/Article"><header class="post-header"><h1 class="post-title" itemprop="name headline"><a class="post-title-link" href="/2016/05/27/cmd-story/" itemprop="url">用命令讲故事</a></h1><div class="post-meta"><span class="post-time"><span class="post-meta-item-icon"><i class="fa fa-calendar-o"></i> </span><span class="post-meta-item-text">发表于</span> <time itemprop="dateCreated" datetime="2016-05-27T14:26:09+08:00" content="2016-05-27">2016-05-27 </time></span><span class="post-comments-count">&nbsp; | &nbsp; <a href="/2016/05/27/cmd-story/#comments" itemprop="discussionUrl"><span class="post-comments-count ds-thread-count" data-thread-key="2016/05/27/cmd-story/" itemprop="commentsCount"></span></a></span></div></header><div class="post-body" itemprop="articleBody"><p><img src="/images/command_Story.jpg" alt="picture alt" title="Title is optional"></p></div><div></div><div></div><footer class="post-footer"><div class="post-eof"></div></footer></article><article class="post post-type-normal" itemscope itemtype="http://schema.org/Article"><header class="post-header"><h1 class="post-title" itemprop="name headline"><a class="post-title-link" href="/2016/05/27/pkgconfig/" itemprop="url">pkgconfig</a></h1><div class="post-meta"><span class="post-time"><span class="post-meta-item-icon"><i class="fa fa-calendar-o"></i> </span><span class="post-meta-item-text">发表于</span> <time itemprop="dateCreated" datetime="2016-05-27T13:53:48+08:00" content="2016-05-27">2016-05-27 </time></span><span class="post-comments-count">&nbsp; | &nbsp; <a href="/2016/05/27/pkgconfig/#comments" itemprop="discussionUrl"><span class="post-comments-count ds-thread-count" data-thread-key="2016/05/27/pkgconfig/" itemprop="commentsCount"></span></a></span></div></header><div class="post-body" itemprop="articleBody"><p>2008-06-20 09:59<br>你在Unix下开发过软件吗？写完一个程序，编译运行完全正常，在你本机上工作得好好的，你放到源代码管理系统中。然后，告诉你的同事说，你可以取下来用了。这时，你长长的出了一口气，几天的工作没有白费，多么清新的空气啊，你开始飘飘然了。</p><p>“Hi，怎么编译不过去？”你还沉浸在那种美妙的感觉之中，双臂充满着力量，似乎没有什么问题能难倒你的。正在此时，那个笨蛋已经冲着你嚷开了。</p><p>“不会吧，我这边好好的！”表面上你说得很客气，其实，你心里已经骂开了，真笨，不知道脑子干嘛用的。也许，你想的没错，上次，他犯了一个简单的错误，不是你一去就解决了吗。</p><p>他喊三次之后，你不得不放下你手上的工作，刚才那种美妙的感觉已经消失得无影无踪了，要不是你把情绪控制得很好，一肚子气就要撒在他身上了。你走到他的电脑前，键入make，优雅的按下回车。怎么可能出错呢？你信心十足。然而，屏幕上的结果多少有点让人脸红，该死的，libxxx.so怎么会让不到呢？</p><p>你在/usr目录中查找libxxx.so，一切都逃不过你的眼睛。奇怪，libxxx.so怎么在/usr/local/lib下，不是应该在/usr/lib下的吗？这你可不能怪别人，别人想安装在哪里都行，下次还可能安装到/lib目录下呢。</p><p>以 上的场景并非虚构，我都经历过好几次，明明在本机上好好的，在别人的机器上连编译都过不去。可能两人的操作系统一模一样，需要的库都安装上，只是由于个人 喜好不同，安装在不同的目录而已。遇到这种情况，每次都技巧性的绕过去了，用的补丁型的方法，心里老惦记其它地方能不能工作。</p><p>今天我们要介绍的pkgconfig，为解决以上问题提供了一个优美方案。从此，你再也不为此担忧了。Pkgconfig提供了下面几个功能：</p><ul><li>检查库的版本号。如果所需要的库的版本不满足要求，它会打印出错误信息，避免链接错误版本的库文件。</li><li>获得编译预处理参数，如宏定义，头文件的位置。</li><li>获得链接参数，如库及依赖的其它库的位置，文件名及其它一些连接参数。</li><li>自动加入所依赖的其它库的设置。</li></ul><p>这一切都自动的，库文件安装在哪里都没关系！</p><p>在使用前，我们说说pkgconfig的原理，pkgconfig并非精灵，可以凭空得到以上信息。事实上，为了让pkgconfig可以得到这些信息，要求库的提供者，提供一个.pc文件。比如gtk+-2.0的pc文件内容如下：</p><pre><code>prefix=/usr
+
+exec_prefix=/usr
+
+libdir=/usr/lib
+
+includedir=/usr/include
+
+target=x11
+
+gtk_binary_version=2.4.0
+
+gtk_host=i386-redhat-linux-gnu
+
+Name: GTK+
+
+Description: GIMP Tool Kit (${target} target)
+
+Version: 2.6.7
+
+Requires: gdk-${target}-2.0 atk
+
+Libs: -L${libdir} -lgtk-${target}-2.0
+
+Cflags: -I${includedir}/gtk-2.0
+</code></pre><p>这个文件一般放在/usr/lib/pkgconfig/或者/usr/local/lib/pkgconfig/里，当然也可以放在其它任何地方，如像X11相关的pc文件是放在/usr/X11R6/lib/pkgconfig下的。为了让pkgconfig可以找到你的pc文件，你要把pc文件所在的路径，设置在环境变量PKG_CONFIG_PATH里。</p><p>使用方法很简单，比如，我们要使用gtk+的库编译一个程序：</p><pre><code>gcc -g arrow.c -o arrow `pkg-config &quot;gtk+-2.0 &gt; 2.0.0&quot; --cflags --libs`
+</code></pre><p>只要安装了gtk+2.0，不管它在哪里，编译都是正常的。这是不是简单很多了？</p></div><div></div><div></div><footer class="post-footer"><div class="post-eof"></div></footer></article><article class="post post-type-normal" itemscope itemtype="http://schema.org/Article"><header class="post-header"><h1 class="post-title" itemprop="name headline"><a class="post-title-link" href="/2016/05/27/designated-initializers/" itemprop="url">.designated_initializers = 指派初始化</a></h1><div class="post-meta"><span class="post-time"><span class="post-meta-item-icon"><i class="fa fa-calendar-o"></i> </span><span class="post-meta-item-text">发表于</span> <time itemprop="dateCreated" datetime="2016-05-27T13:47:25+08:00" content="2016-05-27">2016-05-27 </time></span><span class="post-comments-count">&nbsp; | &nbsp; <a href="/2016/05/27/designated-initializers/#comments" itemprop="discussionUrl"><span class="post-comments-count ds-thread-count" data-thread-key="2016/05/27/designated-initializers/" itemprop="commentsCount"></span></a></span></div></header><div class="post-body" itemprop="articleBody"><p>2008-06-16 11:00 在设备驱动中常见下面这种语法格式，首先定义一堆函数指针，并根据不同的设备初始化为不同的实现函数，很像 C++ 里面的成员函数。</p><pre><code>struct file_operations scull_fops = {
+          .owner = THIS_MODULE,
+          .llseek = scull_llseek,
+          .read = scull_read,
+          .write = scull_write,
+          .ioctl = scull_ioctl,
+          .open = scull_open,
+          .release = scull_release,
+};
+</code></pre><p>这种语法使用了指派初始化（designated_initializers ），使程序可以使不同的结构定义间的移植更加容易，代码更加精简易读。而且编译器可以根据需要改变结构成员的顺序，提升程序的性能。</p><p>以下内容摘自 gcc 手册</p><pre><code>In a structure initializer, specify the name of a field to initialize with `.fieldname =&apos; before the element value. For example, given the following structure,
+
+struct point { int x, y; };
+</code></pre><p>The following initialization</p><pre><code>struct point p = { 
+    .y = yvalue, 
+    .x = xvalue
+};
+</code></pre><p>is equivalent to</p><pre><code>struct point p = { xvalue, yvalue };
+</code></pre></div><div></div><div></div><footer class="post-footer"><div class="post-eof"></div></footer></article><article class="post post-type-normal" itemscope itemtype="http://schema.org/Article"><header class="post-header"><h1 class="post-title" itemprop="name headline"><a class="post-title-link" href="/2016/05/27/Vim-keyboard/" itemprop="url">Vim 键盘图</a></h1><div class="post-meta"><span class="post-time"><span class="post-meta-item-icon"><i class="fa fa-calendar-o"></i> </span><span class="post-meta-item-text">发表于</span> <time itemprop="dateCreated" datetime="2016-05-27T13:41:46+08:00" content="2016-05-27">2016-05-27 </time></span><span class="post-comments-count">&nbsp; | &nbsp; <a href="/2016/05/27/Vim-keyboard/#comments" itemprop="discussionUrl"><span class="post-comments-count ds-thread-count" data-thread-key="2016/05/27/Vim-keyboard/" itemprop="commentsCount"></span></a></span></div></header><div class="post-body" itemprop="articleBody"><p><img src="/images/vim.png" alt="picture alt" title="Vim cheetsheet"></p></div><div></div><div></div><footer class="post-footer"><div class="post-eof"></div></footer></article><article class="post post-type-normal" itemscope itemtype="http://schema.org/Article"><header class="post-header"><h1 class="post-title" itemprop="name headline"><a class="post-title-link" href="/2016/05/27/Mother-board-debug-card/" itemprop="url">主板诊断卡</a></h1><div class="post-meta"><span class="post-time"><span class="post-meta-item-icon"><i class="fa fa-calendar-o"></i> </span><span class="post-meta-item-text">发表于</span> <time itemprop="dateCreated" datetime="2016-05-27T13:38:18+08:00" content="2016-05-27">2016-05-27 </time></span><span class="post-comments-count">&nbsp; | &nbsp; <a href="/2016/05/27/Mother-board-debug-card/#comments" itemprop="discussionUrl"><span class="post-comments-count ds-thread-count" data-thread-key="2016/05/27/Mother-board-debug-card/" itemprop="commentsCount"></span></a></span></div></header><div class="post-body" itemprop="articleBody"><p>主板诊断卡也叫POST卡（Power On Self Test加电自检），其工作原理是利用主板中BIOS内部程序的检测结果，通过主板诊断卡代码一一显示出来，结合诊断卡的代码含义速查表就能很快地知道电 脑故障所在。尤其在PC机不能引导操作系统、黑屏、喇叭不叫时，使用本卡更能体现其便利，事半功倍。</p><p>主板上的BIOS在每次开机时，会对系统的电路、存储器、键盘、视 频部分、硬盘、软驱等各个组件时行严格测试，并分析硬盘系统配置，对已配置的基本I/O设置进行初始化，一切正常后，再引导操作系统。当计算机出现关键性 故障，屏幕上无显示时，很难判断计算机故障所在，此时可以将本卡插入扩充槽 内，根据卡上显示的代码，参照计算机所所属的BIOS种类，再通过主板诊断卡的代码含义速查表查出该代码所表示的故障原因和部位，就可清楚地知道故障所 在。</p><h2 id="DEBUG卡的工作原理"><a href="#DEBUG卡的工作原理" class="headerlink" title="DEBUG卡的工作原理"></a>DEBUG卡的工作原理</h2><p>DEBUG 卡的工作原理其实很简单，每个厂家的BIOS，无论是AWARD、AMI还是PHOENIX的，都有所谓的POST CODE，即开机自我侦测代码，当BIOS要进行某项测试动作时，首先将该POST CODE写入80h地址，如果测试顺利完成，再写入下一个POST CODE，因此，如果发生错误或死机，根据80H地址的POST CODE值，就可以了解问题出在什么地方。DEBUG 卡的作用就是读取80H地址内的POST CODE，并经译码器译码，最后由数码管显示出来。这样就可以通过DEBUG卡上显示的16进制代码判断问题出在硬件的那一部分，而不用仅依靠计算机主板 那几声单调的警告声来粗略判断硬件错误了。通过它可知道硬件检测没有通过的是内存还是CPU，或者是其他硬件，方便直观地解决棘手的主板问题。以此类推， 还可以判断超频的限制硬件是哪一个，做到有的放矢，查障无忧。</p></div><div></div><div></div><footer class="post-footer"><div class="post-eof"></div></footer></article><article class="post post-type-normal" itemscope itemtype="http://schema.org/Article"><header class="post-header"><h1 class="post-title" itemprop="name headline"><a class="post-title-link" href="/2016/05/27/HelloWDM/" itemprop="url">HelloWDM</a></h1><div class="post-meta"><span class="post-time"><span class="post-meta-item-icon"><i class="fa fa-calendar-o"></i> </span><span class="post-meta-item-text">发表于</span> <time itemprop="dateCreated" datetime="2016-05-27T13:31:03+08:00" content="2016-05-27">2016-05-27 </time></span><span class="post-comments-count">&nbsp; | &nbsp; <a href="/2016/05/27/HelloWDM/#comments" itemprop="discussionUrl"><span class="post-comments-count ds-thread-count" data-thread-key="2016/05/27/HelloWDM/" itemprop="commentsCount"></span></a></span></div></header><div class="post-body" itemprop="articleBody"><p>2008-08-14 13:47<br>人生真是会开玩笑啊，作为自由软件的信徒，居然要研究 Windows 的驱动了。不过对比一下还是挺好的，<br>和 Linux 下面的驱动比起来，还是有许多相似的地方。不过这种函数缩进形式也太难看了，一个参数一行，<br>看了两天都没反应过来，头晕。</p><hr><p>WDM驱动程序是一种很新的东西，相信很多人都跟我一样，对它很感兴趣，但是又找不到学习的切入 点。究其原因，还是因为WDM是一种非常“死板板”的程 序，它一运行就是工作在系统的底层RING 0处，提供各种接口给应用程序调用。也正因为如此，它不像普通的应用程序一样，可以很快地上手——更多的时候，你是在阅读它的技术资料和各种接口信息，你 还要非常地熟悉系统底层的工作原理，否则一个不小心，就“蓝屏”了，呵呵——话说回来，写驱动程序的时候，死机是家常便饭。</p><p>因 此很多人都对WDM望而生畏了。回想一下，我刚开始学WDM的情形还历历在目——看书看了整整3天，但是看完之后好像跟没看也差不了多少，还是不知道怎么入门，甚至连怎么写一个“Hello World”都不知道——后来才知道其实WDM是没有所谓的“Hello World”程序的，唉，真是痛苦啊，这主要还是因为网络上的WDM资料太少造成的。为了不让大家重蹈我的覆辙并对WDM有个感性的认识，在此我给出一个 最简单的完整的WDM框架，并附有注释，姑且可以算是一个入门的“Hello World”吧。</p><p>废话少说，让我们马上开始研究，要求读者已安装DDK 2000。</p><pre><code>/***************************************************************
+程序名称：Hello World for WDM
+文件名称：HelloWDM.cpp
+作者：罗聪
+日期：2002-8-16
+***************************************************************/
+
+//一定要的头文件，声明了函数模块和变量：
+#include &quot;HelloWDM.h&quot;
+
+/***************************************************************
+函数名称：DriverEntry()
+功能描述：WDM程序入口
+***************************************************************/
+//extern &quot;C&quot;是必须的，表示“用C链接”。如果你的文件名是HelloWDM.c的话，这句可以省略。
+extern &quot;C&quot;
+NTSTATUS DriverEntry(     IN PDRIVER_OBJECT DriverObject,
+                         IN PUNICODE_STRING RegistryPath)
+{
+    //指定“添加设备”消息由函数“HelloWDMAddDevice()”来处理：
+     DriverObject-&gt;DriverExtension-&gt;AddDevice = HelloWDMAddDevice;
+    //指定“即插即用”消息由函数“HelloWDMPnp()”来处理：
+     DriverObject-&gt;MajorFunction[IRP_MJ_PNP] = HelloWDMPnp;
+
+    //返回一个NTSTATUS值STATUS_SUCCESS。几乎所有的驱动程序例程都必须返回一个NTSTATUS值，这些值在NTSTATUS.H DDK头文件中有详细的定义。
+    return STATUS_SUCCESS;
+}
+
+/***************************************************************
+函数名称：HelloWDMAddDevice()
+功能描述：处理“添加设备”消息
+***************************************************************/
+NTSTATUS HelloWDMAddDevice(IN PDRIVER_OBJECT DriverObject,
+                           IN PDEVICE_OBJECT PhysicalDeviceObject)
+{
+    //定义一个NTSTATUS类型的返回值：
+     NTSTATUS status;
+    //定义一个功能设备对象（Functional Device Object）：
+     PDEVICE_OBJECT fdo;
+
+    //创建我们的功能设备对象，并储存到fdo中：
+     status = IoCreateDevice(
+         DriverObject,                //驱动程序对象
+        sizeof(DEVICE_EXTENSION),    //要求的设备扩展的大小
+         NULL,                        //设备名称，这里为NULL
+         FILE_DEVICE_UNKNOWN,        //设备的类型，在标准头文件WDM.H或NTDDK.H中列出的FILE_DEVICE_xxx值之一
+        0,                            //各种常量用OR组合在一起，指示可删除介质、只读等。
+         FALSE,                        //如果一次只有一个线程可以访问该设备，为TRUE，否则为FALSE
+        &amp;fdo);                        //返回的设备对象
+
+    //NT_SUCCESS宏用于测试IoCreateDevice内核是否成功完成。不要忘记检查对内核的所有调用是否成功。NT_ERROR宏不等同于!NT_SUCCESS，最好使用!NT_SUCCESS，因为除了错误外，它还截获警告信息。
+    if( !NT_SUCCESS(status))
+        return status;
+
+    //创建一个设备扩展对象dx，用于存储指向fdo的指针：
+     PDEVICE_EXTENSION dx = (PDEVICE_EXTENSION)fdo-&gt;DeviceExtension;
+     dx-&gt;fdo = fdo;
+
+    //用IoAttachDeviceToDeviceStack函数把HelloWDM设备挂接到设备栈：
+     dx-&gt;NextStackDevice = IoAttachDeviceToDeviceStack(fdo, PhysicalDeviceObject);
+
+    // 设置fdo的flags。有两个“位”是必须改变的，一个是必须清除DO_DEVICE_INITIALIZING标志，如果在DriverEntry例 程中调用IoCreateDevice()，就不需要清除这个标志位。还有一个是必须设置DO_BUFFER_IO标志位：
+     fdo-&gt;Flags |= DO_BUFFERED_IO | DO_POWER_PAGABLE;
+     fdo-&gt;Flags &amp;= ~DO_DEVICE_INITIALIZING;
+
+    //返回值：
+    return STATUS_SUCCESS;
+}
+
+/***************************************************************
+函数名称：HelloWDMPnp()
+功能描述：处理“即插即用”消息
+***************************************************************/
+NTSTATUS HelloWDMPnp(IN PDEVICE_OBJECT fdo, IN PIRP Irp)
+{
+    //创建一个设备扩展对象dx，用于存储指向fdo的指针：
+     PDEVICE_EXTENSION dx=(PDEVICE_EXTENSION)fdo-&gt;DeviceExtension;
+
+    //首先要通过函数IoGetCurrentIrpStackLocation()得到当前的IRP，并由此得到Minor Function：
+     PIO_STACK_LOCATION IrpStack = IoGetCurrentIrpStackLocation(Irp);
+     ULONG MinorFunction = IrpStack-&gt;MinorFunction;
+
+    //然后把这个Minor Function传递给下一个设备栈：
+     IoSkipCurrentIrpStackLocation(Irp);
+     NTSTATUS status = IoCallDriver( dx-&gt;NextStackDevice, Irp);
+
+    //处理“即插即用”次功能代码：
+    //当Minor Function等于IRP_MN_REMOVE_DEVICE时，说明有设备被拔出或卸下，这时要取消资源分配并删除设备：
+    if( MinorFunction==IRP_MN_REMOVE_DEVICE)
+    {
+        //取消设备接口：
+         IoSetDeviceInterfaceState(&amp;dx-&gt;ifSymLinkName, FALSE);
+         RtlFreeUnicodeString(&amp;dx-&gt;ifSymLinkName);
+
+        //调用IoDetachDevice()把fdo从设备栈中脱开：
+        if (dx-&gt;NextStackDevice)
+             IoDetachDevice(dx-&gt;NextStackDevice);
+        //删除fdo：
+         IoDeleteDevice(fdo);
+    }
+
+    //返回值：
+    return status;
+}
+
+/***************************************************************
+程序名称：Hello World for WDM
+文件名称：HelloWDM.h
+作者：罗聪
+日期：2002-8-16
+***************************************************************/
+
+//头文件，只是声明一些函数和变量，比较简单就不多说了，请读者自行研究：
+
+#ifdef __cplusplus
+
+extern &quot;C&quot;
+{
+#endif
+
+#include &quot;ntddk.h&quot;
+
+#ifdef __cplusplus
+}
+#endif
+
+typedef struct _DEVICE_EXTENSION
+{
+     PDEVICE_OBJECT     fdo;
+     PDEVICE_OBJECT     NextStackDevice;
+     UNICODE_STRING     ifSymLinkName;
+
+} DEVICE_EXTENSION, *PDEVICE_EXTENSION;
+
+NTSTATUS HelloWDMAddDevice(IN PDRIVER_OBJECT DriverObject,
+                           IN PDEVICE_OBJECT PhysicalDeviceObject);
+
+NTSTATUS HelloWDMPnp(IN PDEVICE_OBJECT fdo,
+                         IN PIRP Irp);
+</code></pre></div><div></div><div></div><footer class="post-footer"><div class="post-eof"></div></footer></article><article class="post post-type-normal" itemscope itemtype="http://schema.org/Article"><header class="post-header"><h1 class="post-title" itemprop="name headline"><a class="post-title-link" href="/2016/05/27/submit-code-to-upstream-kernel/" itemprop="url">提交代码到上游内核的好处</a></h1><div class="post-meta"><span class="post-time"><span class="post-meta-item-icon"><i class="fa fa-calendar-o"></i> </span><span class="post-meta-item-text">发表于</span> <time itemprop="dateCreated" datetime="2016-05-27T13:22:16+08:00" content="2016-05-27">2016-05-27 </time></span><span class="post-comments-count">&nbsp; | &nbsp; <a href="/2016/05/27/submit-code-to-upstream-kernel/#comments" itemprop="discussionUrl"><span class="post-comments-count ds-thread-count" data-thread-key="2016/05/27/submit-code-to-upstream-kernel/" itemprop="commentsCount"></span></a></span></div></header><div class="post-body" itemprop="articleBody"><ol><li><p>所有Linux用户都可以使用加入主内核的代码，在不同的发行版中自动启用。所以就没有必要发布驱动盘，免去了支持不同发行版及其不同版本的痛苦（亲身感受，非常痛苦）。解决了大量的发布和支持问题。</p></li><li><p>尽管开发者尽量保持内核空间与用户空间的接口稳定性，内核内部的调用接口却经常变化。这是有意而为之，使得任何时间都可以对内核进行基础修正，以获得更加高质量的代码。但是这一策略的另一个结果就是独立分支必须经常进行大量的修改以跟的上内核前进的脚步。</p></li></ol><p>而内核主树中的代码则不必担心这个问题，因为改变调用接口的开发者必须修正由此引发的问题。所以主树中代码的维护成本很低。</p><ol><li><p>除此之外，其他开发者会经常对内核中的代码进行提升。</p></li><li><p>只有经过审阅的代码才会进入内核。不管代码开发者有多牛，这个审阅过程总会提高代码的质量。</p></li></ol></div><div></div><div></div><footer class="post-footer"><div class="post-eof"></div></footer></article><article class="post post-type-normal" itemscope itemtype="http://schema.org/Article"><header class="post-header"><h1 class="post-title" itemprop="name headline"><a class="post-title-link" href="/2016/05/22/Function-call-convention/" itemprop="url">function-call-convention</a></h1><div class="post-meta"><span class="post-time"><span class="post-meta-item-icon"><i class="fa fa-calendar-o"></i> </span><span class="post-meta-item-text">发表于</span> <time itemprop="dateCreated" datetime="2016-05-22T08:10:51+08:00" content="2016-05-22">2016-05-22 </time></span><span class="post-comments-count">&nbsp; | &nbsp; <a href="/2016/05/22/Function-call-convention/#comments" itemprop="discussionUrl"><span class="post-comments-count ds-thread-count" data-thread-key="2016/05/22/Function-call-convention/" itemprop="commentsCount"></span></a></span></div></header><div class="post-body" itemprop="articleBody"><p>在C语言中，假设我们有这样的一个函数：</p><pre><code>int function(int a,int b)
+</code></pre><p>调用时只要用result = function(1,2)这样的方式就可以使用这个函数。但是，当高级语言被编译成计算机可以识别的机器码时，有一个问题就凸现出来：在CPU中，计算 机没有办法知道一个函数调用需要多少个、什么样的参数，也没有硬件可以保存这些参数。也就是说，计算机不知道怎么给这个函数传递参数，传递参数的工作必须 由函数调用者和函数本身来协调。为此，计算机提供了一种被称为栈的数据结构来支持参数传递。</p><p>栈是一种先进后出的数据结构，栈有一个存储区、一个栈顶指针。栈顶指针指向堆栈中第一个可用的数据项（被称为栈顶）。用户可以在栈顶上方向栈中加入 数据，这个操作被称为压栈(Push)，压栈以后，栈顶自动变成新加入数据项的位置，栈顶指针也随之修改。用户也可以从堆栈中取走栈顶，称为弹出栈 (pop)，弹出栈后，栈顶下的一个元素变成栈顶，栈顶指针随之修改。</p><p>函数调用时，调用者依次把参数压栈，然后调用函数，函数被调用以后，在堆栈中取得数据，并进行计算。函数计算结束以后，或者调用者、或者函数本身修改堆栈，使堆栈恢复原装。</p><p>在参数传递中，有两个很重要的问题必须得到明确说明：</p><ol><li>当参数个数多于一个时，按照什么顺序把参数压入堆栈</li><li>函数调用后，由谁来把堆栈恢复原装</li></ol><p>在高级语言中，通过函数调用约定来说明这两个问题。常见的调用约定有：</p><ul><li>stdcall</li><li>cdecl</li><li>fastcall</li><li>thiscall</li><li>naked call</li></ul><h2 id="stdcall调用约定"><a href="#stdcall调用约定" class="headerlink" title="stdcall调用约定"></a>stdcall调用约定</h2><p>stdcall很多时候被称为pascal调用约定，因为pascal是早期很常见的一种教学用计算机程序设计语言，其语法严谨，使用的函数调用约 定就是stdcall。在Microsoft C++系列的C/C++编译器中，常常用PASCAL宏来声明这个调用约定，类似的宏还有WINAPI和CALLBACK。</p><p>stdcall调用约定声明的语法为(以前文的那个函数为例）：</p><pre><code>int __stdcall function(int a,int b)
+</code></pre><p>stdcall的调用约定意味着：</p><ol><li>参数从右向左压入堆栈</li><li>函数自身修改堆栈</li><li>函数名自动加前导的下划线，后面紧跟一个@符号，其后紧跟着参数的尺寸</li></ol><p>以上述这个函数为例，参数b首先被压栈，然后是参数a，函数调用function(1,2)调用处翻译成汇编语言将变成：</p><pre><code>push 2 第二个参数入栈
+push 1 第一个参数入栈
+call function 调用参数，注意此时自动把cs:eip入栈
+</code></pre><p>而对于函数自身，则可以翻译为：</p><pre><code>push ebp 保存ebp寄存器，该寄存器将用来保存堆栈的栈顶指针，可以在函数退出时恢复
+mov ebp,esp 保存堆栈指针
+mov eax,[ebp + 8H] 堆栈中ebp指向位置之前依次保存有ebp,cs:eip,a,b,ebp +8指向a
+add eax,[ebp + 0CH] 堆栈中ebp + 12处保存了b
+mov esp,ebp 恢复esp
+pop ebp
+ret 8
+</code></pre><p>而在编译时，这个函数的名字被翻译成_function@8</p><p>注意不同编译器会插入自己的汇编代码以提供编译的通用性，但是大体代码如此。其中在函数开始处保留esp到ebp中，在函数结束恢复是编译器常用的方法。</p><p>从函数调用看，2和1依次被push进堆栈，而在函数中又通过相对于ebp(即刚进函数时的堆栈指针）的偏移量存取参数。函数结束后，ret 8表示清理8个字节的堆栈，函数自己恢复了堆栈。</p><h2 id="cdecl调用约定"><a href="#cdecl调用约定" class="headerlink" title="cdecl调用约定"></a>cdecl调用约定</h2><p>cdecl调用约定又称为C调用约定，是C语言缺省的调用约定，它的定义语法是：</p><pre><code>int function (int a ,int b) //不加修饰就是C调用约定
+int __cdecl function(int a,int b)//明确指出C调用约定
+</code></pre><p>在写本文时，出乎我的意料，发现cdecl调用约定的参数压栈顺序是和stdcall是一样的，参数首先由有向左压入堆栈。所不同的是，函数本身不 清理堆栈，调用者负责清理堆栈。由于这种变化，C调用约定允许函数的参数的个数是不固定的，这也是C语言的一大特色。对于前面的function函数，使 用cdecl后的汇编码变成：</p><p>调用处<br>push 1<br>push 2<br>call _function<br>add esp,8 注意：这里调用者在恢复堆栈</p><p>被调用函数_function处</p><pre><code>push ebp 保存ebp寄存器，该寄存器将用来保存堆栈的栈顶指针，可以在函数退出时恢复
+mov ebp,esp 保存堆栈指针
+mov eax,[ebp + 8H] 堆栈中ebp指向位置之前依次保存有ebp,cs:eip,a,b,ebp +8指向a
+add eax,[ebp + 0CH] 堆栈中ebp + 12处保存了b
+mov esp,ebp 恢复esp
+pop ebp
+ret 注意，这里没有修改堆栈
+</code></pre><p>由于参数按照从右向左顺序压栈，因此最开始的参数在最接近栈顶的位置，因此当采用不定个数参数时，第一个参数在栈中的位置肯定能知道，只要不定的参数个数能够根据第一个后者后续的明确的参数确定下来，就可以使用不定参数，例如对于CRT中的sprintf函数，定义为：</p><pre><code>int sprintf(char* buffer,const char* format,...)
+</code></pre><p>由于所有的不定参数都可以通过format确定，因此使用不定个数的参数是没有问题的。</p><pre><code>fastcall
+fastcall调用约定和stdcall类似，它意味着：
+</code></pre><p>函数的第一个和第二个DWORD参数（或者尺寸更小的）通过ecx和edx传递，其他参数通过从右向左的顺序压栈<br>被调用函数清理堆栈<br>函数名修改规则同stdcall<br>其声明语法为：int fastcall function(int a,int b)</p><h2 id="thiscall"><a href="#thiscall" class="headerlink" title="thiscall"></a>thiscall</h2><p>thiscall是唯一一个不能明确指明的函数修饰，因为thiscall不是关键字。它是C++类成员函数缺省的调用约定。由于成员函数调用还有一个this指针，因此必须特殊处理，thiscall意味着：</p><p>参数从右向左入栈<br>如果参数个数确定，this指针通过ecx传递给被调用者；如果参数个数不确定，this指针在所有参数压栈后被压入堆栈。<br>对参数个数不定的，调用者清理堆栈，否则函数自己清理堆栈<br>为了说明这个调用约定，定义如下类和使用代码：</p><pre><code>class A 
+{ 
+public:    
+    int function1(int a,int b);    
+    int function2(int a,...); 
+}; 
+
+int A::function1 (int a,int b) 
+{    
+    return a+b; 
+}
+
+#include
+</code></pre><p>callee函数被翻译成汇编后就变成：</p><pre><code>//函数function1调用
+0401C1D    push        2
+00401C1F   push        1
+00401C21   lea         ecx,[ebp-8]
+00401C24   call function1           注意，这里this没有被入栈
+//函数function2调用
+00401C29   push        3
+00401C2B   push        2
+00401C2D   push        1
+00401C2F   push        3
+00401C31   lea         eax,[ebp-8]   这里引入this指针
+00401C34   push        eax
+00401C35   call function2
+00401C3A   add         esp,14h
+</code></pre><p>可见，对于参数个数固定情况下，它类似于stdcall，不定时则类似cdecl</p><h2 id="naked-call"><a href="#naked-call" class="headerlink" title="naked call"></a>naked call</h2><p>这是一个很少见的调用约定，一般程序设计者建议不要使用。编译器不会给这种函数增加初始化和清理代码，更特殊的是，你不能用return返回返回值，只能用插入汇编返回结果。这一般用于实模式驱动程序设计，假设定义一个求和的加法程序，可以定义为：</p><pre><code>__declspec(naked) int add(int a,int b)
+{
+  __asm mov eax,a
+   __asm add eax,b
+   __asm ret 
+}
+</code></pre><p>注意，这个函数没有显式的return返回值，返回通过修改eax寄存器实现，而且连退出函数的ret指令都必须显式插入。上面代码被翻译成汇编以后变成：</p><pre><code>mov eax,[ebp+8]
+add eax,[ebp+12]
+ret 8
+</code></pre><p>注意这个修饰是和 __stdcall及cdecl结合使用的，前面是它和cdecl结合使用的代码，对于和stdcall结合的代码，则变成：</p><pre><code>__declspec(naked) int __stdcall function(int a,int b)
+{
+    __asm mov eax,a
+    __asm add eax,b
+    __asm ret 8        //注意后面的8
+}
+</code></pre><p>至于这种函数被调用，则和普通的cdecl及stdcall调用函数一致。</p><p>函数调用约定导致的常见问题<br>如果定义的约定和使用的约定不一致，则将导致堆栈被破坏，导致严重问题，下面是两种常见的问题：</p><p>函数原型声明和函数体定义不一致<br>DLL导入函数时声明了不同的函数约定<br>以后者为例，假设我们在dll种声明了一种函数为：</p><pre><code>__declspec(dllexport) int func(int a,int b);//注意，这里没有stdcall，使用的是cdecl
+</code></pre><p>使用时代码为：</p><pre><code>typedef int (*WINAPI DLLFUNC)func(int a,int b);
+hLib = LoadLibrary(...);
+DLLFUNC func = (DLLFUNC)GetProcAddress(...)//这里修改了调用约定
+result = func(1,2);//导致错误
+</code></pre><p>由于调用者没有理解WINAPI的含义错误的增加了这个修饰，上述代码必然导致堆栈被破坏，MFC在编译时插入的checkesp函数将告诉你，堆栈被破坏了。</p></div><div></div><div></div><footer class="post-footer"><div class="post-eof"></div></footer></article></section><nav class="pagination"><a class="extend prev" rel="prev" href="/page/2/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/">4</a><span class="space">&hellip;</span><a class="page-number" href="/page/11/">11</a><a class="extend next" rel="next" href="/page/4/"><i class="fa fa-angle-right"></i></a></nav></div></div><div class="sidebar-toggle"><div class="sidebar-toggle-line-wrap"><span class="sidebar-toggle-line sidebar-toggle-line-first"></span> <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span> <span class="sidebar-toggle-line sidebar-toggle-line-last"></span></div></div><aside id="sidebar" class="sidebar"><div class="sidebar-inner"><section class="site-overview sidebar-panel sidebar-panel-active"><div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person"><img class="site-author-image" itemprop="image" src="/images/avatar.gif" alt="Feng Chao"><p class="site-author-name" itemprop="name">Feng Chao</p><p class="site-description motion-element" itemprop="description"></p></div><nav class="site-state motion-element"><div class="site-state-item site-state-posts"><a href="/archives"><span class="site-state-item-count">106</span> <span class="site-state-item-name">日志</span></a></div><div class="site-state-item site-state-categories"><a href="/categories"><span class="site-state-item-count">10</span> <span class="site-state-item-name">分类</span></a></div><div class="site-state-item site-state-tags"><a href="/tags"><span class="site-state-item-count">5</span> <span class="site-state-item-name">标签</span></a></div></nav><div class="feed-link motion-element"><a href="/atom.xml" rel="alternate"><i class="fa fa-rss"></i> RSS</a></div><div class="links-of-author motion-element"><span class="links-of-author-item"><a href="https://github.com/fengchao" target="_blank" title="GitHub"><i class="fa fa-fw fa-github"></i> GitHub </a></span><span class="links-of-author-item"><a href="https://twitter.com/fengchao" target="_blank" title="Twitter"><i class="fa fa-fw fa-twitter"></i> Twitter</a></span></div></section></div></aside></div></main><footer id="footer" class="footer"><div class="footer-inner"><div class="copyright">&copy; 2008 - <span itemprop="copyrightYear">2016</span> <span class="with-love"><i class="fa fa-heart"></i> </span><span class="author" itemprop="copyrightHolder">Feng Chao</span></div><div class="powered-by">由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动</div><div class="theme-info">主题 - <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">NexT.Mist</a></div></div></footer><div class="back-to-top"><i class="fa fa-arrow-up"></i></div></div><script type="text/javascript">"[object Function]"!==Object.prototype.toString.call(window.Promise)&&(window.Promise=null)</script><script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script><script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script><script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script><script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script><script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script><script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script><script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script><script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script><script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script><script type="text/javascript">var duoshuoQuery={short_name:"chaosite"};!function(){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.id="duoshuo-script",t.src=("https:"==document.location.protocol?"https:":"http:")+"//static.duoshuo.com/embed.js",t.charset="UTF-8",(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(t)}()</script><script src="/vendors/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script><script src="/js/src/hook-duoshuo.js"></script><script type="text/javascript">function proceedsearch(){$("body").append('<div class="popoverlay">').css("overflow","hidden"),$(".popup").toggle()}var isfetched=!1,search_path="search.xml";0==search_path.length&&(search_path="search.xml");var path="/"+search_path,searchFunc=function(e,t,a){"use strict";$.ajax({url:e,dataType:"xml",async:!0,success:function(e){isfetched=!0,$(".popup").detach().appendTo(".header-inner");var r=$("entry",e).map(function(){return{title:$("title",this).text(),content:$("content",this).text(),url:$("url",this).text()}}).get(),c=document.getElementById(t),s=document.getElementById(a);c.addEventListener("input",function(){var e=0,t='<ul class="search-result-list">',a=this.value.trim().toLowerCase().split(/[\s\-]+/);s.innerHTML="",this.value.trim().length>1&&r.forEach(function(r){var c=!0,s=r.title.trim().toLowerCase(),n=r.content.trim().replace(/<[^>]+>/g,"").toLowerCase(),i=r.url,o=-1,l=-1,p=-1;if(""!=s&&""!=n&&a.forEach(function(e,t){o=s.indexOf(e),l=n.indexOf(e),o<0&&l<0?c=!1:(l<0&&(l=0),0==t&&(p=l))}),c){e+=1,t+="<li><a href='"+i+"' class='search-result-title'>"+s+"</a>";var h=r.content.trim().replace(/<[^>]+>/g,"");if(p>=0){var u=p-20,d=p+80;u<0&&(u=0),0==u&&(d=50),d>h.length&&(d=h.length);var f=h.substring(u,d);a.forEach(function(e){var t=new RegExp(e,"gi");f=f.replace(t,'<b class="search-keyword">'+e+"</b>")}),t+='<p class="search-result">'+f+"...</p>"}t+="</li>"}}),t+="</ul>",0==e&&(t='<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'),""==a&&(t='<div id="no-result"><i class="fa fa-search fa-5x" /></div>'),s.innerHTML=t}),proceedsearch()}})};$(".popup-trigger").click(function(e){e.stopPropagation(),0==isfetched?searchFunc(path,"local-search-input","local-search-result"):proceedsearch()}),$(".popup-btn-close").click(function(e){$(".popup").hide(),$(".popoverlay").remove(),$("body").css("overflow","")}),$(".popup").click(function(e){e.stopPropagation()})</script><script type="text/javascript" async src="//push.zhanzhang.baidu.com/push.js"></script></body></html><!-- rebuild by neat -->
