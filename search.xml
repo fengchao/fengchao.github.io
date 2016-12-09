@@ -4,9 +4,15 @@
   
     
     <entry>
+      <title><![CDATA[商业模式]]></title>
+      <url>http://fengchao.github.io/2016/12/09/Business-mode/</url>
+      <content type="html"><![CDATA[<!-- build time:Fri Dec 09 2016 16:08:19 GMT+0800 (CST) --><h2 id="商业模式的常见问题"><a href="#商业模式的常见问题" class="headerlink" title="商业模式的常见问题"></a>商业模式的常见问题</h2><ol><li>把企业愿景当作商业模式</li><li>平台类产品未认准自己的用户</li><li>简单的罗列自己的资源</li><li>追求大而全</li><li>缺乏可爆发性</li></ol><!-- rebuild by neat -->]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[蓝海战略]]></title>
       <url>http://fengchao.github.io/2016/12/07/Blue-Ocean-Strategy/</url>
-      <content type="html"><![CDATA[<!-- build time:Wed Dec 07 2016 13:38:27 GMT+0800 (CST) --><h2 id="确立"><a href="#确立" class="headerlink" title="确立"></a>确立</h2><ul><li>重新确立市场边界</li><li>关注整体状况，而不是数字</li><li>超出现有需求</li><li>确保顺序正确</li></ul><h2 id="执行原则"><a href="#执行原则" class="headerlink" title="执行原则"></a>执行原则</h2><ul><li>解决组织限制</li><li>将执行加入战略</li></ul><h2 id="风险"><a href="#风险" class="headerlink" title="风险"></a>风险</h2><ul><li>计划的风险</li><li>增长的风险</li><li>商业模式的风险</li><li>组织风险</li><li>管理风险</li></ul><!-- rebuild by neat -->]]></content>
+      <content type="html"><![CDATA[<!-- build time:Wed Dec 07 2016 13:24:10 GMT+0800 (CST) --><h2 id="确立"><a href="#确立" class="headerlink" title="确立"></a>确立</h2><ul><li>重新确立市场边界</li><li>关注整体状况，而不是数字</li><li>超出现有需求</li><li>确保顺序正确</li></ul><h2 id="执行原则"><a href="#执行原则" class="headerlink" title="执行原则"></a>执行原则</h2><ul><li>解决组织限制</li><li>将执行加入战略</li></ul><h2 id="风险"><a href="#风险" class="headerlink" title="风险"></a>风险</h2><ul><li>计划的风险</li><li>增长的风险</li><li>商业模式的风险</li><li>组织风险</li><li>管理风险</li></ul><!-- rebuild by neat -->]]></content>
     </entry>
     
     <entry>
@@ -1531,13 +1537,13 @@ $ source ~/.bash_profile
     
     <entry>
       <title><![CDATA[Olny srmat poelpe can raed tihs]]></title>
-      <url>http://fengchao.github.io/2009/10/09/Olny-srmat-poelpe-can-raed-tihs/</url>
+      <url>http://fengchao.github.io/2009/10/09/Olny-srmat-poelpe-can-raed-tihs-1/</url>
       <content type="html"><![CDATA[<!-- build time:Thu Oct 20 2016 21:34:30 GMT+0800 (CST) --><p>“I cdnuolt blveiee taht I cluod aulaclty uesdnatnrd waht I was rdanieg. The phaonmneal pweor of the hmuan mnid, aoccdrnig to a rscheearch at Cmabrigde Uinervtisy, it deosn’t mttaer in waht oredr the ltteers in a wrod are, the olny iprmoatnt tihng is taht the frist and lsat ltteer be in the rghit pclae. The rset can be a taotl mses and you can sitll raed it wouthit a porbelm. Tihs is bcuseae the huamn mnid deos not raed ervey lteter by istlef, but the wrod as a wlohe. Amzanig huh? yaeh and I awlyas tghuhot slpeling was ipmorantt! if you can raed tihs psas it on!!</p><!-- rebuild by neat -->]]></content>
     </entry>
     
     <entry>
       <title><![CDATA[Olny srmat poelpe can raed tihs]]></title>
-      <url>http://fengchao.github.io/2009/10/09/Olny-srmat-poelpe-can-raed-tihs-1/</url>
+      <url>http://fengchao.github.io/2009/10/09/Olny-srmat-poelpe-can-raed-tihs/</url>
       <content type="html"><![CDATA[<!-- build time:Thu Oct 20 2016 21:34:30 GMT+0800 (CST) --><p>“I cdnuolt blveiee taht I cluod aulaclty uesdnatnrd waht I was rdanieg. The phaonmneal pweor of the hmuan mnid, aoccdrnig to a rscheearch at Cmabrigde Uinervtisy, it deosn’t mttaer in waht oredr the ltteers in a wrod are, the olny iprmoatnt tihng is taht the frist and lsat ltteer be in the rghit pclae. The rset can be a taotl mses and you can sitll raed it wouthit a porbelm. Tihs is bcuseae the huamn mnid deos not raed ervey lteter by istlef, but the wrod as a wlohe. Amzanig huh? yaeh and I awlyas tghuhot slpeling was ipmorantt! if you can raed tihs psas it on!!</p><!-- rebuild by neat -->]]></content>
     </entry>
     
@@ -1705,13 +1711,13 @@ static inline void list_del(struct list_head *entry)
     <entry>
       <title><![CDATA[弗里德曼的信徒]]></title>
       <url>http://fengchao.github.io/2009/05/03/Milton-Friedman/</url>
-      <content type="html"><![CDATA[<!-- build time:Wed Dec 07 2016 13:38:27 GMT+0800 (CST) --><p>在去年猪肉价格暴涨的时候，在水源和别人吵架，我说“通货膨胀本身并不会引起经济危机，通货膨胀之后紧随的通货紧缩，才会引起经济危机”。立即被人给了扣上了“弗里德曼的信徒”这顶帽子。本来我打心眼里是不喜欢这个观点的，但是历次经济危机的统计事实告诉我们，这是个普遍真理。</p><p>从这个角度来说，世界经济最坏的时刻，远没有到来。在危机的时刻表上，下一站将会是美元泛滥的通货膨胀，然后是各央行为了应付通胀而猛提利率而直接导致的通货紧缩。那一刻，真正的倒闭狂潮才会到来；那一刻，才是哀鸿遍野。</p><!-- rebuild by neat -->]]></content>
+      <content type="html"><![CDATA[<!-- build time:Mon Dec 05 2016 17:52:28 GMT+0800 (CST) --><p>在去年猪肉价格暴涨的时候，在水源和别人吵架，我说“通货膨胀本身并不会引起经济危机，通货膨胀之后紧随的通货紧缩，才会引起经济危机”。立即被人给了扣上了“弗里德曼的信徒”这顶帽子。本来我打心眼里是不喜欢这个观点的，但是历次经济危机的统计事实告诉我们，这是个普遍真理。</p><p>从这个角度来说，世界经济最坏的时刻，远没有到来。在危机的时刻表上，下一站将会是美元泛滥的通货膨胀，然后是各央行为了应付通胀而猛提利率而直接导致的通货紧缩。那一刻，真正的倒闭狂潮才会到来；那一刻，才是哀鸿遍野。</p><!-- rebuild by neat -->]]></content>
     </entry>
     
     <entry>
       <title><![CDATA[Ada Lovelace]]></title>
       <url>http://fengchao.github.io/2009/03/28/Ada/</url>
-      <content type="html"><![CDATA[<!-- build time:Wed Dec 07 2016 13:38:27 GMT+0800 (CST) --><p>就像护士通常是女人一样，程序员通常是男的。为数不多的女程序员当中，又有相当一部分集中于测试、技术支持部门。Linux 内核的提交人员当中，几乎看不到一个女性的名字。是偏见，还是天性，不得而知。但是有一点是肯定的：第一个计算机程序，出自 Ada 只手，她是一个女人。</p><p>1815年生于伦敦，她是英国著名诗人拜伦(L.Byron)的女儿。因父母婚姻破裂，出生5星期后就一直跟随母亲生活。母亲安娜·密尔班克（A.Millbanke）是位业余数学爱好者，阿达没有继承父亲诗一般的浪漫热情，却继承了母亲的数学才能。</p><p>阿达19岁嫁给了威廉·洛甫雷斯伯爵，因此，史书也称她为洛甫雷斯伯爵夫人（Lady Lovelace）。由于巴贝奇晚年因喉疾几乎不能说话，介绍分析机的文字主要由阿达替他完成。阿达的生命是短暂的，她对计算机的预见超前了整整一个世 纪。阿达早逝，年仅36岁，与她父亲拜伦相似。根据她的遗愿，她被葬于诺丁汉郡其父亲身边。</p><p>阿达设计了巴贝奇分析机上解伯努利方程的一个程序，并证明当时的19世纪计算机狂人巴贝奇的分 析器可以用于许多问题的求解。她甚至还建立了循环和子程序的概念。由于她在程序设计上的开创性工作，Ada Lovelace被称为世界上第一位程序员。当时的阿达甚至不顾自己已是三个孩子的母亲，坚定地投身于分析机研究，成为巴贝奇的合作伙伴。在1843年发 表的一篇论文里，阿达认为机器今后有可能被用来创作复杂的音乐、制图和在科学研究中运用，这在当时确是十分大胆的预见。以现在的观点看，阿达首先为计算拟 定了“算法”，然后写作了一份“程序设计流程图”。这份珍贵的规划，被人们视为“第一件计算机程序”。</p><p>美国国防部花了10年的时间，把所需软件的全部功能混合在一种计算机语言中，希望它能成为军方数千种电脑的标准。1981年，这种语言被正式命名为ADA（阿达）语言，以纪念这位“世界上第一位软件工程师”。</p><!-- rebuild by neat -->]]></content>
+      <content type="html"><![CDATA[<!-- build time:Mon Dec 05 2016 17:59:04 GMT+0800 (CST) --><p>就像护士通常是女人一样，程序员通常是男的。为数不多的女程序员当中，又有相当一部分集中于测试、技术支持部门。Linux 内核的提交人员当中，几乎看不到一个女性的名字。是偏见，还是天性，不得而知。但是有一点是肯定的：第一个计算机程序，出自 Ada 只手，她是一个女人。</p><p>1815年生于伦敦，她是英国著名诗人拜伦(L.Byron)的女儿。因父母婚姻破裂，出生5星期后就一直跟随母亲生活。母亲安娜·密尔班克（A.Millbanke）是位业余数学爱好者，阿达没有继承父亲诗一般的浪漫热情，却继承了母亲的数学才能。</p><p>阿达19岁嫁给了威廉·洛甫雷斯伯爵，因此，史书也称她为洛甫雷斯伯爵夫人（Lady Lovelace）。由于巴贝奇晚年因喉疾几乎不能说话，介绍分析机的文字主要由阿达替他完成。阿达的生命是短暂的，她对计算机的预见超前了整整一个世 纪。阿达早逝，年仅36岁，与她父亲拜伦相似。根据她的遗愿，她被葬于诺丁汉郡其父亲身边。</p><p>阿达设计了巴贝奇分析机上解伯努利方程的一个程序，并证明当时的19世纪计算机狂人巴贝奇的分 析器可以用于许多问题的求解。她甚至还建立了循环和子程序的概念。由于她在程序设计上的开创性工作，Ada Lovelace被称为世界上第一位程序员。当时的阿达甚至不顾自己已是三个孩子的母亲，坚定地投身于分析机研究，成为巴贝奇的合作伙伴。在1843年发 表的一篇论文里，阿达认为机器今后有可能被用来创作复杂的音乐、制图和在科学研究中运用，这在当时确是十分大胆的预见。以现在的观点看，阿达首先为计算拟 定了“算法”，然后写作了一份“程序设计流程图”。这份珍贵的规划，被人们视为“第一件计算机程序”。</p><p>美国国防部花了10年的时间，把所需软件的全部功能混合在一种计算机语言中，希望它能成为军方数千种电脑的标准。1981年，这种语言被正式命名为ADA（阿达）语言，以纪念这位“世界上第一位软件工程师”。</p><!-- rebuild by neat -->]]></content>
     </entry>
     
     <entry>
