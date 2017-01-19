@@ -7,6 +7,14 @@
     </url>
 
     <url>
+        <loc>http://fengchao.github.io/2009/05/10/Gray-I-2/</loc>
+        <lastmod>2017-01-19T03:07:05.002Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>http://fengchao.github.io/2016/12/09/Business-mode/</loc>
         <lastmod>2016-12-09T08:08:19.604Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -33,14 +41,6 @@
     <url>
         <loc>http://fengchao.github.io/2009/05/03/Milton-Friedman/</loc>
         <lastmod>2016-12-05T09:52:28.130Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>http://fengchao.github.io/2009/05/10/Gray-I-2/</loc>
-        <lastmod>2016-11-30T09:40:17.115Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
