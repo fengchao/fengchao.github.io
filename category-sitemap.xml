@@ -21,13 +21,6 @@
     </url>
 
     <url>
-        <loc>https://fengchao.github.io/categories/%E5%BD%B1%E8%A7%86/</loc>
-        <lastmod>2017-01-20T05:55:33.118Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://fengchao.github.io/categories/%E8%BD%AF%E4%BB%B6/</loc>
         <lastmod>2017-01-20T05:57:04.208Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -63,22 +56,8 @@
     </url>
 
     <url>
-        <loc>https://fengchao.github.io/categories/%E5%BC%80%E6%BA%90/</loc>
-        <lastmod>2017-01-20T05:59:12.334Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://fengchao.github.io/categories/%E5%8E%86%E5%8F%B2/</loc>
         <lastmod>2017-01-20T06:00:54.251Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://fengchao.github.io/categories/%E4%B8%AA%E4%BA%BA/</loc>
-        <lastmod>2017-02-06T04:50:12.100Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -91,8 +70,36 @@
     </url>
 
     <url>
+        <loc>https://fengchao.github.io/categories/%E4%B8%AA%E4%BA%BA-Linux-%E5%BC%80%E6%BA%90-%E5%8E%86%E5%8F%B2-%E7%BB%8F%E6%B5%8E/</loc>
+        <lastmod>2017-02-06T05:20:26.513Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://fengchao.github.io/categories/%E4%B8%AA%E4%BA%BA/</loc>
+        <lastmod>2017-02-06T05:22:28.013Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://fengchao.github.io/categories/%E5%BD%B1%E8%A7%86/</loc>
+        <lastmod>2017-02-06T05:31:35.270Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://fengchao.github.io/categories/%E5%BC%80%E6%BA%90/</loc>
+        <lastmod>2017-02-06T06:11:55.949Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://fengchao.github.io/categories/%E7%BB%8F%E6%B5%8E/</loc>
-        <lastmod>2017-02-06T05:02:41.587Z</lastmod>
+        <lastmod>2017-02-06T06:23:36.659Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
