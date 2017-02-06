@@ -4,9 +4,9 @@
   <subtitle>Reshape the world by engineering chaos</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://fengchao.github.io/"/>
+  <link href="https://fengchao.github.io/"/>
   <updated>2017-02-06T05:02:41.587Z</updated>
-  <id>http://fengchao.github.io/</id>
+  <id>https://fengchao.github.io/</id>
   
   <author>
     <name>Feng Chao</name>
@@ -17,8 +17,8 @@
   
   <entry>
     <title>Too good to last</title>
-    <link href="http://fengchao.github.io/2017/02/06/Too-good-to-last/"/>
-    <id>http://fengchao.github.io/2017/02/06/Too-good-to-last/</id>
+    <link href="https://fengchao.github.io/2017/02/06/Too-good-to-last/"/>
+    <id>https://fengchao.github.io/2017/02/06/Too-good-to-last/</id>
     <published>2017-02-06T05:00:20.000Z</published>
     <updated>2017-02-06T05:02:41.587Z</updated>
     
@@ -30,15 +30,15 @@
     
     </summary>
     
-      <category term="经济" scheme="http://fengchao.github.io/categories/%E7%BB%8F%E6%B5%8E/"/>
+      <category term="经济" scheme="https://fengchao.github.io/categories/%E7%BB%8F%E6%B5%8E/"/>
     
     
   </entry>
   
   <entry>
     <title>商业模式</title>
-    <link href="http://fengchao.github.io/2016/12/09/Business-mode/"/>
-    <id>http://fengchao.github.io/2016/12/09/Business-mode/</id>
+    <link href="https://fengchao.github.io/2016/12/09/Business-mode/"/>
+    <id>https://fengchao.github.io/2016/12/09/Business-mode/</id>
     <published>2016-12-09T06:48:47.000Z</published>
     <updated>2017-01-20T05:58:36.471Z</updated>
     
@@ -50,15 +50,15 @@
     
     </summary>
     
-      <category term="经济" scheme="http://fengchao.github.io/categories/%E7%BB%8F%E6%B5%8E/"/>
+      <category term="经济" scheme="https://fengchao.github.io/categories/%E7%BB%8F%E6%B5%8E/"/>
     
     
   </entry>
   
   <entry>
     <title>蓝海战略</title>
-    <link href="http://fengchao.github.io/2016/12/07/Blue-Ocean-Strategy/"/>
-    <id>http://fengchao.github.io/2016/12/07/Blue-Ocean-Strategy/</id>
+    <link href="https://fengchao.github.io/2016/12/07/Blue-Ocean-Strategy/"/>
+    <id>https://fengchao.github.io/2016/12/07/Blue-Ocean-Strategy/</id>
     <published>2016-12-07T05:19:03.000Z</published>
     <updated>2017-01-20T05:58:41.934Z</updated>
     
@@ -70,15 +70,15 @@
     
     </summary>
     
-      <category term="经济" scheme="http://fengchao.github.io/categories/%E7%BB%8F%E6%B5%8E/"/>
+      <category term="经济" scheme="https://fengchao.github.io/categories/%E7%BB%8F%E6%B5%8E/"/>
     
     
   </entry>
   
   <entry>
     <title>npm</title>
-    <link href="http://fengchao.github.io/2016/11/25/npm/"/>
-    <id>http://fengchao.github.io/2016/11/25/npm/</id>
+    <link href="https://fengchao.github.io/2016/11/25/npm/"/>
+    <id>https://fengchao.github.io/2016/11/25/npm/</id>
     <published>2016-11-25T01:34:29.000Z</published>
     <updated>2017-01-20T05:45:47.801Z</updated>
     
@@ -93,15 +93,15 @@
     
     </summary>
     
-      <category term="代码" scheme="http://fengchao.github.io/categories/%E4%BB%A3%E7%A0%81/"/>
+      <category term="代码" scheme="https://fengchao.github.io/categories/%E4%BB%A3%E7%A0%81/"/>
     
     
   </entry>
   
   <entry>
     <title>时间管理，提升效率</title>
-    <link href="http://fengchao.github.io/2016/11/15/Time-management/"/>
-    <id>http://fengchao.github.io/2016/11/15/Time-management/</id>
+    <link href="https://fengchao.github.io/2016/11/15/Time-management/"/>
+    <id>https://fengchao.github.io/2016/11/15/Time-management/</id>
     <published>2016-11-15T03:44:00.000Z</published>
     <updated>2017-01-20T05:24:33.894Z</updated>
     
@@ -113,15 +113,15 @@
     
     </summary>
     
-      <category term="效率" scheme="http://fengchao.github.io/categories/%E6%95%88%E7%8E%87/"/>
+      <category term="效率" scheme="https://fengchao.github.io/categories/%E6%95%88%E7%8E%87/"/>
     
     
   </entry>
   
   <entry>
     <title>Scrapy - python spider</title>
-    <link href="http://fengchao.github.io/2016/09/08/Scrapy-python-spider/"/>
-    <id>http://fengchao.github.io/2016/09/08/Scrapy-python-spider/</id>
+    <link href="https://fengchao.github.io/2016/09/08/Scrapy-python-spider/"/>
+    <id>https://fengchao.github.io/2016/09/08/Scrapy-python-spider/</id>
     <published>2016-09-08T07:46:18.000Z</published>
     <updated>2017-01-20T05:43:00.501Z</updated>
     
@@ -152,15 +152,15 @@ $ scrapy runspider myspider.py
     
     </summary>
     
-      <category term="代码" scheme="http://fengchao.github.io/categories/%E4%BB%A3%E7%A0%81/"/>
+      <category term="代码" scheme="https://fengchao.github.io/categories/%E4%BB%A3%E7%A0%81/"/>
     
     
   </entry>
   
   <entry>
     <title>多线程-中断-效率</title>
-    <link href="http://fengchao.github.io/2016/07/22/Mutithread-efficency/"/>
-    <id>http://fengchao.github.io/2016/07/22/Mutithread-efficency/</id>
+    <link href="https://fengchao.github.io/2016/07/22/Mutithread-efficency/"/>
+    <id>https://fengchao.github.io/2016/07/22/Mutithread-efficency/</id>
     <published>2016-07-22T09:36:52.000Z</published>
     <updated>2017-01-20T05:46:56.011Z</updated>
     
@@ -172,15 +172,15 @@ $ scrapy runspider myspider.py
     
     </summary>
     
-      <category term="效率" scheme="http://fengchao.github.io/categories/%E6%95%88%E7%8E%87/"/>
+      <category term="效率" scheme="https://fengchao.github.io/categories/%E6%95%88%E7%8E%87/"/>
     
     
   </entry>
   
   <entry>
     <title>斯托克代尔悖论</title>
-    <link href="http://fengchao.github.io/2016/07/13/The-Stockdale-Paradox/"/>
-    <id>http://fengchao.github.io/2016/07/13/The-Stockdale-Paradox/</id>
+    <link href="https://fengchao.github.io/2016/07/13/The-Stockdale-Paradox/"/>
+    <id>https://fengchao.github.io/2016/07/13/The-Stockdale-Paradox/</id>
     <published>2016-07-13T01:08:17.000Z</published>
     <updated>2017-01-20T05:25:09.218Z</updated>
     
@@ -192,15 +192,15 @@ $ scrapy runspider myspider.py
     
     </summary>
     
-      <category term="心理学" scheme="http://fengchao.github.io/categories/%E5%BF%83%E7%90%86%E5%AD%A6/"/>
+      <category term="心理学" scheme="https://fengchao.github.io/categories/%E5%BF%83%E7%90%86%E5%AD%A6/"/>
     
     
   </entry>
   
   <entry>
     <title>Dvorak 键盘</title>
-    <link href="http://fengchao.github.io/2016/07/12/Dvorak/"/>
-    <id>http://fengchao.github.io/2016/07/12/Dvorak/</id>
+    <link href="https://fengchao.github.io/2016/07/12/Dvorak/"/>
+    <id>https://fengchao.github.io/2016/07/12/Dvorak/</id>
     <published>2016-07-12T03:13:18.000Z</published>
     <updated>2017-01-20T05:57:30.564Z</updated>
     
@@ -212,15 +212,15 @@ $ scrapy runspider myspider.py
     
     </summary>
     
-      <category term="技术" scheme="http://fengchao.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+      <category term="技术" scheme="https://fengchao.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
   </entry>
   
   <entry>
     <title>破釜沉舟学习法</title>
-    <link href="http://fengchao.github.io/2016/07/06/Destory-books/"/>
-    <id>http://fengchao.github.io/2016/07/06/Destory-books/</id>
+    <link href="https://fengchao.github.io/2016/07/06/Destory-books/"/>
+    <id>https://fengchao.github.io/2016/07/06/Destory-books/</id>
     <published>2016-07-06T01:11:05.000Z</published>
     <updated>2017-01-20T05:57:56.454Z</updated>
     
@@ -232,15 +232,15 @@ $ scrapy runspider myspider.py
     
     </summary>
     
-      <category term="效率" scheme="http://fengchao.github.io/categories/%E6%95%88%E7%8E%87/"/>
+      <category term="效率" scheme="https://fengchao.github.io/categories/%E6%95%88%E7%8E%87/"/>
     
     
   </entry>
   
   <entry>
     <title>攻克 Linux</title>
-    <link href="http://fengchao.github.io/2016/07/06/Learn-linux-the-hard-way/"/>
-    <id>http://fengchao.github.io/2016/07/06/Learn-linux-the-hard-way/</id>
+    <link href="https://fengchao.github.io/2016/07/06/Learn-linux-the-hard-way/"/>
+    <id>https://fengchao.github.io/2016/07/06/Learn-linux-the-hard-way/</id>
     <published>2016-07-06T01:10:03.000Z</published>
     <updated>2017-01-20T05:49:05.948Z</updated>
     
@@ -252,15 +252,15 @@ $ scrapy runspider myspider.py
     
     </summary>
     
-      <category term="Linux" scheme="http://fengchao.github.io/categories/Linux/"/>
+      <category term="Linux" scheme="https://fengchao.github.io/categories/Linux/"/>
     
     
   </entry>
   
   <entry>
     <title>会当临绝顶</title>
-    <link href="http://fengchao.github.io/2016/07/05/Archive-what-you-think/"/>
-    <id>http://fengchao.github.io/2016/07/05/Archive-what-you-think/</id>
+    <link href="https://fengchao.github.io/2016/07/05/Archive-what-you-think/"/>
+    <id>https://fengchao.github.io/2016/07/05/Archive-what-you-think/</id>
     <published>2016-07-05T05:06:43.000Z</published>
     <updated>2017-01-20T05:59:06.241Z</updated>
     
@@ -272,15 +272,15 @@ $ scrapy runspider myspider.py
     
     </summary>
     
-      <category term="心理学" scheme="http://fengchao.github.io/categories/%E5%BF%83%E7%90%86%E5%AD%A6/"/>
+      <category term="心理学" scheme="https://fengchao.github.io/categories/%E5%BF%83%E7%90%86%E5%AD%A6/"/>
     
     
   </entry>
   
   <entry>
     <title>最难解的代码问题</title>
-    <link href="http://fengchao.github.io/2016/07/05/Hard-Bugs/"/>
-    <id>http://fengchao.github.io/2016/07/05/Hard-Bugs/</id>
+    <link href="https://fengchao.github.io/2016/07/05/Hard-Bugs/"/>
+    <id>https://fengchao.github.io/2016/07/05/Hard-Bugs/</id>
     <published>2016-07-05T02:13:11.000Z</published>
     <updated>2017-01-20T05:52:25.014Z</updated>
     
@@ -292,15 +292,15 @@ $ scrapy runspider myspider.py
     
     </summary>
     
-      <category term="代码" scheme="http://fengchao.github.io/categories/%E4%BB%A3%E7%A0%81/"/>
+      <category term="代码" scheme="https://fengchao.github.io/categories/%E4%BB%A3%E7%A0%81/"/>
     
     
   </entry>
   
   <entry>
     <title>建立社群的步骤</title>
-    <link href="http://fengchao.github.io/2016/06/30/How-to-create-community/"/>
-    <id>http://fengchao.github.io/2016/06/30/How-to-create-community/</id>
+    <link href="https://fengchao.github.io/2016/06/30/How-to-create-community/"/>
+    <id>https://fengchao.github.io/2016/06/30/How-to-create-community/</id>
     <published>2016-06-30T03:27:49.000Z</published>
     <updated>2017-01-20T05:51:42.201Z</updated>
     
@@ -312,15 +312,15 @@ $ scrapy runspider myspider.py
     
     </summary>
     
-      <category term="经济" scheme="http://fengchao.github.io/categories/%E7%BB%8F%E6%B5%8E/"/>
+      <category term="经济" scheme="https://fengchao.github.io/categories/%E7%BB%8F%E6%B5%8E/"/>
     
     
   </entry>
   
   <entry>
     <title>创新者的窘境</title>
-    <link href="http://fengchao.github.io/2016/06/28/The-Innovators-Dilemma/"/>
-    <id>http://fengchao.github.io/2016/06/28/The-Innovators-Dilemma/</id>
+    <link href="https://fengchao.github.io/2016/06/28/The-Innovators-Dilemma/"/>
+    <id>https://fengchao.github.io/2016/06/28/The-Innovators-Dilemma/</id>
     <published>2016-06-28T02:31:57.000Z</published>
     <updated>2017-01-20T05:25:25.214Z</updated>
     
@@ -332,15 +332,15 @@ $ scrapy runspider myspider.py
     
     </summary>
     
-      <category term="经济" scheme="http://fengchao.github.io/categories/%E7%BB%8F%E6%B5%8E/"/>
+      <category term="经济" scheme="https://fengchao.github.io/categories/%E7%BB%8F%E6%B5%8E/"/>
     
     
   </entry>
   
   <entry>
     <title>技术类型和典型缺陷</title>
-    <link href="http://fengchao.github.io/2016/06/23/Tech-Type-and-solution/"/>
-    <id>http://fengchao.github.io/2016/06/23/Tech-Type-and-solution/</id>
+    <link href="https://fengchao.github.io/2016/06/23/Tech-Type-and-solution/"/>
+    <id>https://fengchao.github.io/2016/06/23/Tech-Type-and-solution/</id>
     <published>2016-06-23T09:56:13.000Z</published>
     <updated>2017-01-20T05:27:10.001Z</updated>
     
@@ -352,15 +352,15 @@ $ scrapy runspider myspider.py
     
     </summary>
     
-      <category term="效率" scheme="http://fengchao.github.io/categories/%E6%95%88%E7%8E%87/"/>
+      <category term="效率" scheme="https://fengchao.github.io/categories/%E6%95%88%E7%8E%87/"/>
     
     
   </entry>
   
   <entry>
     <title>甲骨文告谷歌 - 输了</title>
-    <link href="http://fengchao.github.io/2016/06/14/Google-win-Oracle/"/>
-    <id>http://fengchao.github.io/2016/06/14/Google-win-Oracle/</id>
+    <link href="https://fengchao.github.io/2016/06/14/Google-win-Oracle/"/>
+    <id>https://fengchao.github.io/2016/06/14/Google-win-Oracle/</id>
     <published>2016-06-14T06:34:38.000Z</published>
     <updated>2017-01-20T05:55:40.994Z</updated>
     
@@ -372,15 +372,15 @@ $ scrapy runspider myspider.py
     
     </summary>
     
-      <category term="开源" scheme="http://fengchao.github.io/categories/%E5%BC%80%E6%BA%90/"/>
+      <category term="开源" scheme="https://fengchao.github.io/categories/%E5%BC%80%E6%BA%90/"/>
     
     
   </entry>
   
   <entry>
     <title>Tmux 快速指南</title>
-    <link href="http://fengchao.github.io/2016/06/13/Tmux/"/>
-    <id>http://fengchao.github.io/2016/06/13/Tmux/</id>
+    <link href="https://fengchao.github.io/2016/06/13/Tmux/"/>
+    <id>https://fengchao.github.io/2016/06/13/Tmux/</id>
     <published>2016-06-13T03:17:28.000Z</published>
     <updated>2017-01-20T05:24:21.058Z</updated>
     
@@ -392,15 +392,15 @@ $ scrapy runspider myspider.py
     
     </summary>
     
-      <category term="技术" scheme="http://fengchao.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+      <category term="技术" scheme="https://fengchao.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
   </entry>
   
   <entry>
     <title>开源漏斗模型</title>
-    <link href="http://fengchao.github.io/2016/06/12/Open-source-funnel/"/>
-    <id>http://fengchao.github.io/2016/06/12/Open-source-funnel/</id>
+    <link href="https://fengchao.github.io/2016/06/12/Open-source-funnel/"/>
+    <id>https://fengchao.github.io/2016/06/12/Open-source-funnel/</id>
     <published>2016-06-12T08:08:03.000Z</published>
     <updated>2017-01-20T05:44:36.708Z</updated>
     
@@ -412,15 +412,15 @@ $ scrapy runspider myspider.py
     
     </summary>
     
-      <category term="开源" scheme="http://fengchao.github.io/categories/%E5%BC%80%E6%BA%90/"/>
+      <category term="开源" scheme="https://fengchao.github.io/categories/%E5%BC%80%E6%BA%90/"/>
     
     
   </entry>
   
   <entry>
     <title>为什么你会不堪重负</title>
-    <link href="http://fengchao.github.io/2016/06/08/why-people-burn-out/"/>
-    <id>http://fengchao.github.io/2016/06/08/why-people-burn-out/</id>
+    <link href="https://fengchao.github.io/2016/06/08/why-people-burn-out/"/>
+    <id>https://fengchao.github.io/2016/06/08/why-people-burn-out/</id>
     <published>2016-06-08T08:35:28.000Z</published>
     <updated>2017-01-20T05:22:27.788Z</updated>
     
@@ -432,7 +432,7 @@ $ scrapy runspider myspider.py
     
     </summary>
     
-      <category term="效率" scheme="http://fengchao.github.io/categories/%E6%95%88%E7%8E%87/"/>
+      <category term="效率" scheme="https://fengchao.github.io/categories/%E6%95%88%E7%8E%87/"/>
     
     
   </entry>
