@@ -7,6 +7,78 @@
     </url>
 
     <url>
+        <loc>https://fengchao.github.io/2008/08/12/XiaoQu/</loc>
+        <lastmod>2017-02-27T07:47:31.185Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://fengchao.github.io/2008/08/14/2008-08-14/</loc>
+        <lastmod>2017-02-15T08:42:12.724Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://fengchao.github.io/2008/08/17/2008-08-17/</loc>
+        <lastmod>2017-02-15T08:36:57.301Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://fengchao.github.io/2008/08/19/2008-08-19/</loc>
+        <lastmod>2017-02-15T08:34:08.424Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://fengchao.github.io/2008/09/06/2008-09-06/</loc>
+        <lastmod>2017-02-15T08:31:11.847Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://fengchao.github.io/2008/08/25/Maidou/</loc>
+        <lastmod>2017-02-15T08:30:34.537Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://fengchao.github.io/2017/02/07/Psychology-in-games/</loc>
+        <lastmod>2017-02-07T06:17:40.322Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://fengchao.github.io/2008/09/17/2008-09-17/</loc>
+        <lastmod>2017-02-06T08:35:14.499Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://fengchao.github.io/2008/10/09/Dao/</loc>
+        <lastmod>2017-02-06T08:26:05.529Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://fengchao.github.io/2008/10/28/Squeeze/</loc>
         <lastmod>2017-02-06T08:16:54.622Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -231,7 +303,7 @@
     </url>
 
     <url>
-        <loc>https://fengchao.github.io/2016/05/27/cmd-story/</loc>
+        <loc>https://fengchao.github.io/2016/05/27/Cmd-story/</loc>
         <lastmod>2017-01-20T05:58:26.121Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -239,7 +311,7 @@
     </url>
 
     <url>
-        <loc>https://fengchao.github.io/2016/05/21/dbus/</loc>
+        <loc>https://fengchao.github.io/2016/05/21/Dbus/</loc>
         <lastmod>2017-01-20T05:58:12.941Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -255,7 +327,7 @@
     </url>
 
     <url>
-        <loc>https://fengchao.github.io/2016/05/27/designated-initializers/</loc>
+        <loc>https://fengchao.github.io/2016/05/27/Designated-initializers/</loc>
         <lastmod>2017-01-20T05:58:01.424Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -335,7 +407,7 @@
     </url>
 
     <url>
-        <loc>https://fengchao.github.io/2016/05/27/flashroom/</loc>
+        <loc>https://fengchao.github.io/2016/05/27/Flashroom/</loc>
         <lastmod>2017-01-20T05:56:51.368Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -479,7 +551,7 @@
     </url>
 
     <url>
-        <loc>https://fengchao.github.io/2016/04/06/hello-world/</loc>
+        <loc>https://fengchao.github.io/2016/04/06/Hello-world/</loc>
         <lastmod>2017-01-20T05:52:13.318Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -543,7 +615,7 @@
     </url>
 
     <url>
-        <loc>https://fengchao.github.io/2016/05/27/initrd/</loc>
+        <loc>https://fengchao.github.io/2016/05/27/Initrd/</loc>
         <lastmod>2017-01-20T05:49:50.481Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -559,7 +631,7 @@
     </url>
 
     <url>
-        <loc>https://fengchao.github.io/2013/02/07/kde-4-10/</loc>
+        <loc>https://fengchao.github.io/2013/02/07/KDE-4-10/</loc>
         <lastmod>2017-01-20T05:49:33.701Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -591,7 +663,7 @@
     </url>
 
     <url>
-        <loc>https://fengchao.github.io/2006/06/07/limitation-of-rational/</loc>
+        <loc>https://fengchao.github.io/2006/06/07/Limitation-of-rational/</loc>
         <lastmod>2017-01-20T05:48:59.901Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -703,7 +775,7 @@
     </url>
 
     <url>
-        <loc>https://fengchao.github.io/2015/11/07/nodejs-nvm/</loc>
+        <loc>https://fengchao.github.io/2015/11/07/Nodejs-nvm/</loc>
         <lastmod>2017-01-20T05:46:06.974Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -727,7 +799,7 @@
     </url>
 
     <url>
-        <loc>https://fengchao.github.io/2016/11/25/npm/</loc>
+        <loc>https://fengchao.github.io/2016/11/25/Npm/</loc>
         <lastmod>2017-01-20T05:45:47.801Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -775,7 +847,7 @@
     </url>
 
     <url>
-        <loc>https://fengchao.github.io/2016/05/27/pkgconfig/</loc>
+        <loc>https://fengchao.github.io/2016/05/27/Pkgconfig/</loc>
         <lastmod>2017-01-20T05:44:16.211Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -799,7 +871,7 @@
     </url>
 
     <url>
-        <loc>https://fengchao.github.io/2016/05/21/programer-roadmap/</loc>
+        <loc>https://fengchao.github.io/2016/05/21/Programer-roadmap/</loc>
         <lastmod>2017-01-20T05:43:39.368Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -831,7 +903,7 @@
     </url>
 
     <url>
-        <loc>https://fengchao.github.io/2015/10/08/remote-work/</loc>
+        <loc>https://fengchao.github.io/2015/10/08/Remote-work/</loc>
         <lastmod>2017-01-20T05:43:08.928Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -855,7 +927,7 @@
     </url>
 
     <url>
-        <loc>https://fengchao.github.io/2015/10/12/self-promote/</loc>
+        <loc>https://fengchao.github.io/2015/10/12/Self-promote/</loc>
         <lastmod>2017-01-20T05:42:42.421Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -903,7 +975,7 @@
     </url>
 
     <url>
-        <loc>https://fengchao.github.io/2012/05/09/stock-k-line/</loc>
+        <loc>https://fengchao.github.io/2012/05/09/Stock-k-line/</loc>
         <lastmod>2017-01-20T05:41:25.448Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -919,7 +991,7 @@
     </url>
 
     <url>
-        <loc>https://fengchao.github.io/2016/05/27/submit-code-to-upstream-kernel/</loc>
+        <loc>https://fengchao.github.io/2016/05/27/Submit-code-to-upstream-kernel/</loc>
         <lastmod>2017-01-20T05:40:59.711Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -951,7 +1023,7 @@
     </url>
 
     <url>
-        <loc>https://fengchao.github.io/2016/05/21/testdisk/</loc>
+        <loc>https://fengchao.github.io/2016/05/21/Testdisk/</loc>
         <lastmod>2017-01-20T05:26:46.194Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1047,7 +1119,7 @@
     </url>
 
     <url>
-        <loc>https://fengchao.github.io/2015/10/12/volatile-in-C/</loc>
+        <loc>https://fengchao.github.io/2015/10/12/Volatile-in-C/</loc>
         <lastmod>2017-01-20T05:23:18.274Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1063,7 +1135,7 @@
     </url>
 
     <url>
-        <loc>https://fengchao.github.io/2016/06/08/why-people-burn-out/</loc>
+        <loc>https://fengchao.github.io/2016/06/08/Why-people-burn-out/</loc>
         <lastmod>2017-01-20T05:22:27.788Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1127,7 +1199,7 @@
     </url>
 
     <url>
-        <loc>https://fengchao.github.io/2016/05/21/patch/</loc>
+        <loc>https://fengchao.github.io/2016/05/21/Patch/</loc>
         <lastmod>2017-01-20T03:57:03.516Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
