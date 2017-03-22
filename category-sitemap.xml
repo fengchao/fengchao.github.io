@@ -84,13 +84,6 @@
     </url>
 
     <url>
-        <loc>https://fengchao.github.io/categories/%E5%BD%B1%E8%A7%86/</loc>
-        <lastmod>2017-02-15T08:30:34.537Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://fengchao.github.io/categories/%E4%B8%AA%E4%BA%BA/</loc>
         <lastmod>2017-02-15T08:42:12.724Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -106,7 +99,14 @@
 
     <url>
         <loc>https://fengchao.github.io/categories/%E6%8A%80%E6%9C%AF/</loc>
-        <lastmod>2017-02-27T07:52:27.248Z</lastmod>
+        <lastmod>2017-03-22T05:07:44.280Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://fengchao.github.io/categories/%E5%BD%B1%E8%A7%86/</loc>
+        <lastmod>2017-03-22T05:11:16.437Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
