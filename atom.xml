@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://fengchao.github.io/"/>
-  <updated>2017-03-22T09:55:59.000Z</updated>
+  <updated>2017-02-07T06:17:40.000Z</updated>
   <id>https://fengchao.github.io/</id>
   
   <author>
@@ -14,66 +14,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>Wen Quan Yi</title>
-    <link href="https://fengchao.github.io/2017/03/22/Wen-Quan-Yi/"/>
-    <id>https://fengchao.github.io/2017/03/22/Wen-Quan-Yi/</id>
-    <published>2017-03-22T09:55:18.000Z</published>
-    <updated>2017-03-22T09:55:59.000Z</updated>
-    
-    <content type="html"><![CDATA[<!-- build time:Wed Jun 07 2017 15:23:08 GMT+0800 (CST) --><p>蓋文字者，經藝之本，王政之始</p><p>——说文解字序 许慎（东汉） 让汉字永远自由</p><p>也许现在你已经习惯每天面对电脑浏览互联网上的中文信息，和亲朋好友收发中文邮件或者习惯用手机接受别人发来的中文短信。如果有人告诉你这些汉字并非时免费使用的，都属于某个商业公司所有，你会有什么样的感受呢？</p><p>汉字成为私人产品</p><p>在计算机进入中国之初并不能显示汉字，而当时汉字显示的技术有着巨大的利润空间，产生了利用硬件字库（如我们常说的汉卡）和软字库两种显示汉字的技术。当 微软推出了Windows 95操作系统后，安装了Windows 95操作系统的个人电脑不再需要额外的汉卡支持汉字的显示，代替汉卡的就是现在经常谈到的汉字字库的显示方式。</p><p>无论是那种方式，他们都需要使用汉字的点阵字库，但正是汉字显示技术的兴起，促成了国家标准点阵汉字标准的出现。</p><p>汉字的电子化具有一定公共性、也关系到能否自由顺畅的进行中文电子信息交流。字库的开发虽然具有巨大的市场利益，但还需要组织巨大的人力物力 开进行开发，而且这些字库的开发并不是一两个人花一两年时间就可以做到的，所以国家采取了授权中国标准技术开发公司等专门从事汉字字库字模及其周边开发的 企业进行研发。最后形成的标准归国家并强制执行，而具体的字库字形内容归企业所有。</p><p>在国家强制标准的推动之下，这一事实垄断造成无论是谁，只要使用中文电子汉字都必须向这些把握汉字字体的公司付费，同时这也造成不同字体之间显示的差异。</p><p>小知识</p><p>字库是储存在电脑、手机等设备里的文字仓库，汉字的显示就是从这些仓库中找到对应的汉字。但汉字数目巨大，如果全部制作出来，其数字内容的大 小将异常庞大。不过常用的汉子只有寥寥数千字，所以国家和相关企业选取了汉字里面的常用字制作了国家标准和相应的字库。不过就算这样，一套精美的汉字字库 从设计到最后成型，也需要2~3年的时间，所以汉字字库的价格昂贵。</p><p>自由字库欲破字库垄断</p><p>手机、终端设备、显示仪器、仪表等一切电子汉字显示打印等产品和设备都需要汉字字体，因为国家指定了GB18030作为全国的汉字编码标准并且强制实施，按理说应该有一套免费字库给公众使用，但事实上却没有一套可供使用的免费的字库。</p><p>原因在于购买一整套汉字字体的费用是巨大的，而不同公司的字库大小和汉字个数的不同造成了中文电子汉字显示方面的麻烦。鉴于此，香港、台湾地 区提供了相应的满足汉字标准要求的字体，放在网上供个人免费使用。特别是2005年12月23日，东京大学的坂村健教授等人，将目前收录字数最多的汉字字 体集对软件开发公司无偿公开，坂村健认为“一种类似社会基础设施的产品向用户征收费用是不对的，这样做还会阻碍计算机行业的发展，庞大的基础设施应该是免 费提供的”。</p><p>相比之下，大陆至今没有一个好用的开源字库，所以，微软公司使用的中文字体也都是从国内的商业公司手中买来的。</p><p>要让公众拥有一套免费的开源字体，解决这个问题的方法有两个途径：政府通过强制或收购具有版权的整套字体获得无限授权，向公众开放字体的使用。或者通过某个个体或者组织自己重新一点一点地制作出整套不同字形的汉字。</p><p>由于没有公司愿意公开其私有字形字库免费给消费者使用，特别是在GNU/Linux领域，怀着让每一个中文电脑用户受益的计划，文泉驿这个朝着自由开放的汉字进军的开发项目应运而生。</p><p>自由字库正在进行时</p><p>文泉驿是一群致力于在计算机世界中推广汉字，丰富电子汉字资源的志愿者组成的非赢利性组织。他们希望通过志愿者无私的劳动，使得所有人无论在世界上任何一个角落，无论在什么不同的系统下都可以免费地获得电子汉字资源，能够流畅地通过汉字进行交流。</p><p>文泉驿将开发一套完整的、美观的、基于自由软件原则的汉字字库，将包含各个大小的点阵汉字以及标准宋体、细宋体、报宋体、黑体的矢量汉字（可以无限放缩）。如果条件可能，还将制作隶书、行书等矢量艺术字体。</p><p>这些字体将覆盖Unicode标准4.0所收录的7万多中日韩汉字。这个字库将允许Linux用户、Windows用户、Mac用户、Unix和PalmOS等主流操作系统的用户免费获得和使用，从而实现中文的无障碍交流。</p><p>文泉驿表示已经在Sourceforge.net立项，所开发出来的汉字字体，包括点阵字体和矢量字体，将选择使用自由软件形式的授权（GPL或 者其他合适的授权形式），为了防止版权被其他商业机构利用，这些字体的版权将归文泉驿信任委员会（由会员产生）所有，文泉驿信任委员会承认参与者对相应的 字体创造性开发拥有署名权。</p><p>目前，文泉驿项目已经有了很大的进展。只要每个愿意为之付出努力的公众抽出一天哪怕几分钟的时间描出一个字，将极大地缩短开源中文字体的最终面世时间。</p><p>我们也期望让汉字无障碍地自由使用的那一天早点到来。</p><p>开源汉字的领军人物——房骞骞</p><p>房骞骞简介：1995年从河南考入电子科技大学微波工程系。2000年9月在美国的达特茅斯学院（Dartmouth College）攻读博士学位，方向是微波医学成像。毕业后在波士顿麻省总医院Martinos生物医学成像中心作博士后，研究课题是肿瘤的红外激光成像 技术。</p><p>房骞骞是文泉驿项目的负责人，自小就对中国传统文化有很浓厚的兴趣，由于他的家乡是甲骨文的发源地，因此他对文字的兴趣尤为强烈。房骞骞的研究课题和文字毫不相关，他为何会投身到开源汉字的创作中呢？记者为此采访了他。</p><p>文泉驿的诞生</p><p>房骞骞告诉记者：“当初想到做这个项目可能有两个方面的原因”。在2002年的时候，房骞骞在编写一个“数学软件常见问题集(FAQ)”的电 子文档，他选择了一个Wiki引擎——UseModWiki，这样所有人都可以参与改进这个文档。再对UseModWiki进行改进的过程中，他被 UseModWiki代码的简练和强大的功能所吸引。</p><p>同时由于工作关系，他需要完全转换到Linux下工作，于是曾经困扰过他很久的中文问题再次成为他工作的一个主要障碍。于是，他萌生了使用Javascript扩展Wiki页面编辑器来从事特殊性文档——中文字体协同开发的想法。</p><p>“Wiki本身具备支持大规模、并行化、分布式开发的优势，加之字体开发本身，可并行化、颗粒化（granularity）的特性非常好”， 于是他自己经过一两天调研、代码改造，并写了一些简单的说明文字，于2004年10月27日正式成立了这个项目，当时的名字叫做“点阵中文Wiki”。当 时，整个过程都是他一个人完成的。</p><p>在中文社区，开源的中文字库主要为台湾的一些公司和志愿者完成的繁体字库，简体中文矢量字库至今据他所知只有一个（台湾文鼎公司提供）。开 源中文字库的短缺从很大程度上使得中文Linux的发展依靠购买商业字库，国内红旗Linux就是其中一例。目前简体中文字库的这些诸多问题，造成了在 Linux下使用中文时候，很多中文字体显示效果极差，甚至无法显示。</p><p>“而如果拥有开源中文字库不仅可以满足可以在很大程度上满足上述需要。而且可以解决困扰大多数Linux中文用户费时费力的所谓“美化”问题，降低中文Linux入门门坎，促进Linux在国内用户中的发展”。</p><p>开源中文字体诞生需要热心参与</p><p>上万的汉字字体都需要人工地对点阵排布进行优化，即保证汉字结构的美观，又保证其易读性。而这些优化目前还没有有效的算法来自动实现，需要消耗开发者个人巨大的精力和时间，所以文泉驿项目需要很多热心的参与者。</p><p>房骞骞介绍说：“从目前网站的浏览记录来看，每天来自不同IP的浏览者大概有3000多个，每天平均点击数为8000多个。不过，真正参与汉 字开发的人还是相当有限，完成60个点阵或50个以上矢量汉字制作的参与者不超过70个；而能够自始至终支持这个计划、参与这个计划的志愿者不足10 个”。</p><p>由于这一项目的公益性、非商业性等问题没有资金来源，所以没有媒体愿意进行宣传。参与者不多、积极性也非常有限，网站的规模也因此受到很大程度的限制。</p><p>由于Wiki的开发方式，参与者之间是相对独立和松散的。参与者根据自己的时间特点选择适当的参与方式，而对于发送的点阵或者矢量字体，最后的质量审核、软件测试、文档和发布管理工作主要由少数的核心会员来负责。</p><p>其中ID为wanghong和ailantian的参与者，以无限的毅力和耐心分别对点阵和矢量汉字的开发做出过关键性的贡献； caiqian和fundawang在计划初期对计划发展提出过有价值的建议；tchaikov一直到现在仍然积极参与点阵“痛苦”、“枯燥”的审核和测 试工作；niqiu、fiag等朋友参与了很多开发工作，而且积极地在各种场合推广这个计划。</p><p>niqiu甚至自己印传单到高校去宣传。目前的开发团队都是通过参与计划相互联系和认识的。房骞骞说：“虽然他们当中很多我甚至只知道网络ID，但我对他们的贡献充满了敬佩和感激。”</p><p>不过幸运的是，温泉驿陆续收到了一些热心朋友的汇款资助，“虽然现在一共只有100美元左右，但至少明年的网站租用费可以解决，更重要的是，这些捐赠对于开发者来说是一种巨大的鼓舞”，房骞骞希望通过《电脑报》向他们表示特别的感谢。</p><p>文泉驿字体的现实和未来</p><p>2006年3月19日，文泉驿发布了开发代号为北斗的文泉半两宋体字体，版本号为v0.7。这个版本是通过半年多的努力，加上上万点阵的优 化，对每个字体无数细致的推敲和斟酌才产生的。这也可以说是目前这个开源中文计划的里程碑。文泉驿新点阵V0.7（北斗）无论从完整性、实用性还是从艺术 性来说，都较以前达到一个质的飞跃。</p><p>而矢量部分的开发工作基于房骞骞一个具有尝试性质的开发方法，他于去年4月正式发布了笔画分析的界面程序，至今，已经完成了19,816个 拥有开源图片的GBK汉字的笔画分析，900多个CJK扩展A区汉字和近4,000个CJK扩展B区汉字的分析工作。房骞骞介绍说：“这里面有1/5的汉 字可能需要重新制作，但如果进度顺利的话，我相信今年我们的开源矢量字体能与世人见面。”</p><p>可以相信，随着中文开源字体问题的解决，假以时日GNU/Linux下的中文信息显示瓶颈就可以得到解决了，那么基于GNU/Linux下的商业办公、文档处理和教育等相关软件的中文化问题都将迎刃而解了。</p><p>请大家支持文泉驿，不要沉迷于微软雅黑美化之类的研究了。</p><!-- rebuild by neat -->]]></content>
-    
-    <summary type="html">
-    
-      &lt;!-- build time:Wed Jun 07 2017 15:23:08 GMT+0800 (CST) --&gt;&lt;p&gt;蓋文字者，經藝之本，王政之始&lt;/p&gt;&lt;p&gt;——说文解字序 许慎（东汉） 让汉字永远自由&lt;/p&gt;&lt;p&gt;也许现在你已经习惯每天面对电脑浏览互联网上的中文信息，和
-    
-    </summary>
-    
-      <category term="开源" scheme="https://fengchao.github.io/categories/%E5%BC%80%E6%BA%90/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>点名</title>
-    <link href="https://fengchao.github.io/2017/03/22/Poll-2016/"/>
-    <id>https://fengchao.github.io/2017/03/22/Poll-2016/</id>
-    <published>2017-03-22T09:30:55.000Z</published>
-    <updated>2017-03-22T09:33:39.000Z</updated>
-    
-    <content type="html"><![CDATA[<!-- build time:Wed Jun 07 2017 15:23:08 GMT+0800 (CST) --><p>1、2006你最开心的是什么？<br>回家</p><p>2、2006最难过的事是什么？<br>离别</p><p>3、2006冬天最大的心愿是什么？<br>忘记</p><p>4、最大的愿望<br>愿望能实现</p><p>5、如果现在可以让你随心所欲去旅行，你想去哪里？<br>The Matrix</p><p>6、你最满意自己身体哪个部位？<br>大脑</p><p>与别人初次见面你会注意他(她)哪个部位？<br>女生——头发<br>男生——看他旁边的女生</p><p>7、失眠过吗？你用什么办法对抗失眠？<br>上厕所</p><p>8、会不会做饭？希望你的伴侣会做饭吗？<br>不会，of cause</p><p>9、你最想做哪个动画片角色？为什么？<br>克罗诺 ，因为罗塞特</p><p>10、在你心中我是怎么样一个人？<br>蓝色</p><p>11、如果可以重来，你最想改变的是什么？<br>chaos ，什么也不敢动</p><p>也许应该改变的就是什么都不敢动，也许应该紧紧抓住蝴蝶的翅膀，也许应该重建世界观</p><p>12、觉得自己是个自恋的人吗？<br>不是</p><p>13、爱人爱到怎样的程度才算超过爱自己呢？<br>自己是谁？</p><p>14、你理想的伴侣应该具备什么样的品质？</p><p>参见问题9</p><!-- rebuild by neat -->]]></content>
-    
-    <summary type="html">
-    
-      &lt;!-- build time:Wed Jun 07 2017 15:23:08 GMT+0800 (CST) --&gt;&lt;p&gt;1、2006你最开心的是什么？&lt;br&gt;回家&lt;/p&gt;&lt;p&gt;2、2006最难过的事是什么？&lt;br&gt;离别&lt;/p&gt;&lt;p&gt;3、2006冬天最大的心愿是什么？&lt;br&gt;忘
-    
-    </summary>
-    
-      <category term="个人" scheme="https://fengchao.github.io/categories/%E4%B8%AA%E4%BA%BA/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Wen-Chuan</title>
-    <link href="https://fengchao.github.io/2017/03/22/Wen-Chuan/"/>
-    <id>https://fengchao.github.io/2017/03/22/Wen-Chuan/</id>
-    <published>2017-03-22T05:59:18.000Z</published>
-    <updated>2017-03-22T05:59:59.000Z</updated>
-    
-    <content type="html"><![CDATA[<!-- build time:Wed Jun 07 2017 15:23:08 GMT+0800 (CST) --><p>在自然灾害面前，个人真的很渺小。几万人，转眼间就没了，想起来就揪心。今天听到灾区缺 AB 型血，下午就请假去了人民广场，排了 4 个小时的队，最后终于献了 400cc 。后面许多来到的人都被劝回去了，因为采血车没有那么大的处理能力，而且上海这边还没有正式向灾区调血。</p><p>最后的时候有一个49岁的老太太来献血，曾经插队到东北，献过三次血，下月就要 50 岁了，就不能献血了，所以今天特地来献血。感动得一塌糊涂。</p><p>灾区人民挺住，全国人民是你们的坚强后盾。</p><p>PS：今天居然在央视看到采访了，虽然是一闪而过。</p><!-- rebuild by neat -->]]></content>
-    
-    <summary type="html">
-    
-      &lt;!-- build time:Wed Jun 07 2017 15:23:08 GMT+0800 (CST) --&gt;&lt;p&gt;在自然灾害面前，个人真的很渺小。几万人，转眼间就没了，想起来就揪心。今天听到灾区缺 AB 型血，下午就请假去了人民广场，排了 4 个小时的队，最后终于献了 
-    
-    </summary>
-    
-      <category term="个人" scheme="https://fengchao.github.io/categories/%E4%B8%AA%E4%BA%BA/"/>
-    
-    
-  </entry>
   
   <entry>
     <title>游戏中的心理学</title>
@@ -433,6 +373,66 @@ $ scrapy runspider myspider.py
     </summary>
     
       <category term="效率" scheme="https://fengchao.github.io/categories/%E6%95%88%E7%8E%87/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>甲骨文告谷歌 - 输了</title>
+    <link href="https://fengchao.github.io/2016/06/14/Google-win-Oracle/"/>
+    <id>https://fengchao.github.io/2016/06/14/Google-win-Oracle/</id>
+    <published>2016-06-14T06:34:38.000Z</published>
+    <updated>2017-01-20T05:55:40.000Z</updated>
+    
+    <content type="html"><![CDATA[<!-- build time:Wed Jun 07 2017 15:23:08 GMT+0800 (CST) --><h3 id="Java-开源十年"><a href="#Java-开源十年" class="headerlink" title="Java 开源十年"></a>Java 开源十年</h3><p>十年前 <a href="http://fengchao.github.io/2006/11/16/Sun-Opens-Java/">Sun 开源 Java</a> 的时候，普天同庆。一个新的世界展现在 Java 眼前，一个开源的 Java 吸引力更多开发者和公司的贡献。十年间，</p><p>谷歌做了 Android，用 Java 作为软件开发语言。Android 凭借开源属性，和苹果展开激烈竞争，成为世界第一手机操作系统。</p><h3 id="专利流氓搅局"><a href="#专利流氓搅局" class="headerlink" title="专利流氓搅局"></a>专利流氓搅局</h3><p>甲骨文收购了 Sun，但是花了很多年时间，依然搞不清楚怎么通过开源软件盈利，看到 Android 这么风生水起，显然眼红的不行。于是拿起专利大棒，状告谷歌侵权并索赔 90 亿美元。</p><p>甲骨文自己在 Java 开发上鲜有作为，却暗指谷歌 Android 的成功完全是 Java 带来的，说的好像自己也能搞出来一个 Android 似的，在专利流氓的道路上越走越远。</p><p>旧金山联邦法庭陪审团今日已做出裁决，认定谷歌 Android 并未侵犯 Oracle 所有的 Java 版权。Google 表示，陪审团的认定代表了 Android 生态体系、Java 开发社区以及依靠开放免费编程语言开发创新消费者产品的软件开发者的胜利。松下一口气的不只有 Google，也包括成千上万的软件开发者。</p><h3 id="阴霾笼罩-Java"><a href="#阴霾笼罩-Java" class="headerlink" title="阴霾笼罩 Java"></a>阴霾笼罩 Java</h3><p>虽然官司赢了，但是 Java 的开源道路已经蒙上了厚厚的阴霾。很多公司再做创新性开发的时候，一定会考虑避免再拿 Java 作为核心组件。毕竟不是每个公司都能像谷歌一样请到最好的律师，能够和甲骨文巨头搞法律对战。</p><p>微软一直想做，但是没有做成的事情，甲骨文做到了。</p><p>软件版权，已经成为创新的障碍；软件版权，应该消亡。</p><p><img src="/images/conways_law.png" alt="Sun 开源 Java"></p><!-- rebuild by neat -->]]></content>
+    
+    <summary type="html">
+    
+      &lt;!-- build time:Wed Jun 07 2017 15:23:08 GMT+0800 (CST) --&gt;&lt;h3 id=&quot;Java-开源十年&quot;&gt;&lt;a href=&quot;#Java-开源十年&quot; class=&quot;headerlink&quot; title=&quot;Java 开源十年&quot;&gt;&lt;/a&gt;
+    
+    </summary>
+    
+      <category term="开源" scheme="https://fengchao.github.io/categories/%E5%BC%80%E6%BA%90/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Tmux 快速指南</title>
+    <link href="https://fengchao.github.io/2016/06/13/Tmux/"/>
+    <id>https://fengchao.github.io/2016/06/13/Tmux/</id>
+    <published>2016-06-13T03:17:28.000Z</published>
+    <updated>2017-01-20T05:24:21.000Z</updated>
+    
+    <content type="html"><![CDATA[<!-- build time:Wed Jun 07 2017 15:23:08 GMT+0800 (CST) --><h2 id="启动"><a href="#启动" class="headerlink" title="启动"></a>启动</h2><table><thead><tr><th>操作</th><th>命令</th></tr></thead><tbody><tr><td>启动</td><td>tmux</td></tr><tr><td>帮助</td><td>^b ?</td></tr></tbody></table><h2 id="会话"><a href="#会话" class="headerlink" title="会话"></a>会话</h2><table><thead><tr><th>操作</th><th>命令</th></tr></thead><tbody><tr><td>新建会话</td><td>tmux new-session -s play</td></tr><tr><td>重命名会话</td><td>tmux rename-session tutorial</td></tr><tr><td>查看会话</td><td>tmux ls</td></tr><tr><td>加入会话</td><td>tmux attach -t ‘’session’’</td></tr><tr><td>脱离会话</td><td>^b d</td></tr></tbody></table><h2 id="窗口"><a href="#窗口" class="headerlink" title="窗口"></a>窗口</h2><table><thead><tr><th>操作</th><th>命令</th></tr></thead><tbody><tr><td>创建窗口</td><td>^b c</td></tr><tr><td>关闭窗口</td><td>^d</td></tr><tr><td>下个窗口</td><td>^b n</td></tr><tr><td>上个窗口</td><td>^b p</td></tr><tr><td>最后窗口</td><td>^b l</td></tr><tr><td>选择窗口</td><td>^b w</td></tr><tr><td>查找窗口</td><td>^b f</td></tr></tbody></table><h2 id="面板"><a href="#面板" class="headerlink" title="面板"></a>面板</h2><table><thead><tr><th>操作</th><th>命令</th></tr></thead><tbody><tr><td>水平分割</td><td>^b %</td></tr><tr><td>垂直分割</td><td>^b “</td></tr><tr><td>切换</td><td>^b o</td></tr><tr><td>放大</td><td>^b z</td></tr></tbody></table><!-- rebuild by neat -->]]></content>
+    
+    <summary type="html">
+    
+      &lt;!-- build time:Wed Jun 07 2017 15:23:08 GMT+0800 (CST) --&gt;&lt;h2 id=&quot;启动&quot;&gt;&lt;a href=&quot;#启动&quot; class=&quot;headerlink&quot; title=&quot;启动&quot;&gt;&lt;/a&gt;启动&lt;/h2&gt;&lt;table&gt;&lt;thead&gt;
+    
+    </summary>
+    
+      <category term="技术" scheme="https://fengchao.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>开源漏斗模型</title>
+    <link href="https://fengchao.github.io/2016/06/12/Open-source-funnel/"/>
+    <id>https://fengchao.github.io/2016/06/12/Open-source-funnel/</id>
+    <published>2016-06-12T08:08:03.000Z</published>
+    <updated>2017-01-20T05:44:36.000Z</updated>
+    
+    <content type="html"><![CDATA[<!-- build time:Wed Jun 07 2017 15:23:08 GMT+0800 (CST) --><p><img src="/images/Funnel.png" alt="Funnel" title="Funnel"></p><h2 id="销售漏斗"><a href="#销售漏斗" class="headerlink" title="销售漏斗"></a>销售漏斗</h2><p>销售中有一个经典的漏斗模型，一个用户需要一系列步骤才会真正购买。在每一个步骤上，都会有用户止步不前，所以最终购买的用户仅仅是潜在用户的很小一部分。</p><ol><li>潜在客户</li><li>了解产品</li><li>浏览网页</li><li>产生购买欲望</li><li>点击购物车</li><li>网银付款</li><li>快递收货</li><li>实际使用</li></ol><h2 id="开发漏斗"><a href="#开发漏斗" class="headerlink" title="开发漏斗"></a>开发漏斗</h2><p>同样，在开源开发中也有类似的漏斗模型存在:</p><ol><li>使用产品</li><li>参与社区讨论</li><li>首次参与贡献</li><li>长期开发者</li><li>核心开发者</li></ol><p>同样的，每一步都会有开发者止步不前，只有极少数人会成为核心开发者。所以为了提高最终的成功可能，获得更多的开发者，一个开源产品也需要进行运营工作。</p><h2 id="运营开源产品"><a href="#运营开源产品" class="headerlink" title="运营开源产品"></a>运营开源产品</h2><h3 id="用户社区"><a href="#用户社区" class="headerlink" title="用户社区"></a>用户社区</h3><p>互联网经济中，所有公司都已经大大提高了对用户社区的重视程度。对开源产品来说，更是如此。很多开源项目都有非常活跃的论坛、IRC、邮件列表等等，老用户帮助新用户。</p><h3 id="首次贡献"><a href="#首次贡献" class="headerlink" title="首次贡献"></a>首次贡献</h3><p>大部分用户开源软件的首次贡献，都是在使用的过程中遇到 Bug。为了解决自己遇到的问题，就去查看代码，找到问题原因，并提交补丁。</p><p>和封闭系统相比，开源系统大大降低了活跃用户参与贡献的难度。尤其是 <a href="https://github.com/" target="_blank" rel="external">Github</a> 的 pull request 机制，更是简化了 patch 提交和合并流程。为了让更多的用户进行首次贡献，一个开源项目最好提供一份快速启动手册，一个专门的页面介绍如何进行贡献。</p><h3 id="长期贡献"><a href="#长期贡献" class="headerlink" title="长期贡献"></a>长期贡献</h3><p>首次贡献变为长期贡献，是一个很艰难的过程。除了解决自己的问题，还是需要额外的动力。对于开源软件来说，商业社会惯用的钱已经起不了作用了。</p><p>不为钱，则为利。需要给这些开发者足够的荣誉，比如贡献者列表等等。激发人对内心自我实现的渴望。</p><!-- rebuild by neat -->]]></content>
+    
+    <summary type="html">
+    
+      &lt;!-- build time:Wed Jun 07 2017 15:23:08 GMT+0800 (CST) --&gt;&lt;p&gt;&lt;img src=&quot;/images/Funnel.png&quot; alt=&quot;Funnel&quot; title=&quot;Funnel&quot;&gt;&lt;/p&gt;&lt;h2 id=&quot;销售漏斗&quot;&gt;&lt;a
+    
+    </summary>
+    
+      <category term="开源" scheme="https://fengchao.github.io/categories/%E5%BC%80%E6%BA%90/"/>
     
     
   </entry>
