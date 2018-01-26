@@ -8,7 +8,15 @@
 
     <url>
         <loc>https://fengchao.github.io/2008/08/07/Control-robot-from-monkey-brain/</loc>
-        <lastmod>2018-01-26T10:00:10.161Z</lastmod>
+        <lastmod>2018-01-26T10:04:02.175Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://fengchao.github.io/2006/05/31/Robot5/</loc>
+        <lastmod>2018-01-26T10:03:22.118Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -113,14 +121,6 @@
     <url>
         <loc>https://fengchao.github.io/2006/05/25/Computing-Machinery-and-Intelligence/</loc>
         <lastmod>2017-03-23T10:10:54.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://fengchao.github.io/2006/05/31/Robot5/</loc>
-        <lastmod>2017-03-23T09:58:54.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
