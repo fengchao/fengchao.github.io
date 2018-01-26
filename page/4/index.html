@@ -1,0 +1,630 @@
+<!-- build time:Fri Jan 26 2018 17:29:22 GMT+0800 (中国标准时间) --><!doctype html><html class="theme-next mist" lang="zh-Hans,en,default"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1"><script src="/lib/pace/pace.min.js?v=1.0.2"></script><link href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2" rel="stylesheet"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css"><link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css"><link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css"><link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css"><meta name="keywords" content="Hexo, Blog"><link rel="alternate" href="/atom.xml" title="Chaospace" type="application/atom+xml"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.1"><meta property="og:type" content="website"><meta property="og:title" content="Chaospace"><meta property="og:url" content="https://fengchao.github.io/page/4/index.html"><meta property="og:site_name" content="Chaospace"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="Chaospace"><script type="text/javascript" id="hexo.configurations">var NexT=window.NexT||{},CONFIG={root:"/",scheme:"Mist",sidebar:{position:"left",display:"post",offset:12,offset_float:0,b2t:!0,scrollpercent:!1},fancybox:!0,motion:!1,duoshuo:{userId:"0",author:"博主"},algolia:{applicationID:"",apiKey:"",indexName:"",hits:{per_page:10},labels:{input_placeholder:"Search for Posts",hits_empty:"We didn't find any results for the search: ${query}",hits_stats:"${hits} results found in ${time} ms"}}}</script><link rel="canonical" href="https://fengchao.github.io/page/4/"><title>Chaospace</title></head><body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans"><script type="text/javascript">var _hmt=_hmt||[];!function(){var e=document.createElement("script");e.src="https://hm.baidu.com/hm.js?e6e028efa4e1db3bb40b47f735c82723";var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)}()</script><div class="container sidebar-position-left page-home"><div class="headband"></div><header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="header-inner"><div class="site-brand-wrapper"><div class="site-meta"><div class="custom-logo-site-title"><a href="/" class="brand" rel="start"><span class="logo-line-before"><i></i></span> <span class="site-title">Chaospace</span> <span class="logo-line-after"><i></i></span></a></div><p class="site-subtitle">Reshape the world by engineering chaos</p></div><div class="site-nav-toggle"><button><span class="btn-bar"></span> <span class="btn-bar"></span> <span class="btn-bar"></span></button></div></div><nav class="site-nav"><ul id="menu" class="menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i><br>首页</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i><br>分类</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i><br>归档</a></li><li class="menu-item menu-item-sitemap"><a href="/sitemap.xml" rel="section"><i class="menu-item-icon fa fa-fw fa-sitemap"></i><br>站点地图</a></li><li class="menu-item menu-item-commonweal"><a href="/404.html" rel="section"><i class="menu-item-icon fa fa-fw fa-heartbeat"></i><br>公益404</a></li><li class="menu-item menu-item-search"><a href="javascript:;" class="popup-trigger"><i class="menu-item-icon fa fa-search fa-fw"></i><br>搜索</a></li></ul><div class="site-search"><div class="popup search-popup local-search-popup"><div class="local-search-header clearfix"><span class="search-icon"><i class="fa fa-search"></i> </span><span class="popup-btn-close"><i class="fa fa-times-circle"></i></span><div class="local-search-input-wrapper"><input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input"></div></div><div id="local-search-result"></div></div></div></nav></div></header><main id="main" class="main"><div class="main-inner"><div class="content-wrap"><div id="content" class="content"><section id="posts" class="posts-expand"><article class="post post-type-normal" itemscope itemtype="http://schema.org/Article"><link itemprop="mainEntityOfPage" href="https://fengchao.github.io/2016/05/27/Designated-initializers/"><span hidden itemprop="author" itemscope itemtype="http://schema.org/Person"><meta itemprop="name" content="Feng Chao"><meta itemprop="description" content=""><meta itemprop="image" content="/images/avatar.gif"></span><span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization"><meta itemprop="name" content="Chaospace"></span><header class="post-header"><h1 class="post-title" itemprop="name headline"><a class="post-title-link" href="/2016/05/27/Designated-initializers/" itemprop="url">.designated_initializers = 指派初始化</a></h1><div class="post-meta"><span class="post-time"><span class="post-meta-item-icon"><i class="fa fa-calendar-o"></i> </span><span class="post-meta-item-text">发表于</span> <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-05-27T13:47:25+08:00">2016-05-27 </time></span><span class="post-category"><span class="post-meta-divider">|</span> <span class="post-meta-item-icon"><i class="fa fa-folder-o"></i> </span><span class="post-meta-item-text">分类于</span> <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/代码/" itemprop="url" rel="index"><span itemprop="name">代码</span></a></span></span></div></header><div class="post-body" itemprop="articleBody"><p>2008-06-16 11:00 在设备驱动中常见下面这种语法格式，首先定义一堆函数指针，并根据不同的设备初始化为不同的实现函数，很像 C++ 里面的成员函数。</p><pre><code>struct file_operations scull_fops = {
+          .owner = THIS_MODULE,
+          .llseek = scull_llseek,
+          .read = scull_read,
+          .write = scull_write,
+          .ioctl = scull_ioctl,
+          .open = scull_open,
+          .release = scull_release,
+};
+</code></pre><p>这种语法使用了指派初始化（designated_initializers ），使程序可以使不同的结构定义间的移植更加容易，代码更加精简易读。而且编译器可以根据需要改变结构成员的顺序，提升程序的性能。</p><p>以下内容摘自 gcc 手册</p><pre><code>In a structure initializer, specify the name of a field to initialize with `.fieldname =&apos; before the element value. For example, given the following structure,
+
+struct point { int x, y; };
+</code></pre><p>The following initialization</p><pre><code>struct point p = { 
+    .y = yvalue, 
+    .x = xvalue
+};
+</code></pre><p>is equivalent to</p><pre><code>struct point p = { xvalue, yvalue };
+</code></pre></div><div></div><div></div><div></div><footer class="post-footer"><div class="post-eof"></div></footer></article><article class="post post-type-normal" itemscope itemtype="http://schema.org/Article"><link itemprop="mainEntityOfPage" href="https://fengchao.github.io/2016/05/27/Vim-keyboard/"><span hidden itemprop="author" itemscope itemtype="http://schema.org/Person"><meta itemprop="name" content="Feng Chao"><meta itemprop="description" content=""><meta itemprop="image" content="/images/avatar.gif"></span><span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization"><meta itemprop="name" content="Chaospace"></span><header class="post-header"><h1 class="post-title" itemprop="name headline"><a class="post-title-link" href="/2016/05/27/Vim-keyboard/" itemprop="url">Vim 键盘图</a></h1><div class="post-meta"><span class="post-time"><span class="post-meta-item-icon"><i class="fa fa-calendar-o"></i> </span><span class="post-meta-item-text">发表于</span> <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-05-27T13:41:46+08:00">2016-05-27 </time></span><span class="post-category"><span class="post-meta-divider">|</span> <span class="post-meta-item-icon"><i class="fa fa-folder-o"></i> </span><span class="post-meta-item-text">分类于</span> <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/技术/" itemprop="url" rel="index"><span itemprop="name">技术</span></a></span></span></div></header><div class="post-body" itemprop="articleBody"><p><img src="/images/vim.png" alt="picture alt" title="Vim cheetsheet"></p></div><div></div><div></div><div></div><footer class="post-footer"><div class="post-eof"></div></footer></article><article class="post post-type-normal" itemscope itemtype="http://schema.org/Article"><link itemprop="mainEntityOfPage" href="https://fengchao.github.io/2016/05/27/Mother-board-debug-card/"><span hidden itemprop="author" itemscope itemtype="http://schema.org/Person"><meta itemprop="name" content="Feng Chao"><meta itemprop="description" content=""><meta itemprop="image" content="/images/avatar.gif"></span><span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization"><meta itemprop="name" content="Chaospace"></span><header class="post-header"><h1 class="post-title" itemprop="name headline"><a class="post-title-link" href="/2016/05/27/Mother-board-debug-card/" itemprop="url">主板诊断卡</a></h1><div class="post-meta"><span class="post-time"><span class="post-meta-item-icon"><i class="fa fa-calendar-o"></i> </span><span class="post-meta-item-text">发表于</span> <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-05-27T13:38:18+08:00">2016-05-27 </time></span><span class="post-category"><span class="post-meta-divider">|</span> <span class="post-meta-item-icon"><i class="fa fa-folder-o"></i> </span><span class="post-meta-item-text">分类于</span> <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/软件/" itemprop="url" rel="index"><span itemprop="name">软件</span></a></span></span></div></header><div class="post-body" itemprop="articleBody"><p>主板诊断卡也叫POST卡（Power On Self Test加电自检），其工作原理是利用主板中BIOS内部程序的检测结果，通过主板诊断卡代码一一显示出来，结合诊断卡的代码含义速查表就能很快地知道电 脑故障所在。尤其在PC机不能引导操作系统、黑屏、喇叭不叫时，使用本卡更能体现其便利，事半功倍。</p><p>主板上的BIOS在每次开机时，会对系统的电路、存储器、键盘、视 频部分、硬盘、软驱等各个组件时行严格测试，并分析硬盘系统配置，对已配置的基本I/O设置进行初始化，一切正常后，再引导操作系统。当计算机出现关键性 故障，屏幕上无显示时，很难判断计算机故障所在，此时可以将本卡插入扩充槽 内，根据卡上显示的代码，参照计算机所所属的BIOS种类，再通过主板诊断卡的代码含义速查表查出该代码所表示的故障原因和部位，就可清楚地知道故障所 在。</p><h2 id="DEBUG卡的工作原理"><a href="#DEBUG卡的工作原理" class="headerlink" title="DEBUG卡的工作原理"></a>DEBUG卡的工作原理</h2><p>DEBUG 卡的工作原理其实很简单，每个厂家的BIOS，无论是AWARD、AMI还是PHOENIX的，都有所谓的POST CODE，即开机自我侦测代码，当BIOS要进行某项测试动作时，首先将该POST CODE写入80h地址，如果测试顺利完成，再写入下一个POST CODE，因此，如果发生错误或死机，根据80H地址的POST CODE值，就可以了解问题出在什么地方。DEBUG 卡的作用就是读取80H地址内的POST CODE，并经译码器译码，最后由数码管显示出来。这样就可以通过DEBUG卡上显示的16进制代码判断问题出在硬件的那一部分，而不用仅依靠计算机主板 那几声单调的警告声来粗略判断硬件错误了。通过它可知道硬件检测没有通过的是内存还是CPU，或者是其他硬件，方便直观地解决棘手的主板问题。以此类推， 还可以判断超频的限制硬件是哪一个，做到有的放矢，查障无忧。</p></div><div></div><div></div><div></div><footer class="post-footer"><div class="post-eof"></div></footer></article><article class="post post-type-normal" itemscope itemtype="http://schema.org/Article"><link itemprop="mainEntityOfPage" href="https://fengchao.github.io/2016/05/27/HelloWDM/"><span hidden itemprop="author" itemscope itemtype="http://schema.org/Person"><meta itemprop="name" content="Feng Chao"><meta itemprop="description" content=""><meta itemprop="image" content="/images/avatar.gif"></span><span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization"><meta itemprop="name" content="Chaospace"></span><header class="post-header"><h1 class="post-title" itemprop="name headline"><a class="post-title-link" href="/2016/05/27/HelloWDM/" itemprop="url">HelloWDM</a></h1><div class="post-meta"><span class="post-time"><span class="post-meta-item-icon"><i class="fa fa-calendar-o"></i> </span><span class="post-meta-item-text">发表于</span> <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-05-27T13:31:03+08:00">2016-05-27 </time></span><span class="post-category"><span class="post-meta-divider">|</span> <span class="post-meta-item-icon"><i class="fa fa-folder-o"></i> </span><span class="post-meta-item-text">分类于</span> <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/代码/" itemprop="url" rel="index"><span itemprop="name">代码</span></a></span></span></div></header><div class="post-body" itemprop="articleBody"><p>2008-08-14 13:47<br>人生真是会开玩笑啊，作为自由软件的信徒，居然要研究 Windows 的驱动了。不过对比一下还是挺好的，<br>和 Linux 下面的驱动比起来，还是有许多相似的地方。不过这种函数缩进形式也太难看了，一个参数一行，<br>看了两天都没反应过来，头晕。</p><hr><p>WDM驱动程序是一种很新的东西，相信很多人都跟我一样，对它很感兴趣，但是又找不到学习的切入 点。究其原因，还是因为WDM是一种非常“死板板”的程 序，它一运行就是工作在系统的底层RING 0处，提供各种接口给应用程序调用。也正因为如此，它不像普通的应用程序一样，可以很快地上手——更多的时候，你是在阅读它的技术资料和各种接口信息，你 还要非常地熟悉系统底层的工作原理，否则一个不小心，就“蓝屏”了，呵呵——话说回来，写驱动程序的时候，死机是家常便饭。</p><p>因 此很多人都对WDM望而生畏了。回想一下，我刚开始学WDM的情形还历历在目——看书看了整整3天，但是看完之后好像跟没看也差不了多少，还是不知道怎么入门，甚至连怎么写一个“Hello World”都不知道——后来才知道其实WDM是没有所谓的“Hello World”程序的，唉，真是痛苦啊，这主要还是因为网络上的WDM资料太少造成的。为了不让大家重蹈我的覆辙并对WDM有个感性的认识，在此我给出一个 最简单的完整的WDM框架，并附有注释，姑且可以算是一个入门的“Hello World”吧。</p><p>废话少说，让我们马上开始研究，要求读者已安装DDK 2000。</p><pre><code>/***************************************************************
+程序名称：Hello World for WDM
+文件名称：HelloWDM.cpp
+作者：罗聪
+日期：2002-8-16
+***************************************************************/
+
+//一定要的头文件，声明了函数模块和变量：
+#include &quot;HelloWDM.h&quot;
+
+/***************************************************************
+函数名称：DriverEntry()
+功能描述：WDM程序入口
+***************************************************************/
+//extern &quot;C&quot;是必须的，表示“用C链接”。如果你的文件名是HelloWDM.c的话，这句可以省略。
+extern &quot;C&quot;
+NTSTATUS DriverEntry(     IN PDRIVER_OBJECT DriverObject,
+                         IN PUNICODE_STRING RegistryPath)
+{
+    //指定“添加设备”消息由函数“HelloWDMAddDevice()”来处理：
+     DriverObject-&gt;DriverExtension-&gt;AddDevice = HelloWDMAddDevice;
+    //指定“即插即用”消息由函数“HelloWDMPnp()”来处理：
+     DriverObject-&gt;MajorFunction[IRP_MJ_PNP] = HelloWDMPnp;
+
+    //返回一个NTSTATUS值STATUS_SUCCESS。几乎所有的驱动程序例程都必须返回一个NTSTATUS值，这些值在NTSTATUS.H DDK头文件中有详细的定义。
+    return STATUS_SUCCESS;
+}
+
+/***************************************************************
+函数名称：HelloWDMAddDevice()
+功能描述：处理“添加设备”消息
+***************************************************************/
+NTSTATUS HelloWDMAddDevice(IN PDRIVER_OBJECT DriverObject,
+                           IN PDEVICE_OBJECT PhysicalDeviceObject)
+{
+    //定义一个NTSTATUS类型的返回值：
+     NTSTATUS status;
+    //定义一个功能设备对象（Functional Device Object）：
+     PDEVICE_OBJECT fdo;
+
+    //创建我们的功能设备对象，并储存到fdo中：
+     status = IoCreateDevice(
+         DriverObject,                //驱动程序对象
+        sizeof(DEVICE_EXTENSION),    //要求的设备扩展的大小
+         NULL,                        //设备名称，这里为NULL
+         FILE_DEVICE_UNKNOWN,        //设备的类型，在标准头文件WDM.H或NTDDK.H中列出的FILE_DEVICE_xxx值之一
+        0,                            //各种常量用OR组合在一起，指示可删除介质、只读等。
+         FALSE,                        //如果一次只有一个线程可以访问该设备，为TRUE，否则为FALSE
+        &amp;fdo);                        //返回的设备对象
+
+    //NT_SUCCESS宏用于测试IoCreateDevice内核是否成功完成。不要忘记检查对内核的所有调用是否成功。NT_ERROR宏不等同于!NT_SUCCESS，最好使用!NT_SUCCESS，因为除了错误外，它还截获警告信息。
+    if( !NT_SUCCESS(status))
+        return status;
+
+    //创建一个设备扩展对象dx，用于存储指向fdo的指针：
+     PDEVICE_EXTENSION dx = (PDEVICE_EXTENSION)fdo-&gt;DeviceExtension;
+     dx-&gt;fdo = fdo;
+
+    //用IoAttachDeviceToDeviceStack函数把HelloWDM设备挂接到设备栈：
+     dx-&gt;NextStackDevice = IoAttachDeviceToDeviceStack(fdo, PhysicalDeviceObject);
+
+    // 设置fdo的flags。有两个“位”是必须改变的，一个是必须清除DO_DEVICE_INITIALIZING标志，如果在DriverEntry例 程中调用IoCreateDevice()，就不需要清除这个标志位。还有一个是必须设置DO_BUFFER_IO标志位：
+     fdo-&gt;Flags |= DO_BUFFERED_IO | DO_POWER_PAGABLE;
+     fdo-&gt;Flags &amp;= ~DO_DEVICE_INITIALIZING;
+
+    //返回值：
+    return STATUS_SUCCESS;
+}
+
+/***************************************************************
+函数名称：HelloWDMPnp()
+功能描述：处理“即插即用”消息
+***************************************************************/
+NTSTATUS HelloWDMPnp(IN PDEVICE_OBJECT fdo, IN PIRP Irp)
+{
+    //创建一个设备扩展对象dx，用于存储指向fdo的指针：
+     PDEVICE_EXTENSION dx=(PDEVICE_EXTENSION)fdo-&gt;DeviceExtension;
+
+    //首先要通过函数IoGetCurrentIrpStackLocation()得到当前的IRP，并由此得到Minor Function：
+     PIO_STACK_LOCATION IrpStack = IoGetCurrentIrpStackLocation(Irp);
+     ULONG MinorFunction = IrpStack-&gt;MinorFunction;
+
+    //然后把这个Minor Function传递给下一个设备栈：
+     IoSkipCurrentIrpStackLocation(Irp);
+     NTSTATUS status = IoCallDriver( dx-&gt;NextStackDevice, Irp);
+
+    //处理“即插即用”次功能代码：
+    //当Minor Function等于IRP_MN_REMOVE_DEVICE时，说明有设备被拔出或卸下，这时要取消资源分配并删除设备：
+    if( MinorFunction==IRP_MN_REMOVE_DEVICE)
+    {
+        //取消设备接口：
+         IoSetDeviceInterfaceState(&amp;dx-&gt;ifSymLinkName, FALSE);
+         RtlFreeUnicodeString(&amp;dx-&gt;ifSymLinkName);
+
+        //调用IoDetachDevice()把fdo从设备栈中脱开：
+        if (dx-&gt;NextStackDevice)
+             IoDetachDevice(dx-&gt;NextStackDevice);
+        //删除fdo：
+         IoDeleteDevice(fdo);
+    }
+
+    //返回值：
+    return status;
+}
+
+/***************************************************************
+程序名称：Hello World for WDM
+文件名称：HelloWDM.h
+作者：罗聪
+日期：2002-8-16
+***************************************************************/
+
+//头文件，只是声明一些函数和变量，比较简单就不多说了，请读者自行研究：
+
+#ifdef __cplusplus
+
+extern &quot;C&quot;
+{
+#endif
+
+#include &quot;ntddk.h&quot;
+
+#ifdef __cplusplus
+}
+#endif
+
+typedef struct _DEVICE_EXTENSION
+{
+     PDEVICE_OBJECT     fdo;
+     PDEVICE_OBJECT     NextStackDevice;
+     UNICODE_STRING     ifSymLinkName;
+
+} DEVICE_EXTENSION, *PDEVICE_EXTENSION;
+
+NTSTATUS HelloWDMAddDevice(IN PDRIVER_OBJECT DriverObject,
+                           IN PDEVICE_OBJECT PhysicalDeviceObject);
+
+NTSTATUS HelloWDMPnp(IN PDEVICE_OBJECT fdo,
+                         IN PIRP Irp);
+</code></pre></div><div></div><div></div><div></div><footer class="post-footer"><div class="post-eof"></div></footer></article><article class="post post-type-normal" itemscope itemtype="http://schema.org/Article"><link itemprop="mainEntityOfPage" href="https://fengchao.github.io/2016/05/27/Submit-code-to-upstream-kernel/"><span hidden itemprop="author" itemscope itemtype="http://schema.org/Person"><meta itemprop="name" content="Feng Chao"><meta itemprop="description" content=""><meta itemprop="image" content="/images/avatar.gif"></span><span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization"><meta itemprop="name" content="Chaospace"></span><header class="post-header"><h1 class="post-title" itemprop="name headline"><a class="post-title-link" href="/2016/05/27/Submit-code-to-upstream-kernel/" itemprop="url">提交代码到上游内核的好处</a></h1><div class="post-meta"><span class="post-time"><span class="post-meta-item-icon"><i class="fa fa-calendar-o"></i> </span><span class="post-meta-item-text">发表于</span> <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-05-27T13:22:16+08:00">2016-05-27 </time></span><span class="post-category"><span class="post-meta-divider">|</span> <span class="post-meta-item-icon"><i class="fa fa-folder-o"></i> </span><span class="post-meta-item-text">分类于</span> <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/开源/" itemprop="url" rel="index"><span itemprop="name">开源</span></a></span></span></div></header><div class="post-body" itemprop="articleBody"><ol><li><p>所有Linux用户都可以使用加入主内核的代码，在不同的发行版中自动启用。所以就没有必要发布驱动盘，免去了支持不同发行版及其不同版本的痛苦（亲身感受，非常痛苦）。解决了大量的发布和支持问题。</p></li><li><p>尽管开发者尽量保持内核空间与用户空间的接口稳定性，内核内部的调用接口却经常变化。这是有意而为之，使得任何时间都可以对内核进行基础修正，以获得更加高质量的代码。但是这一策略的另一个结果就是独立分支必须经常进行大量的修改以跟的上内核前进的脚步。</p></li></ol><p>而内核主树中的代码则不必担心这个问题，因为改变调用接口的开发者必须修正由此引发的问题。所以主树中代码的维护成本很低。</p><ol><li><p>除此之外，其他开发者会经常对内核中的代码进行提升。</p></li><li><p>只有经过审阅的代码才会进入内核。不管代码开发者有多牛，这个审阅过程总会提高代码的质量。</p></li></ol></div><div></div><div></div><div></div><footer class="post-footer"><div class="post-eof"></div></footer></article><article class="post post-type-normal" itemscope itemtype="http://schema.org/Article"><link itemprop="mainEntityOfPage" href="https://fengchao.github.io/2016/05/22/Function-call-convention/"><span hidden itemprop="author" itemscope itemtype="http://schema.org/Person"><meta itemprop="name" content="Feng Chao"><meta itemprop="description" content=""><meta itemprop="image" content="/images/avatar.gif"></span><span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization"><meta itemprop="name" content="Chaospace"></span><header class="post-header"><h1 class="post-title" itemprop="name headline"><a class="post-title-link" href="/2016/05/22/Function-call-convention/" itemprop="url">function-call-convention</a></h1><div class="post-meta"><span class="post-time"><span class="post-meta-item-icon"><i class="fa fa-calendar-o"></i> </span><span class="post-meta-item-text">发表于</span> <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-05-22T08:10:51+08:00">2016-05-22 </time></span><span class="post-category"><span class="post-meta-divider">|</span> <span class="post-meta-item-icon"><i class="fa fa-folder-o"></i> </span><span class="post-meta-item-text">分类于</span> <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/代码/" itemprop="url" rel="index"><span itemprop="name">代码</span></a></span></span></div></header><div class="post-body" itemprop="articleBody"><p>在C语言中，假设我们有这样的一个函数：</p><pre><code>int function(int a,int b)
+</code></pre><p>调用时只要用result = function(1,2)这样的方式就可以使用这个函数。但是，当高级语言被编译成计算机可以识别的机器码时，有一个问题就凸现出来：在CPU中，计算 机没有办法知道一个函数调用需要多少个、什么样的参数，也没有硬件可以保存这些参数。也就是说，计算机不知道怎么给这个函数传递参数，传递参数的工作必须 由函数调用者和函数本身来协调。为此，计算机提供了一种被称为栈的数据结构来支持参数传递。</p><p>栈是一种先进后出的数据结构，栈有一个存储区、一个栈顶指针。栈顶指针指向堆栈中第一个可用的数据项（被称为栈顶）。用户可以在栈顶上方向栈中加入 数据，这个操作被称为压栈(Push)，压栈以后，栈顶自动变成新加入数据项的位置，栈顶指针也随之修改。用户也可以从堆栈中取走栈顶，称为弹出栈 (pop)，弹出栈后，栈顶下的一个元素变成栈顶，栈顶指针随之修改。</p><p>函数调用时，调用者依次把参数压栈，然后调用函数，函数被调用以后，在堆栈中取得数据，并进行计算。函数计算结束以后，或者调用者、或者函数本身修改堆栈，使堆栈恢复原装。</p><p>在参数传递中，有两个很重要的问题必须得到明确说明：</p><ol><li>当参数个数多于一个时，按照什么顺序把参数压入堆栈</li><li>函数调用后，由谁来把堆栈恢复原装</li></ol><p>在高级语言中，通过函数调用约定来说明这两个问题。常见的调用约定有：</p><ul><li>stdcall</li><li>cdecl</li><li>fastcall</li><li>thiscall</li><li>naked call</li></ul><h2 id="stdcall调用约定"><a href="#stdcall调用约定" class="headerlink" title="stdcall调用约定"></a>stdcall调用约定</h2><p>stdcall很多时候被称为pascal调用约定，因为pascal是早期很常见的一种教学用计算机程序设计语言，其语法严谨，使用的函数调用约 定就是stdcall。在Microsoft C++系列的C/C++编译器中，常常用PASCAL宏来声明这个调用约定，类似的宏还有WINAPI和CALLBACK。</p><p>stdcall调用约定声明的语法为(以前文的那个函数为例）：</p><pre><code>int __stdcall function(int a,int b)
+</code></pre><p>stdcall的调用约定意味着：</p><ol><li>参数从右向左压入堆栈</li><li>函数自身修改堆栈</li><li>函数名自动加前导的下划线，后面紧跟一个@符号，其后紧跟着参数的尺寸</li></ol><p>以上述这个函数为例，参数b首先被压栈，然后是参数a，函数调用function(1,2)调用处翻译成汇编语言将变成：</p><pre><code>push 2 第二个参数入栈
+push 1 第一个参数入栈
+call function 调用参数，注意此时自动把cs:eip入栈
+</code></pre><p>而对于函数自身，则可以翻译为：</p><pre><code>push ebp 保存ebp寄存器，该寄存器将用来保存堆栈的栈顶指针，可以在函数退出时恢复
+mov ebp,esp 保存堆栈指针
+mov eax,[ebp + 8H] 堆栈中ebp指向位置之前依次保存有ebp,cs:eip,a,b,ebp +8指向a
+add eax,[ebp + 0CH] 堆栈中ebp + 12处保存了b
+mov esp,ebp 恢复esp
+pop ebp
+ret 8
+</code></pre><p>而在编译时，这个函数的名字被翻译成_function@8</p><p>注意不同编译器会插入自己的汇编代码以提供编译的通用性，但是大体代码如此。其中在函数开始处保留esp到ebp中，在函数结束恢复是编译器常用的方法。</p><p>从函数调用看，2和1依次被push进堆栈，而在函数中又通过相对于ebp(即刚进函数时的堆栈指针）的偏移量存取参数。函数结束后，ret 8表示清理8个字节的堆栈，函数自己恢复了堆栈。</p><h2 id="cdecl调用约定"><a href="#cdecl调用约定" class="headerlink" title="cdecl调用约定"></a>cdecl调用约定</h2><p>cdecl调用约定又称为C调用约定，是C语言缺省的调用约定，它的定义语法是：</p><pre><code>int function (int a ,int b) //不加修饰就是C调用约定
+int __cdecl function(int a,int b)//明确指出C调用约定
+</code></pre><p>在写本文时，出乎我的意料，发现cdecl调用约定的参数压栈顺序是和stdcall是一样的，参数首先由有向左压入堆栈。所不同的是，函数本身不 清理堆栈，调用者负责清理堆栈。由于这种变化，C调用约定允许函数的参数的个数是不固定的，这也是C语言的一大特色。对于前面的function函数，使 用cdecl后的汇编码变成：</p><p>调用处<br>push 1<br>push 2<br>call _function<br>add esp,8 注意：这里调用者在恢复堆栈</p><p>被调用函数_function处</p><pre><code>push ebp 保存ebp寄存器，该寄存器将用来保存堆栈的栈顶指针，可以在函数退出时恢复
+mov ebp,esp 保存堆栈指针
+mov eax,[ebp + 8H] 堆栈中ebp指向位置之前依次保存有ebp,cs:eip,a,b,ebp +8指向a
+add eax,[ebp + 0CH] 堆栈中ebp + 12处保存了b
+mov esp,ebp 恢复esp
+pop ebp
+ret 注意，这里没有修改堆栈
+</code></pre><p>由于参数按照从右向左顺序压栈，因此最开始的参数在最接近栈顶的位置，因此当采用不定个数参数时，第一个参数在栈中的位置肯定能知道，只要不定的参数个数能够根据第一个后者后续的明确的参数确定下来，就可以使用不定参数，例如对于CRT中的sprintf函数，定义为：</p><pre><code>int sprintf(char* buffer,const char* format,...)
+</code></pre><p>由于所有的不定参数都可以通过format确定，因此使用不定个数的参数是没有问题的。</p><pre><code>fastcall
+fastcall调用约定和stdcall类似，它意味着：
+</code></pre><p>函数的第一个和第二个DWORD参数（或者尺寸更小的）通过ecx和edx传递，其他参数通过从右向左的顺序压栈<br>被调用函数清理堆栈<br>函数名修改规则同stdcall<br>其声明语法为：int fastcall function(int a,int b)</p><h2 id="thiscall"><a href="#thiscall" class="headerlink" title="thiscall"></a>thiscall</h2><p>thiscall是唯一一个不能明确指明的函数修饰，因为thiscall不是关键字。它是C++类成员函数缺省的调用约定。由于成员函数调用还有一个this指针，因此必须特殊处理，thiscall意味着：</p><p>参数从右向左入栈<br>如果参数个数确定，this指针通过ecx传递给被调用者；如果参数个数不确定，this指针在所有参数压栈后被压入堆栈。<br>对参数个数不定的，调用者清理堆栈，否则函数自己清理堆栈<br>为了说明这个调用约定，定义如下类和使用代码：</p><pre><code>class A 
+{ 
+public:    
+    int function1(int a,int b);    
+    int function2(int a,...); 
+}; 
+
+int A::function1 (int a,int b) 
+{    
+    return a+b; 
+}
+
+#include
+</code></pre><p>callee函数被翻译成汇编后就变成：</p><pre><code>//函数function1调用
+0401C1D    push        2
+00401C1F   push        1
+00401C21   lea         ecx,[ebp-8]
+00401C24   call function1           注意，这里this没有被入栈
+//函数function2调用
+00401C29   push        3
+00401C2B   push        2
+00401C2D   push        1
+00401C2F   push        3
+00401C31   lea         eax,[ebp-8]   这里引入this指针
+00401C34   push        eax
+00401C35   call function2
+00401C3A   add         esp,14h
+</code></pre><p>可见，对于参数个数固定情况下，它类似于stdcall，不定时则类似cdecl</p><h2 id="naked-call"><a href="#naked-call" class="headerlink" title="naked call"></a>naked call</h2><p>这是一个很少见的调用约定，一般程序设计者建议不要使用。编译器不会给这种函数增加初始化和清理代码，更特殊的是，你不能用return返回返回值，只能用插入汇编返回结果。这一般用于实模式驱动程序设计，假设定义一个求和的加法程序，可以定义为：</p><pre><code>__declspec(naked) int add(int a,int b)
+{
+  __asm mov eax,a
+   __asm add eax,b
+   __asm ret 
+}
+</code></pre><p>注意，这个函数没有显式的return返回值，返回通过修改eax寄存器实现，而且连退出函数的ret指令都必须显式插入。上面代码被翻译成汇编以后变成：</p><pre><code>mov eax,[ebp+8]
+add eax,[ebp+12]
+ret 8
+</code></pre><p>注意这个修饰是和 __stdcall及cdecl结合使用的，前面是它和cdecl结合使用的代码，对于和stdcall结合的代码，则变成：</p><pre><code>__declspec(naked) int __stdcall function(int a,int b)
+{
+    __asm mov eax,a
+    __asm add eax,b
+    __asm ret 8        //注意后面的8
+}
+</code></pre><p>至于这种函数被调用，则和普通的cdecl及stdcall调用函数一致。</p><p>函数调用约定导致的常见问题<br>如果定义的约定和使用的约定不一致，则将导致堆栈被破坏，导致严重问题，下面是两种常见的问题：</p><p>函数原型声明和函数体定义不一致<br>DLL导入函数时声明了不同的函数约定<br>以后者为例，假设我们在dll种声明了一种函数为：</p><pre><code>__declspec(dllexport) int func(int a,int b);//注意，这里没有stdcall，使用的是cdecl
+</code></pre><p>使用时代码为：</p><pre><code>typedef int (*WINAPI DLLFUNC)func(int a,int b);
+hLib = LoadLibrary(...);
+DLLFUNC func = (DLLFUNC)GetProcAddress(...)//这里修改了调用约定
+result = func(1,2);//导致错误
+</code></pre><p>由于调用者没有理解WINAPI的含义错误的增加了这个修饰，上述代码必然导致堆栈被破坏，MFC在编译时插入的checkesp函数将告诉你，堆栈被破坏了。</p></div><div></div><div></div><div></div><footer class="post-footer"><div class="post-eof"></div></footer></article><article class="post post-type-normal" itemscope itemtype="http://schema.org/Article"><link itemprop="mainEntityOfPage" href="https://fengchao.github.io/2016/05/21/Programer-roadmap/"><span hidden itemprop="author" itemscope itemtype="http://schema.org/Person"><meta itemprop="name" content="Feng Chao"><meta itemprop="description" content=""><meta itemprop="image" content="/images/avatar.gif"></span><span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization"><meta itemprop="name" content="Chaospace"></span><header class="post-header"><h1 class="post-title" itemprop="name headline"><a class="post-title-link" href="/2016/05/21/Programer-roadmap/" itemprop="url">程序员发展路线图</a></h1><div class="post-meta"><span class="post-time"><span class="post-meta-item-icon"><i class="fa fa-calendar-o"></i> </span><span class="post-meta-item-text">发表于</span> <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-05-21T16:20:11+08:00">2016-05-21 </time></span><span class="post-category"><span class="post-meta-divider">|</span> <span class="post-meta-item-icon"><i class="fa fa-folder-o"></i> </span><span class="post-meta-item-text">分类于</span> <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/代码/" itemprop="url" rel="index"><span itemprop="name">代码</span></a></span></span></div></header><div class="post-body" itemprop="articleBody"><p>高中</p><pre><code>10 PRINT &quot;HELLO WORLD&quot;
+ 20 END
+</code></pre><p>大一</p><pre><code>rogram Hello(input, output)
+   begin
+    writeln(&apos;Hello World&apos;)
+   end.
+</code></pre><p>大二</p><pre><code>(defun hello
+       (print 
+        (cons &apos;Hello 
+            (list &apos;World))))
+</code></pre><p>新手</p><pre><code>#include &lt;stdio.h&gt;
+void main(void)
+{
+      char *message[] = {&quot;Hello &quot;, &quot;World&quot;};
+      int i;
+
+      for(i = 0; i &lt; 2; ++i)
+        printf(&quot;%s&quot;, message[i]);
+
+   printf(&quot;\n&quot;);
+}
+</code></pre><p>熟练程序员</p><pre><code> #include &lt;iostream.h&gt;
+#include &lt;string.h&gt;
+class string {
+private:
+     int size;
+     char *ptr;
+
+     string() : size(0), ptr(new char[1]) { ptr[0] = 0; }
+
+    string(const string &amp;s) : size(s.size)
+    {
+        ptr = new char[size + 1];
+        strcpy(ptr, s.ptr);
+    }
+
+    ~string()
+    {
+        delete [] ptr;
+    }
+
+       friend ostream &amp;operator &lt;&lt;(ostream &amp;, const string &amp;);
+       string &amp;operator=(const char *);
+ };
+
+ ostream &amp;operator&lt;&lt;(ostream &amp;stream, const string &amp;s)
+ {
+   return(stream &lt;&lt; s.ptr);
+ }
+
+ string &amp;string::operator=(const char *chrs)
+ {
+   if (this != &amp;chrs)
+   {
+     delete [] ptr;
+    size = strlen(chrs);
+     ptr = new char[size + 1];
+     strcpy(ptr, chrs);
+   }
+   return(*this);
+ }
+
+ int main()
+ {
+   string str;
+
+   str = &quot;Hello World&quot;;
+   cout &lt;&lt; str &lt;&lt; endl;
+
+   return(0);
+ }
+</code></pre><p>专家</p><pre><code>[
+ uuid(2573F8F4-CFEE-101A-9A9F-00AA00342820)
+ ]
+ library LHello
+ {
+     // bring in the master library
+     importlib(&quot;actimp.tlb&quot;);
+     importlib(&quot;actexp.tlb&quot;);
+
+     // bring in my interfaces
+     #include &quot;pshlo.idl&quot;
+
+     [
+     uuid(2573F8F5-CFEE-101A-9A9F-00AA00342820)
+     ]
+     cotype THello
+  {
+  interface IHello;
+  interface IPersistFile;
+  };
+ };
+
+ [
+ exe,
+ uuid(2573F890-CFEE-101A-9A9F-00AA00342820)
+ ]
+ module CHelloLib
+ {
+
+     // some code related header files
+     importheader(&lt;windows.h&gt;);
+     importheader(&lt;ole2.h&gt;);
+     importheader(&lt;except.hxx&gt;);
+     importheader(&quot;pshlo.h&quot;);
+     importheader(&quot;shlo.hxx&quot;);
+     importheader(&quot;mycls.hxx&quot;);
+
+     // needed typelibs
+     importlib(&quot;actimp.tlb&quot;);
+     importlib(&quot;actexp.tlb&quot;);
+     importlib(&quot;thlo.tlb&quot;);
+
+     [
+     uuid(2573F891-CFEE-101A-9A9F-00AA00342820),
+     aggregatable
+     ]
+     coclass CHello
+  {
+  cotype THello;
+  };
+ };
+
+
+ #include &quot;ipfix.hxx&quot;
+
+ extern HANDLE hEvent;
+
+ class CHello : public CHelloBase
+ {
+ public:
+     IPFIX(CLSID_CHello);
+
+     CHello(IUnknown *pUnk);
+     ~CHello();
+
+     HRESULT  __stdcall PrintSz(LPWSTR pwszString);
+
+ private:
+     static int cObjRef;
+ };
+
+
+ #include &lt;windows.h&gt;
+ #include &lt;ole2.h&gt;
+ #include &lt;stdio.h&gt;
+ #include &lt;stdlib.h&gt;
+ #include &quot;thlo.h&quot;
+ #include &quot;pshlo.h&quot;
+ #include &quot;shlo.hxx&quot;
+ #include &quot;mycls.hxx&quot;
+
+ int CHello::cObjRef = 0;
+
+ CHello::CHello(IUnknown *pUnk) : CHelloBase(pUnk)
+ {
+     cObjRef++;
+     return;
+ }
+
+ HRESULT  __stdcall  CHello::PrintSz(LPWSTR pwszString)
+ {
+     printf(&quot;%ws
+&quot;, pwszString);
+     return(ResultFromScode(S_OK));
+ }
+
+
+ CHello::~CHello(void)
+ {
+
+ // when the object count goes to zero, stop the server
+ cObjRef--;
+ if( cObjRef == 0 )
+     PulseEvent(hEvent);
+
+ return;
+ }
+
+ #include &lt;windows.h&gt;
+ #include &lt;ole2.h&gt;
+ #include &quot;pshlo.h&quot;
+ #include &quot;shlo.hxx&quot;
+ #include &quot;mycls.hxx&quot;
+
+ HANDLE hEvent;
+
+  int _cdecl main(
+ int argc,
+ char * argv[]
+ ) {
+ ULONG ulRef;
+ DWORD dwRegistration;
+ CHelloCF *pCF = new CHelloCF();
+
+ hEvent = CreateEvent(NULL, FALSE, FALSE, NULL);
+
+ // Initialize the OLE libraries
+ CoInitializeEx(NULL, COINIT_MULTITHREADED);
+
+ CoRegisterClassObject(CLSID_CHello, pCF, CLSCTX_LOCAL_SERVER,
+     REGCLS_MULTIPLEUSE, &amp;dwRegistration);
+
+ // wait on an event to stop
+ WaitForSingleObject(hEvent, INFINITE);
+
+ // revoke and release the class object
+ CoRevokeClassObject(dwRegistration);
+ ulRef = pCF-&gt;Release();
+
+ // Tell OLE we are going away.
+ CoUninitialize();
+
+ return(0); }
+
+ extern CLSID CLSID_CHello;
+ extern UUID LIBID_CHelloLib;
+
+ CLSID CLSID_CHello = { /* 2573F891-CFEE-101A-9A9F-00AA00342820 */
+     0x2573F891,
+     0xCFEE,
+     0x101A,
+     { 0x9A, 0x9F, 0x00, 0xAA, 0x00, 0x34, 0x28, 0x20 }
+ };
+
+ UUID LIBID_CHelloLib = { /* 2573F890-CFEE-101A-9A9F-00AA00342820 */
+     0x2573F890,
+     0xCFEE,
+     0x101A,
+     { 0x9A, 0x9F, 0x00, 0xAA, 0x00, 0x34, 0x28, 0x20 }
+ };
+
+ #include &lt;windows.h&gt;
+ #include &lt;ole2.h&gt;
+ #include &lt;stdlib.h&gt;
+ #include &lt;string.h&gt;
+ #include &lt;stdio.h&gt;
+ #include &quot;pshlo.h&quot;
+ #include &quot;shlo.hxx&quot;
+ #include &quot;clsid.h&quot;
+
+ int _cdecl main(
+ int argc,
+ char * argv[]
+ ) {
+ HRESULT  hRslt;
+ IHello        *pHello;
+ ULONG  ulCnt;
+ IMoniker * pmk;
+ WCHAR  wcsT[_MAX_PATH];
+ WCHAR  wcsPath[2 * _MAX_PATH];
+
+ // get object path
+ wcsPath[0] = &apos;\0&apos;;
+ wcsT[0] = &apos;\0&apos;;
+ if( argc &gt; 1) {
+     mbstowcs(wcsPath, argv[1], strlen(argv[1]) + 1);
+     wcsupr(wcsPath);
+     }
+ else {
+     fprintf(stderr, &quot;Object path must be specified\n&quot;);
+     return(1);
+     }
+
+ // get print string
+ if(argc &gt; 2)
+     mbstowcs(wcsT, argv[2], strlen(argv[2]) + 1);
+ else
+     wcscpy(wcsT, L&quot;Hello World&quot;);
+
+ printf(&quot;Linking to object %ws\n&quot;, wcsPath);
+ printf(&quot;Text String %ws\n&quot;, wcsT);
+
+ // Initialize the OLE libraries
+ hRslt = CoInitializeEx(NULL, COINIT_MULTITHREADED);
+
+ if(SUCCEEDED(hRslt)) {
+
+
+     hRslt = CreateFileMoniker(wcsPath, &amp;pmk);
+     if(SUCCEEDED(hRslt))
+  hRslt = BindMoniker(pmk, 0, IID_IHello, (void **)&amp;pHello);
+
+     if(SUCCEEDED(hRslt)) {
+
+  // print a string out
+  pHello-&gt;PrintSz(wcsT);
+
+  Sleep(2000);
+  ulCnt = pHello-&gt;Release();
+  }
+     else
+  printf(&quot;Failure to connect, status: %lx&quot;, hRslt);
+
+     // Tell OLE we are going away.
+     CoUninitialize();
+     }
+
+ return(0);
+ }
+</code></pre><p>见习黑客</p><pre><code>#!/usr/local/bin/perl
+ $msg=&quot;Hello, world.\n&quot;;
+ if ($#ARGV &gt;= 0) {
+   while(defined($arg=shift(@ARGV))) {
+     $outfilename = $arg;
+     open(FILE, &quot;&gt;&quot; . $outfilename) || die &quot;Can&apos;t write $arg: $!\n&quot;;
+     print (FILE $msg);
+     close(FILE) || die &quot;Can&apos;t close $arg: $!\n&quot;;
+   }
+ } else {
+   print ($msg);
+ }
+ 1;
+</code></pre><p>有经验黑客</p><pre><code>#include &lt;stdio.h&gt;
+ #define S &quot;Hello, World\n&quot;
+ main(){exit(printf(S) == strlen(S) ? 0 : 1);}
+</code></pre><p>熟练黑客</p><pre><code>% cc -o a.out ~/src/misc/hw/hw.c
+ % a.out
+</code></pre><p>黑客领袖</p><pre><code>% echo &quot;Hello, world.&quot;初级主管10 PRINT &quot;HELLO WORLD&quot;
+ 20 END
+</code></pre><p>中级主管</p><pre><code>mail -s &quot;Hello, world.&quot; bob@b12
+ Bob, could you please write me a program that prints &quot;Hello, world.&quot;?
+ I need it by tomorrow.
+ ^D
+</code></pre><p>高级主管</p><pre><code>% zmail jim
+ I need a &quot;Hello, world.&quot; program by this afternoon.
+</code></pre><p>首席执行官</p><pre><code>% letter
+ letter: Command not found.
+ % mail
+ To: ^X ^F ^C
+ % help mail
+ help: Command not found.
+ % damn!
+ !: Event unrecognized
+ % logout
+</code></pre></div><div></div><div></div><div></div><footer class="post-footer"><div class="post-eof"></div></footer></article><article class="post post-type-normal" itemscope itemtype="http://schema.org/Article"><link itemprop="mainEntityOfPage" href="https://fengchao.github.io/2016/05/21/Dbus/"><span hidden itemprop="author" itemscope itemtype="http://schema.org/Person"><meta itemprop="name" content="Feng Chao"><meta itemprop="description" content=""><meta itemprop="image" content="/images/avatar.gif"></span><span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization"><meta itemprop="name" content="Chaospace"></span><header class="post-header"><h1 class="post-title" itemprop="name headline"><a class="post-title-link" href="/2016/05/21/Dbus/" itemprop="url">dbus 进程间通信</a></h1><div class="post-meta"><span class="post-time"><span class="post-meta-item-icon"><i class="fa fa-calendar-o"></i> </span><span class="post-meta-item-text">发表于</span> <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-05-21T16:13:13+08:00">2016-05-21 </time></span><span class="post-category"><span class="post-meta-divider">|</span> <span class="post-meta-item-icon"><i class="fa fa-folder-o"></i> </span><span class="post-meta-item-text">分类于</span> <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Linux/" itemprop="url" rel="index"><span itemprop="name">Linux</span></a></span></span></div></header><div class="post-body" itemprop="articleBody"><h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>通常一个桌面中会有几个不同的程序同时运行，而且它们之间需要相互间进行通讯。在操作系统层，这些不同的程序用不同的进程来实现。而为了安全起见，不同进 程间是不能直接相互调用和内存访问的，也就是一个进程对另外的进程是不可见的。这就需要一个机制来定义一个接口，一个进程通过接口访问另外一个进程，对于 发起访问的进程来说，调用 IPC 接口中的函数与调用自己进程内的函数是没有区别的这就是进程间通讯。进程间通讯有许多不同的实现：D-bus，CORBA，KDE 中的 DCOP 和 Gnome 中的 Bonobo 等。</p><p>实践证明， D-bus 是未来一段时间的桌面程序间进行通讯的主要方式。 D-BUS 的目标是将 DCOP 和 Bonobo 替换为简单的 IPC，并集成这两种桌面环境。由于尽可能地减少了 D-BUS 所需的依赖，所以其他可能会使用 D-BUS 的应用程序不用担心引入过多依赖。</p><h2 id="与其它通讯方式的对比"><a href="#与其它通讯方式的对比" class="headerlink" title="与其它通讯方式的对比"></a>与其它通讯方式的对比</h2><p>其他方式的缺点概括起来就是：</p><p>CORBA： 非常复杂，难于实现。看起来接口定义得相当完善，所以 Gnome 和 KDE 都曾经试图用它作为 进程间通讯的方式。但是因为此方式的接口复杂难用，速度慢，耗内存等缺点，结果都以失败告终。<br>DCOP：轻量级，依赖于 QT，曾经是 KDE 中的默认进程间通信方式，而目前KDE4 已经完全转移到 Dbus；</p><p>Bonobo：基于CORBA，实现复杂，依赖于GObject。目前Gnome 除了极个别的复杂情况下仍然使用 Bonobo 外，大部分已经转移到 D-Bus。</p><p>XML-RPC 和 SOAP：所有消息都以复杂的 XML 格式封包，用文本模式发送，接收后再转换回二进制模式。两次转换低效而耗时、</p><p>COM/DCOM: 微软早期版本使用，而且只能在微软的视窗系统中使用。众所周知，微软的设计通常包含安全问题，曾经风靡一时的冲击波病毒就是利用了远程进程间调用的漏洞。 COM 当然也不例外，ActiveX 依然是大部分网页病毒的源泉。COM+解决了部分问题，不过也实在好不到哪里去。</p><p>综合起来，大部分的缺点包括：</p><p>(1)有些过于复杂，不适合桌面使用</p><p>(2)有些严重依赖桌面环境，只能在 Gnome 中通讯或只能在 KDE 中通讯。这就造成 Gnome 和 KDE 间的程序难以相互通讯，扩大了 Linux 桌面的分裂。</p><h2 id="Dbus-的特点"><a href="#Dbus-的特点" class="headerlink" title="Dbus 的特点"></a>Dbus 的特点</h2><p>Dbus 的设计重复考虑了以上缺点,其主要特点包括：</p><p>（1）基于消息的通讯方式，使用二进制传输数据，使得实现起来相对简单，效率高</p><p>（2) 独立于 Gnome 和 KDE，在 freedesktop.org 的维护下发展。这样 Gnome 和 KDE 的程序之间就可以进行良好的通讯。</p><p>（3）正如其名字显示的那样，Dbus 使用总线系统，这样一个进程就可以同时和一组进程进行通讯。Dbus 中可以使用系统级总线，操作系统可以像总线中发送消息，供用户空间的程序使用。将整个桌面系统更好的整合起来。</p><p>（4）典型的 D-BUS 设置将由几个总线构成,经常使用系统总线和会话总线。一个持久系统总线在引导时就会启动，由操作系统和后台进程使用，安全性非常好，应用程序无法欺骗系统事件。会话总线在用户登录后启动，为用户私有，供用户的自己的应用程序进行通信。</p><h2 id="dbus-的调用方式"><a href="#dbus-的调用方式" class="headerlink" title="dbus 的调用方式"></a>dbus 的调用方式</h2><p>下面这个例子来自 Dbus 的官方教程，使用了 D-Bus 的 GLib 绑定，展示了如何通过 dbus 调用函数，更详细的例子请参考 <a href="http://dbus.freedesktop.org/doc/dbus/libdbus-tutorial.html" target="_blank" rel="external nofollow noopener noreferrer">http://dbus.freedesktop.org/doc/dbus/libdbus-tutorial.html</a> 。</p><pre><code>int main (int argc, char **argv)
+{
+    DBusGConnection *connection;
+    GError *error;
+    DBusGProxy *proxy;
+    char **name_list;
+    char **name_list_ptr;
+
+    g_type_init ();
+
+    error = NULL;
+
+    /* 首先连接到总线 */
+    connection = dbus_g_bus_get (DBUS_BUS_SESSION, &amp;error);
+    if (connection == NULL){
+        g_printerr (&quot;Failed to open connection to bus: %s\n&quot;,
+        error-&gt;message);
+        g_error_free (error);
+        exit (1);
+    }
+
+    /* 创建代理对象 &quot;bus driver&quot; (name &quot;org.freedesktop.DBus&quot;) */
+
+    proxy = dbus_g_proxy_new_for_name (connection,
+        DBUS_SERVICE_DBUS,
+        DBUS_PATH_DBUS,
+        DBUS_INTERFACE_DBUS);
+
+    /* 跨进程调用 ListNames 方法 并等待相应 */
+    error = NULL;
+    if (!dbus_g_proxy_call (proxy, &quot;ListNames&quot;, &amp;error, G_TYPE_INVALID,
+    G_TYPE_STRV, &amp;name_list, G_TYPE_INVALID)){
+    /* 演示远程异常与本地错误的处理 */
+        if (error-&gt;domain == DBUS_GERROR &amp;&amp; error-&gt;code ==  BUS_GERROR_REMOTE_EXCEPTION)
+            g_printerr (&quot;Caught remote method exception %s: %s&quot;,             dbus_g_error_get_name (error), error-&gt;message);
+        else {
+            g_printerr (&quot;Error: %s\n&quot;, error-&gt;message);
+
+        g_error_free (error);
+        exit (1);
+    }
+
+    /* 打印结果 */
+
+    g_print (&quot;Names on the message bus:\n&quot;);
+
+    for (name_list_ptr = name_list; *name_list_ptr; name_list_ptr++){
+        g_print (&quot; %s\n&quot;, *name_list_ptr);
+    }
+    g_strfreev (name_list);
+
+    /* 释放接口 */
+    g_object_unref (proxy);
+
+    return 0;
+}
+</code></pre></div><div></div><div></div><div></div><footer class="post-footer"><div class="post-eof"></div></footer></article><article class="post post-type-normal" itemscope itemtype="http://schema.org/Article"><link itemprop="mainEntityOfPage" href="https://fengchao.github.io/2016/05/21/Testdisk/"><span hidden itemprop="author" itemscope itemtype="http://schema.org/Person"><meta itemprop="name" content="Feng Chao"><meta itemprop="description" content=""><meta itemprop="image" content="/images/avatar.gif"></span><span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization"><meta itemprop="name" content="Chaospace"></span><header class="post-header"><h1 class="post-title" itemprop="name headline"><a class="post-title-link" href="/2016/05/21/Testdisk/" itemprop="url">testdisk</a></h1><div class="post-meta"><span class="post-time"><span class="post-meta-item-icon"><i class="fa fa-calendar-o"></i> </span><span class="post-meta-item-text">发表于</span> <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-05-21T16:00:45+08:00">2016-05-21 </time></span><span class="post-category"><span class="post-meta-divider">|</span> <span class="post-meta-item-icon"><i class="fa fa-folder-o"></i> </span><span class="post-meta-item-text">分类于</span> <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Linux/" itemprop="url" rel="index"><span itemprop="name">Linux</span></a></span></span></div></header><div class="post-body" itemprop="articleBody"><p>Testdisk 是修复分区表，恢复误删数据的好工具。</p><h4 id="Install（Ubuntu）"><a href="#Install（Ubuntu）" class="headerlink" title="Install（Ubuntu）"></a>Install（Ubuntu）</h4><pre><code>$ sudo apt-get install testdisk
+</code></pre><h4 id="启动"><a href="#启动" class="headerlink" title="启动"></a>启动</h4><pre><code>$ sudo testdisk
+</code></pre><h4 id="重新扫描分区表"><a href="#重新扫描分区表" class="headerlink" title="重新扫描分区表"></a>重新扫描分区表</h4><p>依次选择</p><pre><code>[Create] --&gt; 需要修复的硬盘 --&gt; 
+[Proceed] --&gt; 
+[Intel ] Intel/PC partition --&gt; 
+[Analyse] --&gt; 
+[Proceed] --&gt;
+[Write]
+</code></pre><h4 id="reboot"><a href="#reboot" class="headerlink" title="reboot"></a>reboot</h4></div><div></div><div></div><div></div><footer class="post-footer"><div class="post-eof"></div></footer></article><article class="post post-type-normal" itemscope itemtype="http://schema.org/Article"><link itemprop="mainEntityOfPage" href="https://fengchao.github.io/2016/05/21/Patch/"><span hidden itemprop="author" itemscope itemtype="http://schema.org/Person"><meta itemprop="name" content="Feng Chao"><meta itemprop="description" content=""><meta itemprop="image" content="/images/avatar.gif"></span><span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization"><meta itemprop="name" content="Chaospace"></span><header class="post-header"><h1 class="post-title" itemprop="name headline"><a class="post-title-link" href="/2016/05/21/Patch/" itemprop="url">生成和使用代码补丁</a></h1><div class="post-meta"><span class="post-time"><span class="post-meta-item-icon"><i class="fa fa-calendar-o"></i> </span><span class="post-meta-item-text">发表于</span> <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-05-21T15:57:10+08:00">2016-05-21 </time></span><span class="post-category"><span class="post-meta-divider">|</span> <span class="post-meta-item-icon"><i class="fa fa-folder-o"></i> </span><span class="post-meta-item-text">分类于</span> <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/代码/" itemprop="url" rel="index"><span itemprop="name">代码</span></a></span></span></div></header><div class="post-body" itemprop="articleBody"><h4 id="生成"><a href="#生成" class="headerlink" title="生成"></a>生成</h4><pre><code>$ diff -Nur old new &gt; patchfile
+</code></pre><h3 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h3><pre><code>$ cd old 
+$ patch -p1 &lt; ../patchfile
+</code></pre></div><div></div><div></div><div></div><footer class="post-footer"><div class="post-eof"></div></footer></article></section><nav class="pagination"><a class="extend prev" rel="prev" href="/page/3/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/3/">3</a><span class="page-number current">4</span><a class="page-number" href="/page/5/">5</a><span class="space">&hellip;</span><a class="page-number" href="/page/18/">18</a><a class="extend next" rel="next" href="/page/5/"><i class="fa fa-angle-right"></i></a></nav></div></div><div class="sidebar-toggle"><div class="sidebar-toggle-line-wrap"><span class="sidebar-toggle-line sidebar-toggle-line-first"></span> <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span> <span class="sidebar-toggle-line sidebar-toggle-line-last"></span></div></div><aside id="sidebar" class="sidebar"><div class="sidebar-inner"><section class="site-overview sidebar-panel sidebar-panel-active"><div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person"><img class="site-author-image" itemprop="image" src="/images/avatar.gif" alt="Feng Chao"><p class="site-author-name" itemprop="name">Feng Chao</p><p class="site-description motion-element" itemprop="description"></p></div><nav class="site-state motion-element"><div class="site-state-item site-state-posts"><a href="/archives/"><span class="site-state-item-count">178</span> <span class="site-state-item-name">日志</span></a></div><div class="site-state-item site-state-categories"><a href="/categories/index.html"><span class="site-state-item-count">15</span> <span class="site-state-item-name">分类</span></a></div><div class="site-state-item site-state-tags"><span class="site-state-item-count">1</span> <span class="site-state-item-name">标签</span></div></nav><div class="feed-link motion-element"><a href="/atom.xml" rel="alternate"><i class="fa fa-rss"></i> RSS</a></div><div class="links-of-author motion-element"></div></section><div class="back-to-top"><i class="fa fa-arrow-up"></i></div></div></aside></div></main><footer id="footer" class="footer"><div class="footer-inner"><div class="copyright">&copy; 2008 - <span itemprop="copyrightYear">2018</span> <span class="with-love"><i class="fa fa-heart"></i> </span><span class="author" itemprop="copyrightHolder">Feng Chao</span></div><div class="powered-by">由 <a class="theme-link" href="https://hexo.io" rel="external nofollow noopener noreferrer" target="_blank">Hexo</a> 强力驱动</div><div class="theme-info">主题 - <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next" rel="external nofollow noopener noreferrer" target="_blank">NexT.Mist</a></div></div></footer></div><script type="text/javascript">"[object Function]"!==Object.prototype.toString.call(window.Promise)&&(window.Promise=null)</script><script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script><script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script><script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script><script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script><script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script><script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script><script type="text/javascript" src="/js/src/utils.js?v=5.1.1"></script><script type="text/javascript" src="/js/src/motion.js?v=5.1.1"></script><script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script><script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script><script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.1"></script><script type="text/javascript">function proceedsearch(){$("body").append('<div class="search-popup-overlay local-search-pop-overlay"></div>').css("overflow","hidden"),$(".search-popup-overlay").click(onPopupClose),$(".popup").toggle();var t=$("#local-search-input");t.attr("autocapitalize","none"),t.attr("autocorrect","off"),t.focus()}var isfetched=!1,isXml=!0,search_path="search.xml";0===search_path.length?search_path="search.xml":search_path.endsWith("json")&&(isXml=!1);var path="/"+search_path,onPopupClose=function(t){$(".popup").hide(),$("#local-search-input").val(""),$(".search-result-list").remove(),$("#no-result").remove(),$(".local-search-pop-overlay").remove(),$("body").css("overflow","")},searchFunc=function(t,e,o){"use strict";$("body").append('<div class="search-popup-overlay local-search-pop-overlay"><div id="search-loading-icon"><i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i></div></div>').css("overflow","hidden"),$("#search-loading-icon").css("margin","20% auto 0 auto").css("text-align","center"),$.ajax({url:t,dataType:isXml?"xml":"json",async:!0,success:function(t){isfetched=!0,$(".popup").detach().appendTo(".header-inner");var n=isXml?$("entry",t).map(function(){return{title:$("title",this).text(),content:$("content",this).text(),url:$("url",this).text()}}).get():t,r=document.getElementById(e),s=document.getElementById(o),a=function(){var t=r.value.trim().toLowerCase(),e=t.split(/[\s\-]+/);e.length>1&&e.push(t);var o=[];if(t.length>0&&n.forEach(function(n){function r(e,o,n,r){for(var s=r[r.length-1],a=s.position,i=s.word,l=[],h=0;a+i.length<=n&&0!=r.length;){i===t&&h++,l.push({position:a,length:i.length});var p=a+i.length;for(r.pop();0!=r.length&&(s=r[r.length-1],a=s.position,i=s.word,p>a);)r.pop()}return c+=h,{hits:l,start:o,end:n,searchTextCount:h}}function s(t,e){var o="",n=e.start;return e.hits.forEach(function(e){o+=t.substring(n,e.position);var r=e.position+e.length;o+='<b class="search-keyword">'+t.substring(e.position,r)+"</b>",n=r}),o+=t.substring(n,e.end)}var a=!1,i=0,c=0,l=n.title.trim(),h=l.toLowerCase(),p=n.content.trim().replace(/<[^>]+>/g,""),u=p.toLowerCase(),f=decodeURIComponent(n.url),d=[],g=[];if(""!=l&&(e.forEach(function(t){function e(t,e,o){var n=t.length;if(0===n)return[];var r=0,s=[],a=[];for(o||(e=e.toLowerCase(),t=t.toLowerCase());(s=e.indexOf(t,r))>-1;)a.push({position:s,word:t}),r=s+n;return a}d=d.concat(e(t,h,!1)),g=g.concat(e(t,u,!1))}),(d.length>0||g.length>0)&&(a=!0,i=d.length+g.length)),a){[d,g].forEach(function(t){t.sort(function(t,e){return e.position!==t.position?e.position-t.position:t.word.length-e.word.length})});var v=[];0!=d.length&&v.push(r(l,0,l.length,d));for(var C=[];0!=g.length;){var $=g[g.length-1],m=$.position,x=$.word,w=m-20,y=m+80;w<0&&(w=0),y<m+x.length&&(y=m+x.length),y>p.length&&(y=p.length),C.push(r(p,w,y,g))}C.sort(function(t,e){return t.searchTextCount!==e.searchTextCount?e.searchTextCount-t.searchTextCount:t.hits.length!==e.hits.length?e.hits.length-t.hits.length:t.start-e.start});var T=parseInt("1");T>=0&&(C=C.slice(0,T));var b="";b+=0!=v.length?"<li><a href='"+f+"' class='search-result-title'>"+s(l,v[0])+"</a>":"<li><a href='"+f+"' class='search-result-title'>"+l+"</a>",C.forEach(function(t){b+="<a href='"+f+'\'><p class="search-result">'+s(p,t)+"...</p></a>"}),b+="</li>",o.push({item:b,searchTextCount:c,hitCount:i,id:o.length})}}),1===e.length&&""===e[0])s.innerHTML='<div id="no-result"><i class="fa fa-search fa-5x" /></div>';else if(0===o.length)s.innerHTML='<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>';else{o.sort(function(t,e){return t.searchTextCount!==e.searchTextCount?e.searchTextCount-t.searchTextCount:t.hitCount!==e.hitCount?e.hitCount-t.hitCount:e.id-t.id});var a='<ul class="search-result-list">';o.forEach(function(t){a+=t.item}),a+="</ul>",s.innerHTML=a}};r.addEventListener("input",a),$(".local-search-pop-overlay").remove(),$("body").css("overflow",""),proceedsearch()}})};$(".popup-trigger").click(function(t){t.stopPropagation(),isfetched===!1?searchFunc(path,"local-search-input","local-search-result"):proceedsearch()}),$(".popup-btn-close").click(onPopupClose),$(".popup").click(function(t){t.stopPropagation()}),$(document).on("keyup",function(t){var e=27===t.which&&$(".search-popup").is(":visible");e&&onPopupClose()})</script><script>!function(){var t=document.createElement("script"),s=window.location.protocol.split(":")[0];"https"===s?t.src="https://zz.bdstatic.com/linksubmit/push.js":t.src="http://push.zhanzhang.baidu.com/push.js";var e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(t,e)}()</script><script type="text/javascript" src="/js/src/js.cookie.js?v=5.1.1"></script><script type="text/javascript" src="/js/src/scroll-cookie.js?v=5.1.1"></script></body></html><!-- rebuild by neat -->
