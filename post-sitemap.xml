@@ -7,6 +7,22 @@
     </url>
 
     <url>
+        <loc>https://fengchao.github.io/2016/04/06/An-open-letter-to-hobbyists/</loc>
+        <lastmod>2018-01-28T09:25:31.521Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://fengchao.github.io/2010/01/25/Microsoft-choice/</loc>
+        <lastmod>2018-01-28T09:22:52.420Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://fengchao.github.io/2006/06/14/Mitochondrion/</loc>
         <lastmod>2018-01-28T09:20:32.428Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -495,14 +511,6 @@
     </url>
 
     <url>
-        <loc>https://fengchao.github.io/2016/04/06/An-open-letter-to-hobbyists/</loc>
-        <lastmod>2017-01-20T05:59:12.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://fengchao.github.io/2016/07/05/Archive-what-you-think/</loc>
         <lastmod>2017-01-20T05:59:06.000Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -929,14 +937,6 @@
     <url>
         <loc>https://fengchao.github.io/2016/05/27/Master-boot-record/</loc>
         <lastmod>2017-01-20T05:47:44.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://fengchao.github.io/2010/01/25/Microsoft-choice/</loc>
-        <lastmod>2017-01-20T05:47:34.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
