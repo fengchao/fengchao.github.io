@@ -35,7 +35,7 @@
   <entry>
     <title><![CDATA[npm]]></title>
     <url>%2F2016%2F11%2F25%2FNpm%2F</url>
-    <content type="text"><![CDATA[^ ~Major. Minor.Bugfix^: 仅更新不涉及 API 变更的 Minor 版本 ~: 仅更新问题修复版本 $npm update @latest 查找有更新版本的软件包 $ npm outdated 更新软件包 $ npm install packagename@latest --save 处理不兼容的 API 调用]]></content>
+    <content type="text"><![CDATA[^ ~Major. Minor.Bugfix^: 仅更新不涉及 API 变更的 Minor 版本 ~: 仅更新问题修复版本$npm update@latest 查找有更新版本的软件包$ npm outdated 更新软件包$ npm install packagename@latest --save 处理不兼容的 API 调用]]></content>
       <categories>
         <category>代码</category>
       </categories>
